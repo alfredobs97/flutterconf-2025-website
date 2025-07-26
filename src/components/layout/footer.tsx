@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="grid gap-2">
             <h4 className="font-semibold font-headline">Resources</h4>
             <Link href="#info" className="hover:text-primary" prefetch={false}>Info &amp; FAQ</Link>
-            <Link href="#" className="hover:text-primary" prefetch={false}>Code of Conduct</Link>
+            <Link href="/code-of-conduct" className="hover:text-primary" prefetch={false}>Code of Conduct</Link>
             <Link href="#contact" className="hover:text-primary" prefetch={false}>Contact</Link>
           </div>
           <div className="grid gap-2">

@@ -1,7 +1,8 @@
 import type { FaqItem } from '@/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { MapPin, Building, ShieldCheck } from 'lucide-react';
+import { MapPin, ShieldCheck } from 'lucide-react';
+import Link from 'next/link';
 
 const faqItems: FaqItem[] = [
     {
@@ -41,28 +42,17 @@ export default function Info() {
                             <CardTitle>Sede del Evento</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-2">
-                            <p className="font-bold">Palacio de Ferias y Congresos de Málaga</p>
-                            <p className="text-muted-foreground">Av. de José Ortega y Gasset, 201, 29006 Málaga</p>
-                            <p className="text-sm text-muted-foreground">Fácilmente accesible en transporte público y coche, con amplio aparcamiento.</p>
+                            <p className="font-bold">Google Safety Engineering Center (GSEC)</p>
+                            <p className="text-muted-foreground">Paseo de la Farola, Málaga</p>
                         </CardContent>
                     </Card>
                      <Card>
-                        <CardHeader className="flex flex-row items-center gap-4">
-                            <Building className="h-8 w-8 text-primary"/>
-                            <CardTitle>Hoteles</CardTitle>
-                        </CardHeader>
-                        <CardContent className="space-y-2">
-                             <p className="font-bold">Hoteles recomendados</p>
-                            <p className="text-muted-foreground">Hemos negociado tarifas especiales en hoteles cercanos. Pronto publicaremos los enlaces de reserva.</p>
-                        </CardContent>
-                    </Card>
-                     <Card className="md:col-span-2">
                         <CardHeader className="flex flex-row items-center gap-4">
                             <ShieldCheck className="h-8 w-8 text-primary"/>
                             <CardTitle>Código de Conducta</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-muted-foreground">Nos comprometemos a proporcionar una experiencia segura, inclusiva y acogedora para todos. Se espera que todos los asistentes, ponentes, sponsors y voluntarios cumplan con nuestro <a href="#" className="text-primary underline hover:no-underline">Código de Conducta</a>.</p>
+                            <p className="text-muted-foreground">Nos comprometemos a proporcionar una experiencia segura, inclusiva y acogedora para todos. Se espera que todos los asistentes, ponentes, sponsors y voluntarios cumplan con nuestro <Link href="/code-of-conduct" className="text-primary underline hover:no-underline">Código de Conducta</Link>.</p>
                         </CardContent>
                     </Card>
                 </div>
