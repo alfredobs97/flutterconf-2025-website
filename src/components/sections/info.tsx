@@ -7,15 +7,11 @@ import Link from 'next/link';
 const faqItems: FaqItem[] = [
     {
         question: '¿Qué está incluido en la entrada?',
-        answer: 'Tu entrada incluye acceso a todas las charlas y talleres de ambos días, coffee breaks, almuerzo, y la fiesta de networking. También recibirás una camiseta del evento y swag de nuestros sponsors.'
+        answer: 'Tu entrada incluye acceso a todas las charlas del evento, coffee breaks, y el networking. También participarás en el sorte de swag de nuestros sponsors.'
     },
     {
         question: '¿En qué idioma serán las charlas?',
         answer: 'La mayoría de las charlas serán en español. Algunas charlas de ponentes internacionales podrían ser en inglés, pero estará indicado en la agenda.'
-    },
-    {
-        question: '¿Hay descuento para estudiantes?',
-        answer: 'Sí, ofrecemos un número limitado de entradas con descuento para estudiantes. Por favor, contacta con nosotros desde tu email académico para solicitar el código de descuento.'
     },
     {
         question: '¿Se grabarán las charlas?',
@@ -23,7 +19,7 @@ const faqItems: FaqItem[] = [
     },
     {
         question: '¿Quién organiza el evento?',
-        answer: 'FlutterConf España está organizado por GDG Marbella, un grupo independiente y sin ánimo de lucro dedicado a hacer crecer la comunidad tecnológica. Contamos con el apoyo de voluntarios de la comunidad Flutter de toda España.'
+        answer: 'FlutterConf España está organizado por GDG Marbella, GDG Spain, Flutter Lleida y Flutter Málaga, somos una agrupación de comunidades sin ánimo de lucro dedicado a hacer crecer la comunidad tecnológica. Contamos con el apoyo de voluntarios de la comunidad Flutter de toda España.'
     },
 ];
 

@@ -115,8 +115,10 @@ export default function Speakers() {
           ))}
         </div>
         <div className="text-center mt-12">
-            <Button size="lg" variant="outline">
-                Become a Speaker
+            <Button size="lg" variant="outline" asChild>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfI6g-gNwXg5iVIIsia7UhUKnKP9uK2v9dsPFyhCw2yY5pgQ/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                    Become a Speaker
+                </a>
             </Button>
         </div>
       </div>
