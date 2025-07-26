@@ -69,8 +69,8 @@ export default function Contact() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12">
-            <Card className="p-2">
+        <div className="flex flex-col items-center gap-12">
+            <Card className="p-2 w-full max-w-2xl">
                 <CardContent className="p-6">
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -115,7 +115,7 @@ export default function Contact() {
                 </Form>
                 </CardContent>
             </Card>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center w-full max-w-2xl min-h-[120px]">
                 {loading && <Loader2 className="h-16 w-16 animate-spin text-primary"/>}
                 {error && <Alert variant="destructive"><AlertTitle>Error</AlertTitle><AlertDescription>{error}</AlertDescription></Alert>}
                 {submitted && (
