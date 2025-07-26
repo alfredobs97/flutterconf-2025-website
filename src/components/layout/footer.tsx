@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Twitter, Linkedin, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
         <div className="flex flex-col gap-4">
           <Link href="#" className="flex items-center gap-2 font-bold text-lg" prefetch={false}>
-            <FlutterLogo className="h-8 w-8 text-primary" />
+            <Image src="https://storage.googleapis.com/altara-api-prod.appspot.com/google_cloud_sa_3c2a2145719342798e29e1d13a6929a0/user_3a1529a343464301a88efe0a61575778/request_991800f4f72847c2957b445899478440/image_79af81ca973e46c986c4f0f295b28d6c.png" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8" />
             <span className="font-headline">FlutterConf España 2025</span>
           </Link>
           <p className="text-sm text-muted-foreground">
@@ -52,13 +53,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
-
-function FlutterLogo(props: React.SVGProps<SVGSVGElement>) {
-    return (
-        <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M7 14.5l5-5 5 5-5 5z" />
-            <path d="M7 9.5l5-5 5 5" />
-        </svg>
-    )
 }

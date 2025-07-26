@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
     return (
         <section id="about" className="bg-secondary/30">
@@ -12,23 +14,18 @@ export default function About() {
                             Esta conferencia está organizada por y para la comunidad, con el apoyo de GDG Marbella. Siguiendo el éxito de la primera FlutterConf en Europa, celebrada en Marbella en 2019 que reunió a expertos de empresas como InfoJobs, Philips y BBVA, seguimos construyendo una base sólida para la comunidad.
                         </p>
                     </div>
-                    <div className="relative h-80 rounded-lg overflow-hidden shadow-xl">
+                    <div className="relative h-80 rounded-lg overflow-hidden shadow-xl flex items-center justify-center">
                         <div className="absolute inset-0 bg-gradient-to-tr from-primary to-accent opacity-20"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <FlutterLogo className="h-32 w-32 text-primary opacity-80" />
-                        </div>
+                        <Image 
+                            src="https://storage.googleapis.com/altara-api-prod.appspot.com/google_cloud_sa_3c2a2145719342798e29e1d13a6929a0/user_3a1529a343464301a88efe0a61575778/request_991800f4f72847c2957b445899478440/image_79af81ca973e46c986c4f0f295b28d6c.png" 
+                            alt="FlutterConf Logo" 
+                            width={128} 
+                            height={128} 
+                            className="h-32 w-32 opacity-80"
+                        />
                     </div>
                 </div>
             </div>
         </section>
     );
-}
-
-function FlutterLogo(props: React.SVGProps<SVGSVGElement>) {
-    return (
-        <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M7 14.5l5-5 5 5-5 5z" />
-            <path d="M7 9.5l5-5 5 5" />
-        </svg>
-    )
 }
