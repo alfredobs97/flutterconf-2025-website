@@ -35,7 +35,7 @@ export default function Hero() {
             </div>
           </div>
           <Button asChild size="lg" className="mt-4 bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg py-7 px-10 shadow-lg transition-transform transform hover:scale-105">
-            <Link href="#tickets">Comprar Entradas</Link>
+            <Link href="#contact">Apúntate</Link>
           </Button>
         </div>
       </div>
