@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { classifySupportRequest, ClassifySupportRequestOutput } from '@/ai/flows/classify-support-request';
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -24,7 +23,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<ClassifySupportRequestOutput | null>(null);
+  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const form = useForm<FormValues>({
@@ -35,11 +34,14 @@ export default function Contact() {
   async function onSubmit(values: FormValues) {
     setLoading(true);
     setError(null);
-    setResult(null);
+    setSubmitted(false);
 
     try {
-      const aiResult = await classifySupportRequest({ query: values.message });
-      setResult(aiResult);
+      // Here you would typically send the form data to a server
+      console.log(values);
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      setSubmitted(true);
+      form.reset();
     } catch (e) {
       setError("An unexpected error occurred. Please try again later.");
       console.error(e);
@@ -54,7 +56,7 @@ export default function Contact() {
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
           <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">Contacta con Nosotros</h2>
           <p className="max-w-2xl text-muted-foreground text-lg">
-            ¿Tienes alguna pregunta? Rellena el formulario y nuestro asistente con IA te dará una respuesta inicial.
+            ¿Tienes alguna pregunta? Rellena el formulario para contactarnos.
           </p>
         </div>
         
@@ -107,23 +109,18 @@ export default function Contact() {
             <div className="flex items-center justify-center">
                 {loading && <Loader2 className="h-16 w-16 animate-spin text-primary"/>}
                 {error && <Alert variant="destructive"><AlertTitle>Error</AlertTitle><AlertDescription>{error}</AlertDescription></Alert>}
-                {result && (
+                {submitted && (
                     <Alert>
                         <CheckCircle className="h-5 w-5"/>
                         <AlertTitle>¡Gracias por tu mensaje!</AlertTitle>
                         <AlertDescription className="space-y-4 mt-2">
-                            <p>Hemos recibido tu consulta y nuestro sistema la ha clasificado como: <strong className="text-primary">{result.category}</strong>.</p>
-                            <div className="p-4 bg-secondary/50 rounded-lg">
-                                <p className="font-semibold mb-2 flex items-center gap-2"><Info className="h-4 w-4"/> Respuesta inicial sugerida:</p>
-                                <p className="text-muted-foreground text-sm">{result.initialResponse}</p>
-                            </div>
-                            <p className="text-xs">Un miembro de nuestro equipo revisará tu consulta y se pondrá en contacto si es necesario.</p>
+                            <p>Hemos recibido tu consulta y te responderemos pronto.</p>
                         </AlertDescription>
                     </Alert>
                 )}
-                 {!loading && !result && !error && (
+                 {!loading && !submitted && !error && (
                     <div className="text-center text-muted-foreground p-8 border-2 border-dashed rounded-lg">
-                       <p>El resultado de tu consulta aparecerá aquí.</p>
+                       <p>Tu mensaje de confirmación aparecerá aquí.</p>
                     </div>
                 )}
             </div>
