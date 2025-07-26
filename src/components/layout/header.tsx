@@ -34,7 +34,7 @@ export default function Header() {
     )}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="#" className="flex items-center gap-2 font-bold text-lg" prefetch={false}>
-          <Image src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553212/tliFrVJi_400x400_v0nnvh.jpg" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8" />
+          <Image src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553212/tliFrVJi_400x400_v0nnvh.jpg" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8 rounded-full" />
           <span className="font-headline">FlutterConf ES</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -58,7 +58,7 @@ export default function Header() {
             <SheetContent side="right">
               <div className="grid gap-6 p-6">
                 <Link href="#" className="flex items-center gap-2 font-bold text-lg" prefetch={false}>
-                  <Image src="https://storage.googleapis.com/altara-api-prod.appspot.com/google_cloud_sa_3c2a2145719342798e29e1d13a6929a0/user_3a1529a343464301a88efe0a61575778/request_991800f4f72847c2957b445899478440/image_79af81ca973e46c986c4f0f295b28d6c.png" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8" />
+                  <Image src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553212/tliFrVJi_400x400_v0nnvh.jpg" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8 rounded-full" />
                   <span className="font-headline">FlutterConf ES</span>
                 </Link>
                 <nav className="grid gap-4">
