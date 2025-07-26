@@ -26,12 +26,12 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center gap-4 text-lg font-medium">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5" />
-              <span>October 23-24, 2025</span>
+              <span>Octubre 18-19, 2025</span>
             </div>
             <div className="hidden sm:block">|</div>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5" />
-              <span>Valencia, Spain</span>
+              <span>Málaga, Spain</span>
             </div>
           </div>
           <Button asChild size="lg" className="mt-4 bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg py-7 px-10 shadow-lg transition-transform transform hover:scale-105">

@@ -41,9 +41,9 @@ export default function Info() {
                             <CardTitle>Sede del Evento</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-2">
-                            <p className="font-bold">Palacio de Congresos de Valencia</p>
-                            <p className="text-muted-foreground">Av. de les Corts Valencianes, 60, 46015 València, Valencia</p>
-                            <p className="text-sm text-muted-foreground">Fácilmente accesible en metro, autobús y coche, con amplio aparcamiento.</p>
+                            <p className="font-bold">Palacio de Ferias y Congresos de Málaga</p>
+                            <p className="text-muted-foreground">Av. de José Ortega y Gasset, 201, 29006 Málaga</p>
+                            <p className="text-sm text-muted-foreground">Fácilmente accesible en transporte público y coche, con amplio aparcamiento.</p>
                         </CardContent>
                     </Card>
                      <Card>
@@ -53,7 +53,7 @@ export default function Info() {
                         </CardHeader>
                         <CardContent className="space-y-2">
                              <p className="font-bold">Hoteles recomendados</p>
-                            <p className="text-muted-foreground">Hemos negociado tarifas especiales en hoteles cercanos como el Hotel Meliá Valencia y el Sercotel Sorolla Palace. Pronto publicaremos los enlaces de reserva.</p>
+                            <p className="text-muted-foreground">Hemos negociado tarifas especiales en hoteles cercanos. Pronto publicaremos los enlaces de reserva.</p>
                         </CardContent>
                     </Card>
                      <Card className="md:col-span-2">
