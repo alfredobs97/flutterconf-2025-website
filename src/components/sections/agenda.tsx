@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Clock, User, Coffee, Mic, Code } from 'lucide-react';
 
 const day1Schedule: AgendaEvent[] = [
-    { time: '09:00', title: 'Registration & Coffee', type: 'break', duration: 60, speaker: '' },
+    /* { time: '09:00', title: 'Registration & Coffee', type: 'break', duration: 60, speaker: '' },
     { time: '10:00', title: 'Opening Keynote', type: 'talk', duration: 45, speaker: 'Jane Doe' },
     { time: '10:45', title: 'Scaling Flutter Apps for the Enterprise', type: 'talk', duration: 45, speaker: 'John Smith' },
     { time: '11:30', title: 'Coffee Break', type: 'break', duration: 30, speaker: '' },
@@ -13,11 +13,11 @@ const day1Schedule: AgendaEvent[] = [
     { time: '13:45', title: 'Lunch', type: 'break', duration: 90, speaker: '' },
     { time: '15:15', title: 'Flutter &amp; Flame for Game Dev', type: 'workshop', duration: 90, speaker: 'Guest Speaker' },
     { time: '16:45', title: 'From Native to Flutter: A Migration Story', type: 'talk', duration: 45, speaker: 'Maria Garcia' },
-    { time: '17:30', title: 'Closing Remarks &amp; Networking', type: 'break', duration: 60, speaker: '' },
+    { time: '17:30', title: 'Closing Remarks &amp; Networking', type: 'break', duration: 60, speaker: '' }, */
 ];
 
 const day2Schedule: AgendaEvent[] = [
-    { time: '09:30', title: 'Morning Coffee', type: 'break', duration: 30, speaker: '' },
+   /*  { time: '09:30', title: 'Morning Coffee', type: 'break', duration: 30, speaker: '' },
     { time: '10:00', title: 'Advanced Theming in Flutter', type: 'talk', duration: 45, speaker: 'Jane Doe' },
     { time: '10:45', title: 'Testing Strategies for Flutter Apps', type: 'talk', duration: 45, speaker: 'Maria Garcia' },
     { time: '11:30', title: 'Coffee Break', type: 'break', duration: 30, speaker: '' },
@@ -25,7 +25,7 @@ const day2Schedule: AgendaEvent[] = [
     { time: '13:30', title: 'Lunch', type: 'break', duration: 90, speaker: '' },
     { time: '15:00', title: 'Flutter on the Web and Desktop', type: 'talk', duration: 45, speaker: 'John Smith' },
     { time: '15:45', title: 'Community Lightning Talks', type: 'talk', duration: 60, speaker: 'Community' },
-    { time: '16:45', title: 'Closing Keynote &amp; Awards', type: 'talk', duration: 45, speaker: 'David Martinez' },
+    { time: '16:45', title: 'Closing Keynote &amp; Awards', type: 'talk', duration: 45, speaker: 'David Martinez' }, */
 ];
 
 const EventIcon = ({type}: {type: AgendaEvent['type']}) => {
