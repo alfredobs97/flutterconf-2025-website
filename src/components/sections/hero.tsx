@@ -8,9 +8,8 @@ export default function Hero() {
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 bg-primary/80 z-10" />
       <Image 
-        src="https://placehold.co/1920x1080.png" 
-        alt="Conference background"
-        data-ai-hint="conference technology"
+        src="https://firebasestorage.googleapis.com/v0/b/gemini-studio-dev.appspot.com/o/projects%2Fstudio-2a6af%2Finstances%2F339f4019-913b-4899-8588-e93237e10887%2Ffiles%2Ff9e0ac1a-9fc9-44d7-867c-9b7e750059e7?alt=media" 
+        alt="Speakers on stage at FlutterConf"
         layout="fill"
         objectFit="cover"
         className="absolute inset-0"
