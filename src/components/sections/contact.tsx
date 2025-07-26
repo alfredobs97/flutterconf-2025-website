@@ -127,11 +127,6 @@ export default function Contact() {
                         </AlertDescription>
                     </Alert>
                 )}
-                 {!loading && !submitted && !error && (
-                    <div className="text-center text-muted-foreground p-8 border-2 border-dashed rounded-lg">
-                       <p>Tu mensaje de confirmación aparecerá aquí.</p>
-                    </div>
-                )}
             </div>
         </div>
       </div>
