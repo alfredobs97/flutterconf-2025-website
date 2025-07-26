@@ -6,7 +6,7 @@ import { Download } from 'lucide-react';
 
 const sponsors: Sponsor[] = [
     { name: 'Google', logoUrl: 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png', website: 'https://google.com' },
-    { name: 'Flutter', logoUrl: 'https://storage.googleapis.com/flutter-infra-release/flutter-lockup.png', website: 'https://flutter.dev' },
+    { name: 'Flutter', logoUrl: 'https://storage.googleapis.com/cms-storage-bucket/lockup_flutter_horizontal.847ae81f5430402216fd.svg', website: 'https://flutter.dev' },
 ];
 
 const collaborators: Sponsor[] = [
