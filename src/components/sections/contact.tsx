@@ -37,9 +37,18 @@ export default function Contact() {
     setSubmitted(false);
 
     try {
-      // Here you would typically send the form data to a server
-      console.log(values);
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
       setSubmitted(true);
       form.reset();
     } catch (e) {
