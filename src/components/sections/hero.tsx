@@ -8,7 +8,7 @@ export default function Hero() {
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 bg-primary/80 z-10" />
       <Image 
-        src="https://firebasestorage.googleapis.com/v0/b/gemini-studio-dev.appspot.com/o/projects%2Fstudio-2a6af%2Finstances%2F339f4019-913b-4899-8588-e93237e10887%2Ffiles%2Ff9e0ac1a-9fc9-44d7-867c-9b7e750059e7?alt=media" 
+        src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553216/48946377431_c3d0469ef1_b_1_pnqi7u.jpg" 
         alt="Speakers on stage at FlutterConf"
         layout="fill"
         objectFit="cover"

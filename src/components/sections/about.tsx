@@ -17,10 +17,10 @@ export default function About() {
                     <div className="relative h-80 rounded-lg overflow-hidden shadow-xl flex items-center justify-center">
                         <div className="absolute inset-0 bg-gradient-to-tr from-primary to-accent opacity-20"></div>
                         <Image 
-                            src="https://storage.googleapis.com/altara-api-prod.appspot.com/google_cloud_sa_3c2a2145719342798e29e1d13a6929a0/user_3a1529a343464301a88efe0a61575778/request_991800f4f72847c2957b445899478440/image_79af81ca973e46c986c4f0f295b28d6c.png" 
+                            src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553865/48952394171_3a1cd7872d_b_qsqqs2.jpg" 
                             alt="FlutterConf Logo" 
-                            width={128} 
-                            height={128} 
+                            layout="fill"
+                            objectFit="cover"
                             className="h-32 w-32 opacity-80"
                         />
                     </div>

@@ -8,7 +8,7 @@ export default function PastEvent() {
                     <div className="order-2 md:order-1">
                         <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
                             <Image
-                                src="https://placehold.co/600x400.png"
+                                src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753554068/48952580842_785e732a06_c_mcnurg.jpg"
                                 alt="Foto del evento de 2019"
                                 layout="fill"
                                 objectFit="cover"
