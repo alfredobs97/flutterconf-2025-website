@@ -1,7 +1,7 @@
 import type { AgendaEvent } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from '@/components/ui/card';
-import { Clock, User, Coffee, Mic, Code } from 'lucide-react';
+import { Clock, User, Coffee, Mic, Code, Loader2 } from 'lucide-react';
 
 const day1Schedule: AgendaEvent[] = [
     /* { time: '09:00', title: 'Registration & Coffee', type: 'break', duration: 60, speaker: '' },
@@ -40,23 +40,33 @@ const EventIcon = ({type}: {type: AgendaEvent['type']}) => {
 
 const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
     <div className="space-y-6">
-        {schedule.map((event, index) => (
-            <Card key={index} className="w-full">
-                <CardContent className="p-6 flex flex-col md:flex-row gap-4 justify-between">
-                    <div className="flex gap-4">
-                        <div className="flex flex-col items-center">
-                            <EventIcon type={event.type} />
-                            <p className="text-sm font-bold text-primary whitespace-nowrap"><Clock className="inline h-4 w-4 mr-1"/>{event.time}</p>
+        {schedule.length > 0 ? (
+            schedule.map((event, index) => (
+                <Card key={index} className="w-full">
+                    <CardContent className="p-6 flex flex-col md:flex-row gap-4 justify-between">
+                        <div className="flex gap-4">
+                            <div className="flex flex-col items-center">
+                                <EventIcon type={event.type} />
+                                <p className="text-sm font-bold text-primary whitespace-nowrap"><Clock className="inline h-4 w-4 mr-1"/>{event.time}</p>
+                            </div>
+                            <div className="pl-4 border-l-2 border-accent">
+                                <h3 className="font-bold text-lg font-headline">{event.title}</h3>
+                                {event.speaker && <p className="text-muted-foreground text-sm">{event.speaker}</p>}
+                            </div>
                         </div>
-                        <div className="pl-4 border-l-2 border-accent">
-                            <h3 className="font-bold text-lg font-headline">{event.title}</h3>
-                            {event.speaker && <p className="text-muted-foreground text-sm">{event.speaker}</p>}
-                        </div>
-                    </div>
-                     <p className="text-sm text-muted-foreground md:text-right shrink-0">{event.duration} min</p>
+                        <p className="text-sm text-muted-foreground md:text-right shrink-0">{event.duration} min</p>
+                    </CardContent>
+                </Card>
+            ))
+        ) : (
+            <Card className="w-full">
+                <CardContent className="p-12 text-center text-muted-foreground">
+                    <Loader2 className="mx-auto h-12 w-12 text-primary animate-spin mb-4" />
+                    <h3 className="text-xl font-headline font-bold text-foreground">Estamos preparando la agenda</h3>
+                    <p>¡Pronto compartiremos todos los detalles de las charlas y ponentes!</p>
                 </CardContent>
             </Card>
-        ))}
+        )}
     </div>
 );
 
