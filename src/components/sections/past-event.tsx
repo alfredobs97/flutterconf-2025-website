@@ -1,0 +1,33 @@
+import Image from 'next/image';
+
+export default function PastEvent() {
+    return (
+        <section id="past-event" className="">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="order-2 md:order-1">
+                        <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+                            <Image
+                                src="https://placehold.co/600x400.png"
+                                alt="Foto del evento de 2019"
+                                layout="fill"
+                                objectFit="cover"
+                                data-ai-hint="conference event"
+                            />
+                        </div>
+                    </div>
+                    <div className="order-1 md:order-2 space-y-4">
+                        <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">El Origen: FlutterConf 2019</h2>
+                        <p className="text-muted-foreground text-lg">
+                            En 2019, sentamos un precedente organizando la primera FlutterConf en Europa en la soleada Marbella. El evento fue un rotundo éxito, reuniendo a pioneros y expertos de la comunidad Flutter.
+                        </p>
+                        <p className="text-muted-foreground text-lg">
+                            Contamos con la participación de ponentes de empresas líderes como <strong>InfoJobs, Philips y BBVA</strong>, que compartieron sus experiencias y conocimientos, sentando las bases de una comunidad fuerte y colaborativa en España que no ha dejado de crecer desde entonces.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    );
+}
