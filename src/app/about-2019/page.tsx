@@ -10,7 +10,7 @@ export default function About2019Page() {
             <div className="container mx-auto px-4 md:px-6">
                 <Card className="max-w-4xl mx-auto">
                     <CardHeader>
-                        <CardTitle className="text-3xl font-headline font-bold text-center tracking-tight sm:text-4xl">Nuestra Trayectoria: El Comienzo de Todo</CardTitle>
+                        <CardTitle className="text-3xl font-headline font-bold text-center tracking-tight sm:text-4xl">Nuestra Historia: El Comienzo de Todo</CardTitle>
                     </CardHeader>
                     <CardContent className="prose prose-lg max-w-none text-muted-foreground">
                         <section className="py-2">
