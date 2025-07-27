@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Camera, Users, Award, Star, Video } from 'lucide-react';
+import { Camera, Users, Award, Star, Video, Handshake, Globe } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -10,7 +10,7 @@ export default function About2019Page() {
             <div className="container mx-auto px-4 md:px-6">
                 <Card className="max-w-4xl mx-auto">
                     <CardHeader>
-                        <CardTitle className="text-3xl font-headline font-bold text-center tracking-tight sm:text-4xl">Nuestra Historia: El Comienzo de Todo</CardTitle>
+                        <CardTitle className="text-3xl font-headline font-bold text-center tracking-tight sm:text-4xl">Nuestra Historia</CardTitle>
                     </CardHeader>
                     <CardContent className="prose prose-lg max-w-none text-muted-foreground">
                         <section className="py-2">
@@ -91,9 +91,17 @@ export default function About2019Page() {
                                 <h3 className="text-xl font-headline font-bold text-foreground flex items-center gap-2"><Users />Una Iniciativa Comunitaria</h3>
                                 <p>FlutterConf surge como iniciativa de GDG Marbella (Google Developers Group Marbella) con la colaboración de la asociación Marbella Digital. Una iniciativa que nació desde la comunidad para la comunidad, con amplia experiencia organizando eventos sin ánimo de lucro.</p>
                             </div>
+                            <div className="bg-secondary/30 p-6 rounded-lg">
+                                <h3 className="text-xl font-headline font-bold text-foreground flex items-center gap-2"><Globe />Reconocimiento Global</h3>
+                                <p>El evento cuenta con un alcance global y una reputación validada por el equipo de Flutter en Estados Unidos, atrayendo a ponentes y asistentes de todo el mundo.</p>
+                            </div>
+                        </section>
+
+                        <section className="py-6">
                              <div className="bg-secondary/30 p-6 rounded-lg">
-                                <h3 className="text-xl font-headline font-bold text-foreground flex items-center gap-2"><Award />Soporte y Reconocimiento</h3>
-                                <p>El evento estuvo patrocinado por Google, Hidralia y contó con la colaboración de la Delegación de Fomento Económico y Pymes del Ayuntamiento de Marbella junto a empresas y medios locales.</p>
+                                <h3 className="text-xl font-headline font-bold text-foreground flex items-center gap-2"><Handshake />Soporte de la Industria</h3>
+                                <p className="mb-4">A lo largo de nuestra historia, hemos contado con el apoyo de empresas líderes que creen en el poder de la comunidad y la tecnología. Algunos de nuestros colaboradores han sido:</p>
+                                <p className="font-semibold text-muted-foreground">Google, Flutter, Hidralia, Andalucía Lab, HandCash, Malt, OpenWebinars, y muchos más.</p>
                             </div>
                         </section>
 
