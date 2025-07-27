@@ -12,6 +12,7 @@ const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#speakers', label: 'Speakers' },
   { href: '#agenda', label: 'Agenda' },
+  { href: '/about-2019', label: 'Nuestra Historia' },
   { href: '#sponsors', label: 'Sponsors' },
   { href: '#contact', label: 'Contact' },
 ];
