@@ -12,48 +12,18 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import { Twitter, Linkedin } from 'lucide-react';
+import { Twitter, Linkedin, UserPlus } from 'lucide-react';
 
 const speakers: Speaker[] = [
     {
-        name: 'Jane Doe',
-        title: 'Lead Flutter Engineer',
-        company: 'Google',
-        avatarUrl: 'https://placehold.co/400x400.png',
-        bio: 'Jane is a passionate Flutter developer with over 10 years of experience in mobile development. She is a GDE for Flutter and Dart and loves sharing her knowledge with the community.',
-        talkTitle: 'The Future of Declarative UIs with Flutter',
-        talkAbstract: 'In this talk, we will explore the latest advancements in Flutter\'s declarative UI framework and how it compares to other modern UI toolkits. We will look at performance improvements, new widgets, and best practices for building beautiful and performant apps.',
-        socials: { twitter: '#', linkedin: '#' }
-    },
-    {
-        name: 'John Smith',
-        title: 'Senior Software Architect',
-        company: 'Microsoft',
-        avatarUrl: 'https://placehold.co/400x400.png',
-        bio: 'John is an expert in cross-platform development and has been working with Flutter since its early days. He has a passion for clean architecture and state management.',
-        talkTitle: 'Scaling Flutter Apps for the Enterprise',
-        talkAbstract: 'This session will cover strategies and patterns for building large-scale Flutter applications that are maintainable, scalable, and ready for enterprise environments. We will discuss modularization, state management solutions, and CI/CD pipelines.',
-        socials: { twitter: '#', linkedin: '#' }
-    },
-    {
-        name: 'Maria Garcia',
-        title: 'Mobile Tech Lead',
-        company: 'BBVA',
-        avatarUrl: 'https://placehold.co/400x400.png',
-        bio: 'Maria leads the mobile development team at a major bank, where they have successfully migrated their native apps to Flutter. She is an advocate for testing and code quality.',
-        talkTitle: 'From Native to Flutter: A Migration Story',
-        talkAbstract: 'Join us to learn about the journey of migrating a large-scale banking application from native iOS and Android to a single Flutter codebase. We will share challenges, learnings, and the business impact of this transition.',
-        socials: { twitter: '#', linkedin: '#' }
-    },
-    {
-        name: 'David Martinez',
-        title: 'Flutter Consultant',
-        company: 'IndieDev',
-        avatarUrl: 'https://placehold.co/400x400.png',
-        bio: 'David is an independent consultant helping companies adopt Flutter. He is the author of several popular Flutter packages and a frequent speaker at tech conferences.',
-        talkTitle: 'Mastering Flutter Animations',
-        talkAbstract: 'A deep dive into Flutter\'s animation system. From implicit and explicit animations to custom painters and Rive integrations, this talk will equip you with the skills to create stunning animations in your apps.',
-        socials: { twitter: '#', linkedin: '#' }
+        name: 'Alfredo Bautista',
+        title: 'Flutter developer',
+        company: 'Greenflux',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1753630178/gde-badge-2-jpeg_jnsede.jpg',
+        bio: 'Google Developer Expert en Flutter y Dart desde 2022 y desarrollador en Greenflux. Soy de Málaga y le pongo esa energía a mejorar la experiencia de los conductores de vehículos eléctricos. ¡Me encanta el café y la pizza! Sígueme en @alfredobs97.',
+        talkTitle: 'Flutter con Gemini, la IA en tu mano',
+        talkAbstract: '¿Has oído hablar de Flutter? El framework multiplataforma desarrollado por Google, con el que podrás desplegar tus aplicaciones en todas las plataformas desde un mismo código.¿Pero de la IA si, verdad? También conoceremos a Gemini, el LLM más avanzado de Google, y cómo podremos conectarlo a nuestras aplicaciones de Flutter de una forma muy muy sencilla. Después de esta charla ya no tendrás excusa para desarrollar tu próxima app.',
+        socials: { twitter: 'https://x.com/alfredobs97', linkedin: 'https://www.linkedin.com/in/alfredo-bautista-santos-179b2b105/' }
     },
 ];
 
@@ -113,6 +83,15 @@ export default function Speakers() {
               </DialogContent>
             </Dialog>
           ))}
+           {speakers.length <= 1 && (
+            <Card className="flex items-center justify-center border-2 border-dashed bg-secondary/50">
+                <CardContent className="text-center text-muted-foreground p-6">
+                    <UserPlus className="h-12 w-12 mx-auto mb-4 text-primary"/>
+                    <h3 className="font-bold font-headline text-lg text-foreground">¡Más ponentes por confirmar!</h3>
+                    <p>Estamos trabajando para traerte a los mejores.</p>
+                </CardContent>
+            </Card>
+           )}
         </div>
         <div className="text-center mt-12">
             <Button size="lg" variant="outline" asChild>
