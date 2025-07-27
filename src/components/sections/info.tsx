@@ -1,7 +1,7 @@
 import type { FaqItem } from '@/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { MapPin, ShieldCheck } from 'lucide-react';
+import { MapPin, ShieldCheck, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 
 const faqItems: FaqItem[] = [
@@ -37,9 +37,10 @@ export default function Info() {
                             <MapPin className="h-8 w-8 text-primary"/>
                             <CardTitle>Sede del Evento</CardTitle>
                         </CardHeader>
-                        <CardContent className="space-y-2">
-                            <p className="font-bold">Google Safety Engineering Center (GSEC)</p>
-                            <p className="text-muted-foreground">Paseo de la Farola, Málaga</p>
+                        <CardContent className="space-y-2 text-center text-muted-foreground h-full flex flex-col justify-center items-center">
+                            <Loader2 className="h-8 w-8 text-primary animate-spin mb-2"/>
+                            <p className="font-semibold text-foreground">¡Muy pronto desvelaremos la ubicación!</p>
+                            <p>Estamos trabajando para encontrar el lugar perfecto.</p>
                         </CardContent>
                     </Card>
                      <Card>
