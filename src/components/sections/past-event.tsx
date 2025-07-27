@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 export default function PastEvent() {
     return (
@@ -24,6 +27,11 @@ export default function PastEvent() {
                         <p className="text-muted-foreground text-lg">
                             Contamos con la participación de ponentes de empresas líderes como <strong>InfoJobs, Philips y BBVA</strong>, que compartieron sus experiencias y conocimientos, sentando las bases de una comunidad fuerte y colaborativa en España que no ha dejado de crecer desde entonces.
                         </p>
+                        <Button asChild variant="outline">
+                            <Link href="/about-2019">
+                                ¿Quieres saber más? <ArrowRight className="ml-2 h-4 w-4" />
+                            </Link>
+                        </Button>
                     </div>
 
                 </div>
