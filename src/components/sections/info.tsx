@@ -37,9 +37,9 @@ export default function Info() {
                             <MapPin className="h-8 w-8 text-primary"/>
                             <CardTitle>Sede del Evento</CardTitle>
                         </CardHeader>
-                        <CardContent className="space-y-2 text-center text-muted-foreground h-full flex flex-col justify-center items-center">
+                        <CardContent className="text-center">
                             <p className="font-semibold text-foreground">¡Muy pronto desvelaremos la ubicación!</p>
-                            <p>Estamos trabajando para encontrar el lugar perfecto.</p>
+                            <p className="text-muted-foreground">Estamos trabajando para encontrar el lugar perfecto.</p>
                         </CardContent>
                     </Card>
                      <Card>
