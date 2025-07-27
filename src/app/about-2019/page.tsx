@@ -72,7 +72,7 @@ export default function About2019Page() {
                         </section>
 
                         <section className="py-2">
-                             <h2 className="text-2xl font-headline font-bold text-foreground">2023: El Gran Reencuentro en Marbella</h2>
+                             <h2 className="text-2xl font-headline font-bold text-foreground">2023: Nueva edición en Marbella</h2>
                             <p>
                                 Nuestro último gran evento presencial fue un éxito rotundo. La <strong>Edición 2023</strong> en Marbella congregó a más de 200 personas en Andalucía Lab, con la participación de colegios de la zona y ponentes de talla internacional como Nilay Yener, Developer Relations de Flutter en Google (EE. UU.).
                             </p>
