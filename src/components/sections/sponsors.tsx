@@ -3,19 +3,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 const sponsors: Sponsor[] = [
     { name: 'Google', logoUrl: 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png', website: 'https://google.com' },
     { name: 'Flutter', logoUrl: 'https://storage.googleapis.com/cms-storage-bucket/lockup_flutter_horizontal.847ae81f5430402216fd.svg', website: 'https://flutter.dev' },
 ];
 
-const collaborators: Sponsor[] = [
-    { name: 'InfoJobs', logoUrl: 'https://placehold.co/200x100.png', website: '#' },
-    { name: 'Philips', logoUrl: 'https://placehold.co/200x100.png', website: '#' },
-    { name: 'Codemagic', logoUrl: 'https://placehold.co/200x100.png', website: '#' },
-    { name: 'BBVA', logoUrl: 'https://placehold.co/250x125.png', website: '#' },
-    { name: 'Microsoft', logoUrl: 'https://placehold.co/250x125.png', website: '#' },
-];
+const collaborators: Sponsor[] = [];
 
 export default function Sponsors() {
   return (
@@ -43,11 +38,17 @@ export default function Sponsors() {
             <div>
                 <h3 className="text-2xl font-headline text-center mb-8 text-primary font-bold">Colaboradores</h3>
                  <div className="flex justify-center items-center gap-8 flex-wrap">
-                    {collaborators.map(sponsor => (
+                    {collaborators.length > 0 ? collaborators.map(sponsor => (
                         <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
                            <Image src={sponsor.logoUrl} alt={sponsor.name} data-ai-hint="company logo" width={180} height={90} className="object-contain" />
                         </Link>
-                    ))}
+                    )) : (
+                        <Card className="w-full max-w-2xl">
+                          <CardContent className="p-6 text-center">
+                            <p className="text-muted-foreground">¿Quieres que tu marca aparezca aquí? ¡Estamos buscando colaboradores!</p>
+                          </CardContent>
+                        </Card>
+                    )}
                 </div>
             </div>
         </div>
