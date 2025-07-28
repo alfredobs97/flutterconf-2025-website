@@ -26,7 +26,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center gap-4 text-lg font-medium">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5" />
-              <span>Octubre 18-19, 2025</span>
+              <span>Octubre 17-18, 2025</span>
             </div>
             <div className="hidden sm:block">|</div>
             <div className="flex items-center gap-2">

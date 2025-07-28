@@ -82,8 +82,8 @@ export default function Agenda() {
                 </div>
                 <Tabs defaultValue="day1" className="w-full">
                     <TabsList className="grid w-full grid-cols-2 mb-8">
-                        <TabsTrigger value="day1">Día 1 (Octubre 18)</TabsTrigger>
-                        <TabsTrigger value="day2">Día 2 (Octubre 19)</TabsTrigger>
+                        <TabsTrigger value="day1">Día 1 (Octubre 17)</TabsTrigger>
+                        <TabsTrigger value="day2">Día 2 (Octubre 18)</TabsTrigger>
                     </TabsList>
                     <TabsContent value="day1">
                         <AgendaView schedule={day1Schedule} />
