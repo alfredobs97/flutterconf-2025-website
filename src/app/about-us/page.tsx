@@ -16,7 +16,7 @@ export default function AboutUsPage() {
                         <section className="py-2">
                              <div className="relative h-96 rounded-lg overflow-hidden shadow-xl mb-8">
                                 <Image
-                                    src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753554068/48952580842_785e732a06_c_mcnurg.jpg"
+                                    src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753698587/48952397566_63ebd371e5_c_fz4j04.jpg"
                                     alt="Foto del evento de 2019"
                                     layout="fill"
                                     objectFit="cover"
