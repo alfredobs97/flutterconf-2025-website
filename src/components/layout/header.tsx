@@ -20,7 +20,6 @@ const navLinks = [
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
   const pathname = usePathname();
   const isHomePage = pathname === '/';
 
@@ -63,7 +62,7 @@ export default function Header() {
           <Button asChild className="hidden md:inline-flex bg-accent hover:bg-accent/90 text-accent-foreground">
             <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-es-2025/" target="_blank" rel="noopener noreferrer">Apúntate</a>
           </Button>
-          <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+          <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
                 <Menu className="h-6 w-6" />
@@ -76,13 +75,13 @@ export default function Header() {
                     Navegación principal del sitio, con enlaces a las diferentes secciones.
                 </SheetDescription>
               <div className="grid gap-6 p-6">
-                <Link href="/" className="flex items-center gap-2 font-bold text-lg" prefetch={false} onClick={() => setIsSheetOpen(false)}>
+                <Link href="/" className="flex items-center gap-2 font-bold text-lg" prefetch={false}>
                   <Image src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553212/tliFrVJi_400x400_v0nnvh.jpg" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8 rounded-full" />
                   <span className="font-headline">FlutterConf ES</span>
                 </Link>
                 <nav className="grid gap-4">
                   {navLinks.map((link) => (
-                    <Link key={link.href} href={getLinkHref(link.href)} className="text-base font-medium hover:text-primary transition-colors" prefetch={false} onClick={() => setIsSheetOpen(false)}>
+                    <Link key={link.href} href={getLinkHref(link.href)} className="text-base font-medium hover:text-primary transition-colors" prefetch={false}>
                       {link.label}
                     </Link>
                   ))}
