@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
@@ -25,15 +25,12 @@ export default function Header() {
   const isHomePage = pathname === '/';
 
   const getLinkHref = (href: string) => {
-    // If it's an absolute path, return it as is.
     if (href.startsWith('/')) {
         return href;
     }
-    // If we are on the home page, hash links work directly.
     if (isHomePage) {
         return href;
     }
-    // If we are on another page, prepend '/' to the hash link.
     return `/${href}`;
   };
   
@@ -74,6 +71,10 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+                <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
+                <SheetDescription className="sr-only">
+                    Navegación principal del sitio, con enlaces a las diferentes secciones.
+                </SheetDescription>
               <div className="grid gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 font-bold text-lg" prefetch={false} onClick={() => setIsSheetOpen(false)}>
                   <Image src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553212/tliFrVJi_400x400_v0nnvh.jpg" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8 rounded-full" />
