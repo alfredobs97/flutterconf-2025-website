@@ -6,6 +6,10 @@ import Link from 'next/link';
 
 const faqItems: FaqItem[] = [
     {
+        question: '¿Cómo puedo asistir al evento?',
+        answer: '¡Es muy fácil! El evento es totalmente gratuito. Solo tienes que registrarte a través del botón "Apúntate" que encontrarás en la web para asegurar tu plaza.'
+    },
+    {
         question: '¿Qué está incluido en la entrada?',
         answer: 'Tu entrada incluye acceso a todas las charlas del evento, coffee breaks, y el networking. También participarás en el sorte de swag de nuestros sponsors.'
     },
