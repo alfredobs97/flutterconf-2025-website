@@ -24,8 +24,13 @@ export default function Header() {
   const isHomePage = pathname === '/';
 
   const getLinkHref = (href: string) => {
-    if (href.startsWith('/')) return href;
-    return isHomePage ? href : `/${href}`;
+    if (href.startsWith('/') && href !== '/') {
+        return href;
+    }
+    if (isHomePage) {
+        return href;
+    }
+    return `/${href}`;
   };
 
   useEffect(() => {
