@@ -24,7 +24,7 @@ export default function Header() {
   const isHomePage = pathname === '/';
 
   const getLinkHref = (href: string) => {
-    if (href.startsWith('/') && href !== '/') {
+    if (href.startsWith('/')) {
         return href;
     }
     if (isHomePage) {
@@ -32,7 +32,7 @@ export default function Header() {
     }
     return `/${href}`;
   };
-
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
