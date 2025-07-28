@@ -25,12 +25,15 @@ export default function Header() {
   const isHomePage = pathname === '/';
 
   const getLinkHref = (href: string) => {
+    // If it's an absolute path, return it as is.
     if (href.startsWith('/')) {
         return href;
     }
+    // If we are on the home page, hash links work directly.
     if (isHomePage) {
         return href;
     }
+    // If we are on another page, prepend '/' to the hash link.
     return `/${href}`;
   };
   
