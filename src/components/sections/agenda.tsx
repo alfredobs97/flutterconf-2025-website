@@ -5,7 +5,7 @@ import { Clock, User, Coffee, Mic, Code, Loader2 } from 'lucide-react';
 
 const day1Schedule: AgendaEvent[] = [
     { time: '08:30', title: 'Bienvenida y networking', type: 'break', duration: 30 },
-    { time: '09:00', title: 'Opening', type: 'talk', duration: 15, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '09:00', title: 'Opening', type: 'talk', duration: 15, speaker: 'Conoce FlutterConf y empieza con nosotros el evento' },
     { time: '09:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
     { time: '09:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
     { time: '10:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
