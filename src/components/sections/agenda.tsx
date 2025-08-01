@@ -19,6 +19,12 @@ const day1Schedule: AgendaEvent[] = [
     { time: '14:00', title: 'Networking', type: 'break', duration: 60 },
 ];
 
+const day1AfternoonSchedule: AgendaEvent[] = [
+    { time: '16:00', title: 'Mesa redonda de comunidades', type: 'panel', duration: 60 },
+    { time: '17:00', title: 'Dart Conversations', type: 'talk', duration: 45 },
+    { time: '17:45', title: '¡Y mucho más por confirmar!', type: 'break', duration: 30 },
+];
+
 const day2Schedule: AgendaEvent[] = [
    /*  { time: '09:30', title: 'Morning Coffee', type: 'break', duration: 30, speaker: '' },
     { time: '10:00', title: 'Advanced Theming in Flutter', type: 'talk', duration: 45, speaker: 'Jane Doe' },
@@ -107,6 +113,13 @@ export default function Agenda() {
                     </TabsList>
                     <TabsContent value="day1">
                         <AgendaView schedule={day1Schedule} />
+                        <div className="mt-12">
+                            <h3 className="text-2xl font-headline font-bold text-center mb-4">Tarde de Comunidad (Opcional)</h3>
+                            <p className="text-center text-muted-foreground mb-8">
+                                Después del programa principal, únete a nosotros para unas sesiones extra organizadas por la comunidad.
+                            </p>
+                            <AgendaView schedule={day1AfternoonSchedule} />
+                        </div>
                     </TabsContent>
                     <TabsContent value="day2">
                         <AgendaView schedule={day2Schedule} />
