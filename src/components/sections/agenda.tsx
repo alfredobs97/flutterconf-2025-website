@@ -1,7 +1,7 @@
 import type { AgendaEvent } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card, CardContent } from '@/components/ui/card';
 import { Clock, User, Coffee, Mic, Code, Loader2 } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const day1Schedule: AgendaEvent[] = [
     { time: '08:30', title: 'Bienvenida y networking', type: 'break', duration: 30 },
@@ -45,7 +45,10 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
     <div className="divide-y divide-border rounded-lg border bg-card">
         {schedule.length > 0 ? (
             schedule.map((event, index) => (
-                <div key={index} className="p-4 flex flex-col sm:flex-row gap-4 justify-between items-start">
+                <div key={index} className={cn(
+                    "p-4 flex flex-col sm:flex-row gap-4 justify-between items-start",
+                    event.type === 'break' && 'bg-secondary/30'
+                )}>
                     <div className="flex gap-4 items-center">
                         <p className="text-sm font-bold text-primary whitespace-nowrap w-20 flex-shrink-0"><Clock className="inline h-4 w-4 mr-1"/>{event.time}</p>
                         <div className="pl-4 border-l-2 border-accent">
