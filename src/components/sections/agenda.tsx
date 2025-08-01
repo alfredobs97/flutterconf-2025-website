@@ -1,6 +1,6 @@
 import type { AgendaEvent } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Clock, User, Coffee, Mic, Code, Loader2 } from 'lucide-react';
+import { User, Coffee, Mic, Code, Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const day1Schedule: AgendaEvent[] = [
@@ -64,7 +64,7 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
                         <div className="flex gap-4 items-center">
                             <div className="text-center flex-shrink-0 w-20">
                                 <p className="text-sm font-bold text-primary whitespace-nowrap">
-                                    <Clock className="inline h-4 w-4 mr-1"/>{event.time}
+                                    {event.time}
                                 </p>
                                 <p className="text-xs text-muted-foreground">{endTime}</p>
                             </div>
