@@ -5,17 +5,17 @@ import { Clock, User, Coffee, Mic, Code, Loader2 } from 'lucide-react';
 
 const day1Schedule: AgendaEvent[] = [
     { time: '08:30', title: 'Bienvenida y networking', type: 'break', duration: 30 },
-    { time: '09:00', title: 'Opening', type: 'talk', duration: 15, speaker: 'Por confirmar' },
-    { time: '09:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
-    { time: '09:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
-    { time: '10:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
+    { time: '09:00', title: 'Opening', type: 'talk', duration: 15, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '09:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '09:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '10:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
     { time: '10:45', title: 'Coffee Break', type: 'break', duration: 30 },
-    { time: '11:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
-    { time: '11:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
-    { time: '12:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
-    { time: '12:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
-    { time: '13:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
-    { time: '13:45', title: 'Closing', type: 'talk', duration: 15, speaker: 'Por confirmar' },
+    { time: '11:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '11:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '12:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '12:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '13:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '13:45', title: 'Closing', type: 'talk', duration: 15, speaker: 'Publicaremos la informacion próximamente' },
     { time: '14:00', title: 'Networking', type: 'break', duration: 60 },
 ];
 
@@ -46,18 +46,18 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
         {schedule.length > 0 ? (
             schedule.map((event, index) => (
                 <Card key={index} className="w-full">
-                    <CardContent className="p-6 flex flex-col md:flex-row gap-4 justify-between">
-                        <div className="flex gap-4">
-                            <div className="flex flex-col items-center">
-                                <EventIcon type={event.type} />
-                                <p className="text-sm font-bold text-primary whitespace-nowrap"><Clock className="inline h-4 w-4 mr-1"/>{event.time}</p>
-                            </div>
+                    <CardContent className="p-6 flex flex-col md:flex-row gap-4 justify-between items-start">
+                        <div className="flex gap-4 items-center">
+                            <p className="text-sm font-bold text-primary whitespace-nowrap"><Clock className="inline h-4 w-4 mr-1"/>{event.time}</p>
                             <div className="pl-4 border-l-2 border-accent">
                                 <h3 className="font-bold text-lg font-headline">{event.title}</h3>
                                 {event.speaker && <p className="text-muted-foreground text-sm">{event.speaker}</p>}
                             </div>
                         </div>
-                        <p className="text-sm text-muted-foreground md:text-right shrink-0">{event.duration} min</p>
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground md:text-right shrink-0">
+                           <span>{event.duration} min</span>
+                           <EventIcon type={event.type} />
+                        </div>
                     </CardContent>
                 </Card>
             ))
