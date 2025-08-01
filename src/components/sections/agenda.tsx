@@ -4,16 +4,19 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Clock, User, Coffee, Mic, Code, Loader2 } from 'lucide-react';
 
 const day1Schedule: AgendaEvent[] = [
-    /* { time: '09:00', title: 'Registration & Coffee', type: 'break', duration: 60, speaker: '' },
-    { time: '10:00', title: 'Opening Keynote', type: 'talk', duration: 45, speaker: 'Jane Doe' },
-    { time: '10:45', title: 'Scaling Flutter Apps for the Enterprise', type: 'talk', duration: 45, speaker: 'John Smith' },
-    { time: '11:30', title: 'Coffee Break', type: 'break', duration: 30, speaker: '' },
-    { time: '12:00', title: 'Mastering Flutter Animations', type: 'talk', duration: 45, speaker: 'David Martinez' },
-    { time: '12:45', title: 'State Management Panel', type: 'panel', duration: 60, speaker: 'All Speakers' },
-    { time: '13:45', title: 'Lunch', type: 'break', duration: 90, speaker: '' },
-    { time: '15:15', title: 'Flutter &amp; Flame for Game Dev', type: 'workshop', duration: 90, speaker: 'Guest Speaker' },
-    { time: '16:45', title: 'From Native to Flutter: A Migration Story', type: 'talk', duration: 45, speaker: 'Maria Garcia' },
-    { time: '17:30', title: 'Closing Remarks &amp; Networking', type: 'break', duration: 60, speaker: '' }, */
+    { time: '08:30', title: 'Bienvenida y networking', type: 'break', duration: 30 },
+    { time: '09:00', title: 'Opening', type: 'talk', duration: 15, speaker: 'Por confirmar' },
+    { time: '09:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
+    { time: '09:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
+    { time: '10:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
+    { time: '10:45', title: 'Coffee Break', type: 'break', duration: 30 },
+    { time: '11:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
+    { time: '11:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
+    { time: '12:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
+    { time: '12:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
+    { time: '13:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Por confirmar' },
+    { time: '13:45', title: 'Closing', type: 'talk', duration: 15, speaker: 'Por confirmar' },
+    { time: '14:00', title: 'Networking', type: 'break', duration: 60 },
 ];
 
 const day2Schedule: AgendaEvent[] = [
