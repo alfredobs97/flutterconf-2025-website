@@ -21,7 +21,7 @@ export default function Hero() {
             FlutterConf España 2025
           </h1>
           <p className="max-w-[700px] text-lg md:text-xl text-primary-foreground/90">
-            La cita anual para la comunidad de Flutter en España. Únete a los líderes que están revolucionando el desarrollo mobile.
+            La cita anual para la comunidad de Flutter en España, desarrollada conjuntamente con Google Developers Spain. Únete a los líderes que están revolucionando el desarrollo mobile.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 text-lg font-medium">
             <div className="flex items-center gap-2">
