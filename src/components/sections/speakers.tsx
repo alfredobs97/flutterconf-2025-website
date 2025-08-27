@@ -29,7 +29,7 @@ const speakers: Speaker[] = [
         name: 'Hossein Yousefi',
         title: 'Software Engineer',
         company: 'Google',
-        avatarUrl: 'https://picsum.photos/400/400',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1756305352/photo_mbavpz.jpg',
         bio: 'Making interop fluid between Dart and Java/Kotlin.',
         talkTitle: 'Who is a Native Bindings Author and why you should be one',
         talkAbstract: 'The traditional Flutter plugin model, with its unified APIs, is powerful for creating consistent cross-platform experiences. However, this approach can present challenges. The process often involves manually implementing method channels, which can be time-consuming and prone to runtime errors. Furthermore, keeping unified abstractions in sync across multiple platforms is complex work, and sometimes we need access to a new feature faster than a manual process allows.\n\nThis talk introduces a complementary paradigm: the Native Bindings Author. We\'ll explore a world where focused, single-platform packages (built with powerful and type-safe code generation tools like FFIgen and JNIgen) can accelerate development and unlock new possibilities.',
