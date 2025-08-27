@@ -27,12 +27,12 @@ const speakers: Speaker[] = [
     },
     {
         name: 'Hossein Yousefi',
-        title: 'Ingeniero de Software',
+        title: 'Software Engineer',
         company: 'Google',
         avatarUrl: 'https://picsum.photos/400/400',
-        bio: 'Haciendo que la interoperabilidad entre Dart y Java/Kotlin sea fluida.',
-        talkTitle: '¿Quién es un autor de Native Bindings y por qué deberías ser uno?',
-        talkAbstract: 'El modelo de plugin tradicional de Flutter, con sus API unificadas, es potente para crear experiencias multiplataforma consistentes. Sin embargo, este enfoque puede presentar desafíos. El proceso a menudo implica implementar manualmente canales de método, lo que puede consumir mucho tiempo y ser propenso a errores en tiempo de ejecución. Además, mantener sincronizadas las abstracciones unificadas en múltiples plataformas es un trabajo complejo, y a veces necesitamos acceder a una nueva función más rápido de lo que permite un proceso manual. Esta charla introduce un paradigma complementario: el Autor de "Native Bindings". Exploraremos un mundo donde los paquetes enfocados en una sola plataforma (construidos con herramientas de generación de código potentes y seguras como FFIgen y JNIgen) pueden acelerar el desarrollo y abrir nuevas posibilidades.',
+        bio: 'Making interop fluid between Dart and Java/Kotlin.',
+        talkTitle: 'Who is a Native Bindings Author and why you should be one',
+        talkAbstract: 'The traditional Flutter plugin model, with its unified APIs, is powerful for creating consistent cross-platform experiences. However, this approach can present challenges. The process often involves manually implementing method channels, which can be time-consuming and prone to runtime errors. Furthermore, keeping unified abstractions in sync across multiple platforms is complex work, and sometimes we need access to a new feature faster than a manual process allows.\n\nThis talk introduces a complementary paradigm: the Native Bindings Author. We\'ll explore a world where focused, single-platform packages (built with powerful and type-safe code generation tools like FFIgen and JNIgen) can accelerate development and unlock new possibilities.',
         socials: { twitter: 'https://x.com/YousefiDash', linkedin: 'https://www.linkedin.com/in/hosseinyousefi' }
     },
 ];
