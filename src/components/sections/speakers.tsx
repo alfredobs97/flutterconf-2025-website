@@ -21,8 +21,8 @@ const speakers: Speaker[] = [
         company: 'Greenflux',
         avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1753630178/gde-badge-2-jpeg_jnsede.jpg',
         bio: 'Google Developer Expert en Flutter y Dart desde 2022 y desarrollador en Greenflux. Soy de Málaga y le pongo esa energía a mejorar la experiencia de los conductores de vehículos eléctricos. ¡Me encanta el café y la pizza! Sígueme en @alfredobs97.',
-        talkTitle: 'Flutter con Gemini, la IA en tu mano',
-        talkAbstract: '¿Has oído hablar de Flutter? El framework multiplataforma desarrollado por Google, con el que podrás desplegar tus aplicaciones en todas las plataformas desde un mismo código.¿Pero de la IA si, verdad? También conoceremos a Gemini, el LLM más avanzado de Google, y cómo podremos conectarlo a nuestras aplicaciones de Flutter de una forma muy muy sencilla. Después de esta charla ya no tendrás excusa para desarrollar tu próxima app.',
+        talkTitle: 'Aplicaciones agénticas con Gemini y Firebase',
+        talkAbstract: 'Ve más allá de los chatbots básicos y descubre el futuro de las aplicaciones inteligentes. Esta sesión se sumerge en el mundo de la IA agéntica, donde las aplicaciones no solo responden, sino que razonan, planifican y actúan. Aprenderás a usar los modelos Gemini de Google con el SDK de Firebase AI Logic para crear experiencias verdaderamente autónomas. Vete con el conocimiento para crear la próxima generación de aplicaciones inteligentes y agénticas que puedan realizar tareas complejas para tus usuarios.',
         socials: { twitter: 'https://x.com/alfredobs97', linkedin: 'https://www.linkedin.com/in/alfredo-bautista-santos-179b2b105/' }
     },
 ];
