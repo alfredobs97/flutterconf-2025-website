@@ -25,6 +25,16 @@ const speakers: Speaker[] = [
         talkAbstract: 'Ve más allá de los chatbots básicos y descubre el futuro de las aplicaciones inteligentes. Esta sesión se sumerge en el mundo de la IA agéntica, donde las aplicaciones no solo responden, sino que razonan, planifican y actúan. Aprenderás a usar los modelos Gemini de Google con el SDK de Firebase AI Logic para crear experiencias verdaderamente autónomas. Vete con el conocimiento para crear la próxima generación de aplicaciones inteligentes y agénticas que puedan realizar tareas complejas para tus usuarios.',
         socials: { twitter: 'https://x.com/alfredobs97', linkedin: 'https://www.linkedin.com/in/alfredo-bautista-santos-179b2b105/' }
     },
+    {
+        name: 'Hossein Yousefi',
+        title: 'Ingeniero de Software',
+        company: 'Google',
+        avatarUrl: 'https://picsum.photos/400/400',
+        bio: 'Haciendo que la interoperabilidad entre Dart y Java/Kotlin sea fluida.',
+        talkTitle: '¿Quién es un autor de Native Bindings y por qué deberías ser uno?',
+        talkAbstract: 'El modelo de plugin tradicional de Flutter, con sus API unificadas, es potente para crear experiencias multiplataforma consistentes. Sin embargo, este enfoque puede presentar desafíos. El proceso a menudo implica implementar manualmente canales de método, lo que puede consumir mucho tiempo y ser propenso a errores en tiempo de ejecución. Además, mantener sincronizadas las abstracciones unificadas en múltiples plataformas es un trabajo complejo, y a veces necesitamos acceder a una nueva función más rápido de lo que permite un proceso manual. Esta charla introduce un paradigma complementario: el Autor de "Native Bindings". Exploraremos un mundo donde los paquetes enfocados en una sola plataforma (construidos con herramientas de generación de código potentes y seguras como FFIgen y JNIgen) pueden acelerar el desarrollo y abrir nuevas posibilidades.',
+        socials: { twitter: 'https://x.com/YousefiDash', linkedin: 'https://www.linkedin.com/in/hosseinyousefi' }
+    },
 ];
 
 export default function Speakers() {
