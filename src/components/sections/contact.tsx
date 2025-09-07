@@ -43,13 +43,13 @@ export default function Contact() {
                 <CardContent className="p-6 text-center">
                     <p className="text-muted-foreground mb-4">Para cualquier consulta, puedes escribirnos a:</p>
                     <div className="flex items-center justify-center gap-2">
-                      <a href={`mailto:${email}`} className="text-xl font-bold text-primary hover:underline break-all">
-                          {email}
-                      </a>
-                      <Button variant="ghost" size="icon" onClick={copyToClipboard}>
-                        {copied ? <Check className="h-5 w-5 text-green-500" /> : <Copy className="h-5 w-5" />}
-                        <span className="sr-only">Copiar correo</span>
-                      </Button>
+                        <span className="text-xl font-bold text-primary break-all">
+                            {email}
+                        </span>
+                        <Button variant="ghost" size="icon" onClick={copyToClipboard} className="shrink-0">
+                            {copied ? <Check className="h-5 w-5 text-green-500" /> : <Copy className="h-5 w-5" />}
+                            <span className="sr-only">Copiar correo</span>
+                        </Button>
                     </div>
                     <Button asChild className="mt-6 w-full max-w-xs mx-auto">
                         <a href={`mailto:${email}`}>
