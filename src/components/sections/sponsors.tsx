@@ -57,7 +57,7 @@ export default function Sponsors() {
             <h3 className="text-2xl font-headline font-bold mb-4">¿Quieres ser Sponsor?</h3>
             <p className="text-muted-foreground mb-6">Apoya a la comunidad Flutter y gana visibilidad para tu marca.</p>
             <Button size="lg" asChild>
-                <Link href="https://docs.google.com/presentation/d/1XVQF3yKi_CAjBOjKSUCJBjaCGL5PAvSrQtnLMUmv0D0/edit?usp=sharing" target="_blank">
+                <Link href="https://docs.google.com/presentation/d/1Xx0kZ97Ac1TRk3IRkYVmipykPuDokatvH5z6E8jsU2o/edit?usp=sharing" target="_blank">
                     <Download className="mr-2 h-5 w-5" />
                     ¡Descarga nuestro dossier!
                 </Link>
