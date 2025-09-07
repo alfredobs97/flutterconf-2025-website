@@ -56,12 +56,20 @@ export default function Sponsors() {
         <div className="text-center mt-16 p-8 bg-secondary/30 rounded-lg">
             <h3 className="text-2xl font-headline font-bold mb-4">¿Quieres ser Sponsor?</h3>
             <p className="text-muted-foreground mb-6">Apoya a la comunidad Flutter y gana visibilidad para tu marca.</p>
-            <Button size="lg" asChild>
-                <Link href="https://docs.google.com/presentation/d/1Xx0kZ97Ac1TRk3IRkYVmipykPuDokatvH5z6E8jsU2o/edit?usp=sharing" target="_blank">
-                    <Download className="mr-2 h-5 w-5" />
-                    ¡Descarga nuestro dossier!
-                </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <Button size="lg" asChild>
+                    <Link href="https://docs.google.com/presentation/d/1XoK8k4s3hYl4wzJ3e2b5c1a9g7f_8dD/edit?usp=sharing" target="_blank">
+                        <Download className="mr-2 h-5 w-5" />
+                        ¡Descarga nuestro dossier!
+                    </Link>
+                </Button>
+                 <Button size="lg" variant="outline" asChild>
+                    <Link href="https://docs.google.com/presentation/d/1Xx0kZ97Ac1TRk3IRkYVmipykPuDokatvH5z6E8jsU2o/edit?usp=sharing" target="_blank">
+                        <Download className="mr-2 h-5 w-5" />
+                        Download our deck! (English)
+                    </Link>
+                </Button>
+            </div>
         </div>
       </div>
     </section>
