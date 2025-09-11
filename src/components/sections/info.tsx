@@ -41,9 +41,9 @@ export default function Info() {
                             <MapPin className="h-8 w-8 text-primary"/>
                             <CardTitle>Sede del Evento</CardTitle>
                         </CardHeader>
-                        <CardContent className="text-center">
-                            <p className="font-semibold text-foreground">¡Muy pronto desvelaremos la ubicación!</p>
-                            <p className="text-muted-foreground">Estamos trabajando para encontrar el lugar perfecto.</p>
+                        <CardContent className="text-left">
+                            <p className="font-semibold text-foreground">E.T.S. de Ingeniería de Telecomunicación</p>
+                            <p className="text-muted-foreground">Campus de Teatinos, Blvr. Louis Pasteur, 35, Teatinos-Universidad, 29010 Málaga, España</p>
                         </CardContent>
                     </Card>
                      <Card>
