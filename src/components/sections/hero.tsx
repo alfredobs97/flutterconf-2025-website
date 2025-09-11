@@ -35,7 +35,7 @@ export default function Hero() {
             </div>
           </div>
           <Button asChild size="lg" className="mt-4 bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg py-7 px-10 shadow-lg transition-transform transform hover:scale-105">
-            <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-es-2025/" target="_blank" rel="noopener noreferrer">Apúntate</a>
+            <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-espana-2025/cohost-gdg-marbella" target="_blank" rel="noopener noreferrer">Apúntate</a>
           </Button>
         </div>
       </div>

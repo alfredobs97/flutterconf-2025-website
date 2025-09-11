@@ -60,7 +60,7 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-4">
           <Button asChild className="hidden md:inline-flex bg-accent hover:bg-accent/90 text-accent-foreground">
-            <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-es-2025/" target="_blank" rel="noopener noreferrer">Apúntate</a>
+            <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-espana-2025/cohost-gdg-marbella" target="_blank" rel="noopener noreferrer">Apúntate</a>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -87,7 +87,7 @@ export default function Header() {
                   ))}
                 </nav>
                 <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                  <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-es-2025/" target="_blank" rel="noopener noreferrer">Apúntate</a>
+                  <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-espana-2025/cohost-gdg-marbella" target="_blank" rel="noopener noreferrer">Apúntate</a>
                 </Button>
               </div>
             </SheetContent>
