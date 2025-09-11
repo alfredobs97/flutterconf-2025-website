@@ -42,8 +42,10 @@ export default function Info() {
                             <CardTitle>Sede del Evento</CardTitle>
                         </CardHeader>
                         <CardContent className="text-left">
-                            <p className="font-semibold text-foreground">E.T.S. de Ingeniería de Telecomunicación</p>
-                            <p className="text-muted-foreground">Campus de Teatinos, Blvr. Louis Pasteur, 35, Teatinos-Universidad, 29010 Málaga, España</p>
+                            <p className="font-semibold text-foreground">E.T.S. de Ingeniería de Telecomunicación de la UMA</p>
+                            <a href="https://www.google.com/maps/place/E.T.S.+Ingenier%C3%ADa+de+Telecomunicaci%C3%B3n/@36.7154231,-4.4807153,17z/data=!3m1!4b1!4m6!3m5!1s0xd72f792a7e1178f:0x539e8d2be2651535!8m2!3d36.7154231!4d-4.4781404!16s%2Fg%2F1s05p4vkg?entry=ttu&g_ep=EgoyMDI1MDkwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                                Campus de Teatinos, Blvr. Louis Pasteur, 35, Teatinos-Universidad, 29010 Málaga, España
+                            </a>
                         </CardContent>
                     </Card>
                      <Card>
