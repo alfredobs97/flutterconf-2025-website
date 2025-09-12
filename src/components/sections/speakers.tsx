@@ -32,7 +32,7 @@ const speakers: Speaker[] = [
         avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1756305352/photo_mbavpz.jpg',
         bio: 'Making interop fluid between Dart and Java/Kotlin.',
         talkTitle: 'Who is a Native Bindings Author and why you should be one',
-        talkAbstract: 'The traditional Flutter plugin model, with its unified APIs, is powerful for creating consistent cross-platform experiences. However, this approach can present challenges. The process often involves manually implementing method channels, which can be time-consuming and prone to runtime errors. Furthermore, keeping unified abstractions in sync across multiple platforms is complex work, and sometimes we need access to a new feature faster than a manual process allows.\n\nThis talk introduces a complementary paradigm: the Native Bindings Author. We\'ll explore a world where focused, single-platform packages (built with powerful and type-safe code generation tools like FFIgen and JNIgen) can accelerate development and unlock new possibilities.',
+        talkAbstract: 'The traditional Flutter plugin model, with its unified APIs, is powerful for creating consistent cross-platform experiences. However, this approach can present challenges. The process often involves manually implementing method channels, which can be time-consuming and prone to runtime errors. Furthermore, keeping unified abstractions in sync across multiple platforms is complex work, and sometimes we need access to a new feature faster than a manual process allows.\n\nThis talk introduces a complementary paradigm: the Native Bindings Author. We\'\'\'ll explore a world where focused, single-platform packages (built with powerful and type-safe code generation tools like FFIgen and JNIgen) can accelerate development and unlock new possibilities.',
         socials: { twitter: 'https://x.com/YousefiDash', linkedin: 'https://www.linkedin.com/in/hosseinyousefi' }
     },
 ];
@@ -102,13 +102,6 @@ export default function Speakers() {
                 </CardContent>
             </Card>
            )}
-        </div>
-        <div className="text-center mt-12">
-            <Button size="lg" variant="outline" asChild>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfI6g-gNwXg5iVIIsia7UhUKnKP9uK2v9dsPFyhCw2yY5pgQ/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-                    Become a Speaker
-                </a>
-            </Button>
         </div>
       </div>
     </section>
