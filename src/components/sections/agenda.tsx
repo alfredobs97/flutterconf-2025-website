@@ -20,21 +20,17 @@ const day1Schedule: AgendaEvent[] = [
 ];
 
 const day1AfternoonSchedule: AgendaEvent[] = [
-    { time: '16:00', title: 'Mesa redonda de comunidades', type: 'panel', duration: 60 },
-    { time: '17:00', title: 'Dart Conversations', type: 'talk', duration: 45 },
-    { time: '17:45', title: '¡Y mucho más por confirmar!', type: 'break', duration: 30 },
+    { time: '16:15', title: 'Bienvenida parte 2', type: 'break', duration: 15 },
+    { time: '16:30', title: '¿Quieres ganarte 4.500 € el próximo verano? Programa de becas Oportunidades', speaker: 'Andreu', type: 'talk', duration: 60 },
+    { time: '17:30', title: 'Mesa redonda / Dart Conversations', type: 'panel', duration: 60 },
+    { time: '18:30', title: 'Q/A', type: 'talk', duration: 30 },
 ];
 
 const day2Schedule: AgendaEvent[] = [
-   /*  { time: '09:30', title: 'Morning Coffee', type: 'break', duration: 30, speaker: '' },
-    { time: '10:00', title: 'Advanced Theming in Flutter', type: 'talk', duration: 45, speaker: 'Jane Doe' },
-    { time: '10:45', title: 'Testing Strategies for Flutter Apps', type: 'talk', duration: 45, speaker: 'Maria Garcia' },
-    { time: '11:30', title: 'Coffee Break', type: 'break', duration: 30, speaker: '' },
-    { time: '12:00', title: 'CI/CD for Flutter with Codemagic', type: 'workshop', duration: 90, speaker: 'Guest Speaker' },
-    { time: '13:30', title: 'Lunch', type: 'break', duration: 90, speaker: '' },
-    { time: '15:00', title: 'Flutter on the Web and Desktop', type: 'talk', duration: 45, speaker: 'John Smith' },
-    { time: '15:45', title: 'Community Lightning Talks', type: 'talk', duration: 60, speaker: 'Community' },
-    { time: '16:45', title: 'Closing Keynote &amp; Awards', type: 'talk', duration: 45, speaker: 'David Martinez' }, */
+   { time: '10:30', title: 'Café-networking', type: 'break', duration: 60, speaker: 'en el coworking' },
+   { time: '11:30', title: 'Presentación de comunidades', type: 'talk', duration: 45 },
+   { time: '12:15', title: 'Lightning talks sobre temas Dart y Flutter', type: 'talk', duration: 45 },
+   { time: '13:00', title: 'Cierre evento', type: 'talk', duration: 15 },
 ];
 
 const EventIcon = ({type}: {type: AgendaEvent['type']}) => {
