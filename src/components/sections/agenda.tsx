@@ -27,7 +27,7 @@ const day1AfternoonSchedule: AgendaEvent[] = [
 ];
 
 const day2Schedule: AgendaEvent[] = [
-   { time: '10:30', title: 'Café-networking', type: 'break', duration: 60, speaker: 'en el coworking' },
+   { time: '10:30', title: 'Café-networking', type: 'break', duration: 60 },
    { time: '11:30', title: 'Presentación de comunidades', type: 'talk', duration: 45 },
    { time: '12:15', title: 'Lightning talks sobre temas Dart y Flutter', type: 'talk', duration: 45 },
    { time: '13:00', title: 'Cierre evento', type: 'talk', duration: 15 },
