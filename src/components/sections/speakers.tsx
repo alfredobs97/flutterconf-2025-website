@@ -82,7 +82,7 @@ export default function Speakers() {
                       className="w-full h-auto aspect-square object-cover object-center transition-transform group-hover:scale-105"
                     />
                   </CardContent>
-                  <CardFooter className="flex flex-col items-start p-4 bg-background">
+                  <CardFooter className="flex flex-col items-start p-4 bg-secondary/30">
                     <h3 className="font-bold font-headline text-lg">{speaker.name}</h3>
                     <p className="text-sm text-primary">{speaker.title}</p>
                     <p className="text-sm text-muted-foreground">{speaker.company}</p>
