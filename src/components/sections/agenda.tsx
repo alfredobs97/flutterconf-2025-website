@@ -1,37 +1,17 @@
-import type { AgendaEvent } from '@/types';
+import type { AgendaEvent, Speaker } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { User, Coffee, Mic, Code, Loader2 } from 'lucide-react';
+import { User, Coffee, Mic, Code, Loader2, Twitter, Linkedin } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { cn } from '@/lib/utils';
-
-const day1Schedule: AgendaEvent[] = [
-    { time: '08:30', title: 'Bienvenida y networking', type: 'break', duration: 30 },
-    { time: '09:00', title: 'Opening', type: 'talk', duration: 15, speaker: 'Conoce FlutterConf y empieza con nosotros el evento' },
-    { time: '09:15', title: 'Aplicaciones agénticas con Gemini y Firebase', type: 'talk', duration: 30, speaker: 'Alfredo Bautista' },
-    { time: '09:45', title: 'Recetas Mágicas para Android Studio con Gemini', type: 'talk', duration: 30, speaker: 'Gema Socorro Rodríguez' },
-    { time: '10:15', title: 'Who is a Native Bindings Author and why you should be one', type: 'talk', duration: 30, speaker: 'Hossein Yousefi' },
-    { time: '10:45', title: 'Coffee Break', type: 'break', duration: 30 },
-    { time: '11:15', title: 'Accessibility First: Building an App with Support for Various Disabilities', type: 'talk', duration: 30, speaker: 'Enzo Conty' },
-    { time: '11:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
-    { time: '12:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
-    { time: '12:45', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
-    { time: '13:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
-    { time: '13:45', title: 'Closing', type: 'talk', duration: 15, speaker: 'Publicaremos la informacion próximamente' },
-    { time: '14:00', title: 'Networking', type: 'break', duration: 60 },
-];
-
-const day1AfternoonSchedule: AgendaEvent[] = [
-    { time: '16:15', title: 'Bienvenida parte 2', type: 'break', duration: 15 },
-    { time: '16:30', title: '¿Quieres ganarte 4.500 € el próximo verano? Programa de becas Oportunidades', speaker: 'Andreu', type: 'talk', duration: 60 },
-    { time: '17:30', title: 'Mesa redonda / Dart Conversations', type: 'panel', duration: 60 },
-    { time: '18:30', title: 'Q/A', type: 'talk', duration: 30 },
-];
-
-const day2Schedule: AgendaEvent[] = [
-   { time: '10:30', title: 'Café-networking', type: 'break', duration: 60 },
-   { time: '11:30', title: 'Presentación de comunidades', type: 'talk', duration: 45 },
-   { time: '12:15', title: 'Lightning talks sobre temas Dart y Flutter', type: 'talk', duration: 45 },
-   { time: '13:00', title: 'Cierre evento', type: 'talk', duration: 15 },
-];
+import Image from 'next/image';
+import { day1Schedule, day1AfternoonSchedule, day2Schedule, speakers } from '@/lib/data';
 
 const EventIcon = ({type}: {type: AgendaEvent['type']}) => {
     switch(type) {
@@ -58,10 +38,13 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
         {schedule.length > 0 ? (
             schedule.map((event, index) => {
                 const endTime = calculateEndTime(event.time, event.duration);
-                return (
-                    <div key={index} className={cn(
+                const speaker = speakers.find(s => s.name === event.speaker);
+
+                const eventContent = (
+                    <div className={cn(
                         "p-4 flex flex-col sm:flex-row gap-4 justify-between items-start",
-                        event.type === 'break' && 'bg-secondary/30'
+                        event.type === 'break' && 'bg-secondary/30',
+                        speaker ? 'cursor-pointer hover:bg-secondary/20' : ''
                     )}>
                         <div className="flex gap-4 items-center">
                             <div className="text-center flex-shrink-0 w-20">
@@ -80,7 +63,39 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
                            <EventIcon type={event.type} />
                         </div>
                     </div>
-                )
+                );
+
+                if (speaker) {
+                    return (
+                        <Dialog key={index}>
+                            <DialogTrigger asChild>{eventContent}</DialogTrigger>
+                            <DialogContent className="sm:max-w-[625px]">
+                                <DialogHeader className="flex flex-col sm:flex-row gap-6">
+                                    <Image src={speaker.avatarUrl} alt={speaker.name} data-ai-hint="person portrait" width={150} height={150} className="rounded-lg aspect-square object-cover object-center" />
+                                    <div className="space-y-2 text-left">
+                                        <DialogTitle className="text-2xl font-headline">{speaker.name}</DialogTitle>
+                                        <DialogDescription>
+                                            {speaker.title} at {speaker.company}
+                                        </DialogDescription>
+                                        <div className="flex gap-2">
+                                            {speaker.socials.twitter && <a href={speaker.socials.twitter} target="_blank" rel="noopener noreferrer"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary"/></a>}
+                                            {speaker.socials.linkedin && <a href={speaker.socials.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary"/></a>}
+                                        </div>
+                                    </div>
+                                </DialogHeader>
+                                <div className="py-4 space-y-4">
+                                    <p className="text-sm text-foreground">{speaker.bio}</p>
+                                    <div className="p-4 bg-secondary/50 rounded-lg">
+                                        <h4 className="font-bold font-headline mb-2">Talk: {speaker.talkTitle}</h4>
+                                        <p className="text-sm text-muted-foreground">{speaker.talkAbstract}</p>
+                                    </div>
+                                </div>
+                            </DialogContent>
+                        </Dialog>
+                    );
+                }
+
+                return <div key={index}>{eventContent}</div>;
             })
         ) : (
             <div className="p-12 text-center text-muted-foreground">
