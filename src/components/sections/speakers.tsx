@@ -39,7 +39,7 @@ const speakers: Speaker[] = [
         name: 'Enzo Conty',
         title: 'CTO at Ezymob / GDE Flutter & Dart',
         company: 'Ezymob',
-        avatarUrl: 'https://pbs.twimg.com/media/GenY8r2WcAAH7cQ?format=jpg&name=large',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1757780420/Screenshot_2025-09-13_at_6.19.32_PM-min_c8fev6.png',
         bio: 'Enzo Conty currently serves as the CTO of Ezymob, applying his extensive skills as a Sr. Mobile SWE honed over seven years of freelancing. Renowned for his expertise in Flutter, he has developed numerous innovative applications exploring new platforms such as Steam Deck, embeddable systems, drink distributors and even Steam games. Enzo also enriches the tech community by organizing the GDG Bordeaux and Flutter Meetup Group Bordeaux.',
         talkTitle: 'Accessibility First: Building an App with Support for Various Disabilities',
         talkAbstract: 'In this session, I will share my experience creating an app that prioritizes accessibility and supports different disabilities. We will discuss the development of user interfaces that cater to a wide range of users, including those with visual impairments such as color blindness, cognitive disabilities, and mobility impairments.\n\nIn detail: we will explore the techniques for designing inclusive UIs, such as high-contrast visuals, adaptable font sizes, and appropriate color schemes for color-blind users. Additionally, we will address the significance of semantic widgets to enhance accessibility.\n\nUsing practical examples, development insights, and fail attempts this talk aims to raise awareness about the importance of accessibility in apps.',
