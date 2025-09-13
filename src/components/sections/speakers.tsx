@@ -79,7 +79,7 @@ export default function Speakers() {
                       data-ai-hint="person portrait"
                       width={400}
                       height={400}
-                      className="w-full h-auto aspect-square object-cover transition-transform group-hover:scale-105"
+                      className="w-full h-auto aspect-square object-cover object-center transition-transform group-hover:scale-105"
                     />
                   </CardContent>
                   <CardFooter className="flex flex-col items-start p-4 bg-background">
@@ -91,7 +91,7 @@ export default function Speakers() {
               </DialogTrigger>
               <DialogContent className="sm:max-w-[625px]">
                 <DialogHeader className="flex flex-col sm:flex-row gap-6">
-                    <Image src={speaker.avatarUrl} alt={speaker.name} data-ai-hint="person portrait" width={150} height={150} className="rounded-lg aspect-square object-cover" />
+                    <Image src={speaker.avatarUrl} alt={speaker.name} data-ai-hint="person portrait" width={150} height={150} className="rounded-lg aspect-square object-cover object-center" />
                     <div className="space-y-2 text-left">
                         <DialogTitle className="text-2xl font-headline">{speaker.name}</DialogTitle>
                         <DialogDescription>
