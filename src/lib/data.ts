@@ -50,6 +50,16 @@ export const speakers: Speaker[] = [
         talkTitle: 'To SQL or NoSQL? Firebase is the Answer',
         talkAbstract: 'Firebase has long offered NoSQL databases, but 2024 brought Firebase DataConnect, a new SQL-based option. In this talk, I’ll share how I adopted it for my Bunny Search app: the wins, the struggles, and what it’s really like using a brand-new product in production. You’ll leave with a clear answer when DataConnect is the right choice, and when it’s not.',
         socials: { twitter: 'https://x.com/dariadroid', linkedin: 'https://www.linkedin.com/in/daria-orlova-47a44110a/' }
+    },
+    {
+        name: 'Lukas Klingsbo',
+        title: 'Open Source Engineer',
+        company: 'Blue Fire',
+        avatarUrl: 'https://picsum.photos/seed/lk/400/400',
+        bio: 'Lukas is a GDE for Flutter & Dart and part of the open source collective called Blue Fire, which develops popular packages like Flame and Audioplayers. Lukas is also a maintainer for Melos. On his free-time he enjoys programming, climbing and playing the handpan.',
+        talkTitle: 'An introduction to Building Games with Flutter & Flame',
+        talkAbstract: 'Flame is an open source and completely free game engine for Flutter. While you can create cross platform games in pure Flutter, it becomes quite hard once you start building more advanced games, and that\'s where Flame comes in to help you! In this talk we will both go through both generic gamedev concepts and things specific to Flame.',
+        socials: { twitter: 'https://x.com/spydon', linkedin: 'https://linkedin.com/in/spydon' }
     }
 ];
 
