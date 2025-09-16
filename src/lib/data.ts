@@ -55,7 +55,7 @@ export const speakers: Speaker[] = [
         name: 'Lukas Klingsbo',
         title: 'Open Source Engineer',
         company: 'Blue Fire',
-        avatarUrl: 'https://picsum.photos/seed/lk/400/400',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758041773/profile_gde-lukas_kvjv9z.jpg',
         bio: 'Lukas is a GDE for Flutter & Dart and part of the open source collective called Blue Fire, which develops popular packages like Flame and Audioplayers. Lukas is also a maintainer for Melos. On his free-time he enjoys programming, climbing and playing the handpan.',
         talkTitle: 'An introduction to Building Games with Flutter & Flame',
         talkAbstract: 'Flame is an open source and completely free game engine for Flutter. While you can create cross platform games in pure Flutter, it becomes quite hard once you start building more advanced games, and that\'s where Flame comes in to help you! In this talk we will both go through both generic gamedev concepts and things specific to Flame.',
