@@ -40,6 +40,16 @@ export const speakers: Speaker[] = [
         talkTitle: 'Recetas Mágicas para Android Studio con Gemini',
         talkAbstract: '¿Y si te dijera que Android Studio ahora tiene su propia varita mágica? En esta charla descubrirás cómo Gemini 2.5 Pro está transformando el desarrollo Android con capacidades que parecen sacadas de Hogwarts.\nAprenderás 6 "hechizos" prácticos que revolucionarán tu flujo de trabajo: desde Journeys que genera tests con lenguaje natural, hasta Agent Mode que refactoriza arquitecturas completas. Veremos ejemplos de cómo Gemini puede arreglar crashes automáticamente, transformar interfaces con simples instrucciones, y mantener tus dependencias siempre actualizadas.\nEsta sesión está diseñada para desarrolladoras y desarrolladores de todos los niveles que quieran multiplicar su productividad. Saldrás con conocimientos prácticos listos para aplicar desde el primer día. No se requiere experiencia previa con IA, solo ganas de aprender magia moderna del desarrollo.\n¿Lista/o para convertirte en maga o mago del código?',
         socials: { twitter: 'https://x.com/gemamsr', linkedin: 'https://www.linkedin.com/in/gemasr/' }
+    },
+    {
+        name: 'Daria Orlova',
+        title: 'Co-founder @ BBapps',
+        company: 'BBapps',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758041507/Screenshot_2025-09-16_at_6.51.42_PM_qqj8cy.png',
+        bio: 'Daria is a Flutter GDE & Flutterista 💜, co-founder of BBapps – apps that care for you and the planet 🌍🫶🏽. She’s the co-author of Flutter Design Patterns and Best Practices 📚 and a regular speaker at international tech conferences 🎤, as well as the co-organizer behind Flutter Riga and Flutter & Friends. In her free time, she likes travelling, dancing, and learning languages.',
+        talkTitle: 'To SQL or NoSQL? Firebase is the Answer',
+        talkAbstract: 'Firebase has long offered NoSQL databases, but 2024 brought Firebase DataConnect, a new SQL-based option. In this talk, I’ll share how I adopted it for my Bunny Search app: the wins, the struggles, and what it’s really like using a brand-new product in production. You’ll leave with a clear answer when DataConnect is the right choice, and when it’s not.',
+        socials: { twitter: 'https://x.com/dariadroid', linkedin: 'https://www.linkedin.com/in/daria-orlova-47a44110a/' }
     }
 ];
 
