@@ -135,8 +135,8 @@ export default function Agenda() {
                     </TabsContent>
                     <TabsContent value="day2">
                         <div className="text-center mb-8 p-6 bg-card rounded-lg border">
-                            <h3 className="text-2xl font-headline font-bold text-center mb-2">Día de Comunidad y Talleres</h3>
-                            <p className="text-muted-foreground mb-4">El segundo día es una jornada abierta a la comunidad, con talleres y lightning talks. ¡Las plazas son limitadas!</p>
+                            <h3 className="text-2xl font-headline font-bold text-center mb-2">Día de Comunidad</h3>
+                            <p className="text-muted-foreground mb-4">El segundo día es una jornada abierta a la comunidad, con lightning talks. ¡Las plazas son limitadas!</p>
                             <Button asChild>
                                 <a href="https://gdg.community.dev/e/mjc8ks/" target="_blank" rel="noopener noreferrer">
                                     Apúntate al Día 2
