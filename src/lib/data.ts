@@ -60,6 +60,16 @@ export const speakers: Speaker[] = [
         talkTitle: 'An introduction to Building Games with Flutter & Flame',
         talkAbstract: 'Flame is an open source and completely free game engine for Flutter. While you can create cross platform games in pure Flutter, it becomes quite hard once you start building more advanced games, and that\'s where Flame comes in to help you! In this talk we will both go through both generic gamedev concepts and things specific to Flame.',
         socials: { twitter: 'https://x.com/spydon', linkedin: 'https://linkedin.com/in/spydon' }
+    },
+    {
+        name: 'Victor Carreras',
+        title: 'CTO Mobile DCX',
+        company: 'Capgemini',
+        avatarUrl: 'https://picsum.photos/seed/vc/400/400',
+        bio: 'Con más de 6 años inmerso en el desarrollo móvil, ha evolucionado desde sus inicios como desarrollador y escalado con maestría roles clave, consolidándose como líder técnico, arquitecto y desarrollador integral hasta su rol actual como CTO Mobile Experience DCX en Capgemini donde lidera equipos especializados en Flutter, Android e iOS contribuyendo al éxito de proyectos de envergadura.',
+        talkTitle: 'Gestiona el modo mantenimiento y las versiones de tu app con Firebase.',
+        talkAbstract: '¿Te gustaría poder activar el modo mantenimiento de tu app o de que todos tus usuarios actualicen a la última versión? En esta charla aprenderás cómo usar Firebase Remote Config para tomar el control total de tu aplicación móvil en tiempo real. Veremos cómo implementar un sistema de mantenimiento remoto, cómo forzar actualizaciones según la versión instalada y cómo comunicar estos cambios de forma efectiva a los usuarios.',
+        socials: { twitter: 'https://x.com/vicajilau', linkedin: 'linkedin.com/in/vicajilau' }
     }
 ];
 
