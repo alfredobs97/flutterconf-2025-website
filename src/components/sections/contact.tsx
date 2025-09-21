@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from '@/components/ui/card';
-import { Mail, Copy, Check } from 'lucide-react';
+import { Mail, Copy, Check, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -57,6 +57,20 @@ export default function Contact() {
                             Enviar un Email
                         </a>
                     </Button>
+                     <div className="mt-6 border-t pt-6">
+                        <p className="text-muted-foreground mb-4">Síguenos en nuestras redes:</p>
+                        <div className="flex justify-center items-center gap-4">
+                            <a href="https://x.com/flutterconfes" target="_blank" rel="noopener noreferrer" aria-label="Twitter de FlutterConf ES" className="text-muted-foreground hover:text-primary transition-colors">
+                                <Twitter className="h-6 w-6" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/flutterconf-es" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de FlutterConf ES" className="text-muted-foreground hover:text-primary transition-colors">
+                                <Linkedin className="h-6 w-6" />
+                            </a>
+                            <a href="https://www.instagram.com/flutterconfdev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de FlutterConf ES" className="text-muted-foreground hover:text-primary transition-colors">
+                                <Instagram className="h-6 w-6" />
+                            </a>
+                        </div>
+                    </div>
                 </CardContent>
             </Card>
         </div>
