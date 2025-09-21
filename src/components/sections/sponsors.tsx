@@ -10,7 +10,11 @@ const sponsors: Sponsor[] = [
     { name: 'Flutter', logoUrl: 'https://storage.googleapis.com/cms-storage-bucket/lockup_flutter_horizontal.847ae81f5430402216fd.svg', website: 'https://flutter.dev' },
 ];
 
-const collaborators: Sponsor[] = [];
+const collaborators: Sponsor[] = [
+    { name: 'Netscrapers', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758470884/logo_netscrapers_ekzcmj.svg', website: '#' },
+    { name: 'Xtorm', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758470968/4-XTORM-logoFC-free-standing-grey_upqyow.png', website: '#' },
+    { name: 'Shorebird', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758471011/logo_wordmark_c89fo5.png', website: '#' },
+];
 
 export default function Sponsors() {
   return (
