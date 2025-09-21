@@ -39,7 +39,7 @@ export default function Hero() {
               <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-espana-2025/cohost-gdg-marbella" target="_blank" rel="noopener noreferrer">Apúntate</a>
             </Button>
             <div className="flex items-center gap-2">
-                <p className="text-sm font-semibold text-primary-foreground">Síguenos:</p>
+                <p className="text-sm font-semibold text-primary-foreground">Encuéntranos en:</p>
                 <a href="https://x.com/flutterconfes" target="_blank" rel="noopener noreferrer" aria-label="Twitter de FlutterConf ES" className="hover:text-accent transition-colors">
                     <Twitter className="h-6 w-6" />
                 </a>
