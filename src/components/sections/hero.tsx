@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Calendar, MapPin } from 'lucide-react';
+import { Calendar, MapPin, Twitter, Linkedin, Instagram } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -34,9 +34,23 @@ export default function Hero() {
               <span>Málaga, Spain</span>
             </div>
           </div>
-          <Button asChild size="lg" className="mt-4 bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg py-7 px-10 shadow-lg transition-transform transform hover:scale-105">
-            <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-espana-2025/cohost-gdg-marbella" target="_blank" rel="noopener noreferrer">Apúntate</a>
-          </Button>
+          <div className="flex flex-col items-center gap-6">
+            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg py-7 px-10 shadow-lg transition-transform transform hover:scale-105">
+              <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-espana-2025/cohost-gdg-marbella" target="_blank" rel="noopener noreferrer">Apúntate</a>
+            </Button>
+            <div className="flex items-center gap-4">
+                <p className="text-sm text-primary-foreground/80 mr-2">Síguenos:</p>
+                <a href="https://x.com/flutterconfes" target="_blank" rel="noopener noreferrer" aria-label="Twitter de FlutterConf ES" className="hover:text-accent transition-colors">
+                    <Twitter className="h-6 w-6" />
+                </a>
+                <a href="https://www.linkedin.com/company/flutterconf-es" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de FlutterConf ES" className="hover:text-accent transition-colors">
+                    <Linkedin className="h-6 w-6" />
+                </a>
+                <a href="https://www.instagram.com/flutterconfdev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de FlutterConf ES" className="hover:text-accent transition-colors">
+                    <Instagram className="h-6 w-6" />
+                </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
