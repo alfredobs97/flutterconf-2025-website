@@ -6,7 +6,6 @@ import { Download } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const sponsors: Sponsor[] = [
-    { name: 'Google', logoUrl: 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png', website: 'https://google.com' },
     { name: 'Flutter', logoUrl: 'https://storage.googleapis.com/cms-storage-bucket/lockup_flutter_horizontal.847ae81f5430402216fd.svg', website: 'https://flutter.dev' },
 ];
 
@@ -68,7 +67,7 @@ export default function Sponsors() {
                     </Link>
                 </Button>
                  <Button size="lg" variant="outline" asChild>
-                    <Link href="https://docs.google.com/presentation/d/1Xx0kZ97Ac1TRk3IRkYVmipykPuDokatvH5z6E8jsU2o/edit?usp=sharing" target="_blank">
+                    <Link href="https://docs.google.com/presentation/d/1Xx0kZ97Ac1TRkYVmipykPuDokatvH5z6E8jsU2o/edit?usp=sharing" target="_blank">
                         <Download className="mr-2 h-5 w-5" />
                         Download our deck! (English)
                     </Link>
