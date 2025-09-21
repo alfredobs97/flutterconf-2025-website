@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Twitter, Linkedin, Github } from 'lucide-react';
+import { Twitter, Linkedin, Github, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
@@ -35,6 +35,12 @@ export default function Footer() {
             <div className="flex gap-2">
               <Button variant="ghost" size="icon" asChild>
                 <a href="https://x.com/flutterconfes" target="_blank" rel="noopener noreferrer"><Twitter className="h-5 w-5" /></a>
+              </Button>
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://www.linkedin.com/company/flutterconf-es" target="_blank" rel="noopener noreferrer"><Linkedin className="h-5 w-5" /></a>
+              </Button>
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://www.instagram.com/flutterconfdev/" target="_blank" rel="noopener noreferrer"><Instagram className="h-5 w-5" /></a>
               </Button>
             </div>
           </div>
