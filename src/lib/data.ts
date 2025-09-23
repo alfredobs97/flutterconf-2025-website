@@ -91,7 +91,7 @@ export const day1Schedule: AgendaEvent[] = [
 
 export const day1AfternoonSchedule: AgendaEvent[] = [
     { time: '16:15', title: 'Bienvenida parte 2', type: 'break', duration: 15 },
-    { time: '16:30', title: '¿Quieres ganarte 4.500 € el próximo verano? Programa de becas Oportunidades', speaker: 'Andreu', type: 'talk', duration: 60 },
+    { time: '16:30', title: 'Charla por confirmar', type: 'talk', duration: 60 },
     { time: '17:30', title: 'Mesa redonda / Dart Conversations', type: 'panel', duration: 60 },
     { time: '18:30', title: 'Q/A', type: 'talk', duration: 30 },
 ];
