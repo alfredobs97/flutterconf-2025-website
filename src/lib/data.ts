@@ -86,7 +86,7 @@ export const day1Schedule: AgendaEvent[] = [
     { time: '12:15', title: 'Gestiona el modo mantenimiento y las versiones de tu app con Firebase.', type: 'talk', duration: 30, speaker: 'Victor Carreras' },
     { time: '12:45', title: 'An introduction to Building Games with Flutter & Flame', type: 'talk', duration: 30, speaker: 'Lukas Klingsbo' },
     { time: '13:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
-    { time: '13:45', title: 'Closing', type: 'talk', duration: 15, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '13:45', title: 'Closing', type: 'talk', duration: 15, speaker: 'Despedimos la primera parte de la FlutterConf con sorteos y sorpresas' },
     { time: '14:00', title: 'Networking', type: 'break', duration: 60 },
 ];
 
