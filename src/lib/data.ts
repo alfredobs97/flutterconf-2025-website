@@ -91,9 +91,9 @@ export const day1Schedule: AgendaEvent[] = [
 
 export const day1AfternoonSchedule: AgendaEvent[] = [
     { time: '16:15', title: 'Bienvenida parte 2', type: 'break', duration: 15 },
-    { time: '16:30', title: 'Charla por confirmar', type: 'talk', duration: 60 },
-    { time: '17:30', title: 'Mesa redonda / Dart Conversations', type: 'panel', duration: 60 },
-    { time: '18:30', title: 'Q/A', type: 'talk', duration: 30 },
+    { time: '16:30', title: 'Mesa de comunidades', speaker: 'Diferentes comunidades de Flutter participarán para dar su visión', type: 'panel', duration: 60 },
+    { time: '17:30', title: 'Dart Conversations', speaker: 'Nuestro Podcast donde comentaremos todo lo vivido en la FlutterConf', type: 'panel', duration: 60 },
+    { time: '18:30', title: 'Networking con Cervezas Victoria', speaker: 'Acompáñanos a cerrar el evento con la colaboración malagueña de Cervezas Victoria', type: 'break', duration: 30 },
 ];
 
 export const day2Schedule: AgendaEvent[] = [
