@@ -95,7 +95,7 @@ export const day1Schedule: AgendaEvent[] = [
     { time: '11:45', title: 'Accessibility First: Building an App with Support for Various Disabilities', type: 'talk', duration: 30, speaker: 'Enzo Conty' },
     { time: '12:15', title: 'Gestiona el modo mantenimiento y las versiones de tu app con Firebase.', type: 'talk', duration: 30, speaker: 'Victor Carreras' },
     { time: '12:45', title: 'An introduction to Building Games with Flutter & Flame', type: 'talk', duration: 30, speaker: 'Lukas Klingsbo' },
-    { time: '13:15', title: 'Charla', type: 'talk', duration: 30, speaker: 'Publicaremos la informacion próximamente' },
+    { time: '13:15', title: 'Getting started with Serverpod and Dart on the backend', type: 'talk', duration: 30, speaker: 'Viktor Lidholt' },
     { time: '13:45', title: 'Closing', type: 'talk', duration: 15, speaker: 'Despedimos la primera parte de la FlutterConf con sorteos y sorpresas' },
     { time: '14:00', title: 'Networking', type: 'break', duration: 60 },
 ];
@@ -113,4 +113,5 @@ export const day2Schedule: AgendaEvent[] = [
    { time: '12:15', title: 'Lightning talks sobre temas Dart y Flutter', type: 'talk', duration: 45 },
    { time: '13:00', title: 'Cierre evento', type: 'talk', duration: 15 },
 ];
+
 
