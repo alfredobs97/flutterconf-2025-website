@@ -71,6 +71,16 @@ export const speakers: Speaker[] = [
         talkTitle: 'Gestiona el modo mantenimiento y las versiones de tu app con Firebase.',
         talkAbstract: '¿Te gustaría poder activar el modo mantenimiento de tu app o de que todos tus usuarios actualicen a la última versión? En esta charla aprenderás cómo usar Firebase Remote Config para tomar el control total de tu aplicación móvil en tiempo real. Veremos cómo implementar un sistema de mantenimiento remoto, cómo forzar actualizaciones según la versión instalada y cómo comunicar estos cambios de forma efectiva a los usuarios.',
         socials: { twitter: 'https://x.com/vicajilau', linkedin: 'linkedin.com/in/vicajilau' }
+    },
+    {
+        name: 'Viktor Lidholt',
+        title: 'Founder of Serverpod',
+        company: 'Serverpod',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759393539/Portrait_u5fd4k.jpg',
+        bio: 'With a master’s in computer science and over 20 years of industry experience, Viktor has a solid background in software engineering. Before starting his own venture, he worked at Google’s Flutter team in Silicon Valley. He has held talks and taught guest lectures on programming, app creation, and computer graphics at international conferences and universities such as MIT, Carnegie Mellon, and UC Berkeley.',
+        talkTitle: 'Getting started with Serverpod and Dart on the backend',
+        talkAbstract: 'Building a backend shouldn’t slow you down or force you out of the Dart ecosystem. This talk introduces Serverpod, an open-source backend framework built specifically for Flutter developers. With Serverpod, you can spin up production-grade backends in Dart, generate type-safe client code automatically, and deploy without wrestling with DevOps. We’ll walk through the essentials, databases, APIs, serialization, without the usual complexity. You’ll see how to set up a project, create endpoints, define data models, and run database operations, all while staying in the same language you already know and love.',
+        socials: { twitter: 'https://x.com/viktorlidholt', linkedin: 'https://www.linkedin.com/in/viktorlidholt/' }
     }
 ];
 
@@ -103,3 +113,4 @@ export const day2Schedule: AgendaEvent[] = [
    { time: '12:15', title: 'Lightning talks sobre temas Dart y Flutter', type: 'talk', duration: 45 },
    { time: '13:00', title: 'Cierre evento', type: 'talk', duration: 15 },
 ];
+
