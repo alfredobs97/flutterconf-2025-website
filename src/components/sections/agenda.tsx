@@ -36,7 +36,7 @@ const calculateEndTime = (startTime: string, duration: number): string => {
 };
 
 const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
-    <div className="divide-y divide-border rounded-lg border bg-card">
+    <div className="divide-y divide-border rounded-lg border bg-card text-left">
         {schedule.length > 0 ? (
             schedule.map((event, index) => {
                 const endTime = calculateEndTime(event.time, event.duration);
