@@ -42,7 +42,8 @@ export default function Speakers() {
                   </CardContent>
                   <CardFooter className="flex flex-col items-start p-4 bg-secondary/30 flex-grow">
                     <h3 className="font-bold font-headline text-lg">{speaker.name}</h3>
-                    <p className="text-sm text-primary flex-grow">{speaker.title} at {speaker.company}</p>
+                    <p className="text-sm text-primary">{speaker.title}</p>
+                    <p className="text-sm text-muted-foreground">{speaker.company}</p>
                   </CardFooter>
                 </Card>
               </DialogTrigger>
