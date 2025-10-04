@@ -13,6 +13,7 @@ const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#speakers', label: 'Speakers' },
   { href: '#agenda', label: 'Agenda' },
+  { href: '/community', label: 'Comunidad' },
   { href: '/about-us', label: 'Nuestra Historia' },
   { href: '#sponsors', label: 'Sponsors' },
   { href: '#contact', label: 'Contact' },

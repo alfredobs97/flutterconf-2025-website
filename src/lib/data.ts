@@ -1,5 +1,5 @@
 
-import type { Speaker, AgendaEvent } from '@/types';
+import type { Speaker, AgendaEvent, CommunitySpeaker } from '@/types';
 
 export const speakers: Speaker[] = [
     {
@@ -84,6 +84,52 @@ export const speakers: Speaker[] = [
     }
 ];
 
+export const communitySpeakers: CommunitySpeaker[] = [
+    {
+        name: 'Alfredo Bautista',
+        title: 'Coorganizador GDG Marbella',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1753630178/gde-badge-2-jpeg_jnsede.jpg',
+        socials: { twitter: 'https://x.com/alfredobs97', linkedin: 'https://www.linkedin.com/in/alfredo-bautista-santos-179b2b105/' }
+    },
+    {
+        name: 'Lukas Klingsbo',
+        title: 'Open Source Engineer, Blue Fire',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758041773/profile_gde-lukas_kvjv9z.jpg',
+        socials: { twitter: 'https://x.com/spydon', linkedin: 'https://linkedin.com/in/spydon' }
+    },
+    {
+        name: 'Victor Carreras',
+        title: 'Coorganizador Flutter Barcelona',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758280957/codemotion_smaller-min_ioacua.jpg',
+        socials: { twitter: 'https://x.com/vicajilau', linkedin: 'linkedin.com/in/vicajilau' }
+    },
+    {
+        name: 'Andreu Ibañez',
+        title: 'Coorganizador Flutter Lleida',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759556885/andreu_wwhh3s.jpg',
+        socials: { twitter: 'https://x.com/andreuipan', linkedin: 'https://www.linkedin.com/in/andreuibanez/' }
+    },
+    {
+        name: 'Félix Wielander',
+        title: 'Coorganizador Flutter Málaga',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759556885/felix_n2nkrj.jpg',
+        socials: { twitter: 'https://x.com/FeliEW', linkedin: 'https://www.linkedin.com/in/felix-wielander/' }
+    },
+    {
+        name: 'Ahmed Hamdan',
+        title: 'Coorganizador Flutter Valencia',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759556885/ahmed_gogl6y.jpg',
+        socials: { twitter: 'https://x.com/ahmedbamdan', linkedin: 'https://www.linkedin.com/in/ahmed-h-34448687/' }
+    },
+    {
+        name: 'Simon Eckerstorfer',
+        title: 'Coorganizador Flutter Vienna',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759556885/simon_pajayf.jpg',
+        socials: { twitter: 'https://x.com/SimonEcky', linkedin: 'https://www.linkedin.com/in/simon-eckerstorfer-3051a617a/' }
+    },
+];
+
+
 export const day1Schedule: AgendaEvent[] = [
     { time: '08:30', title: 'Bienvenida y networking', type: 'break', duration: 30 },
     { time: '09:00', title: 'Opening', type: 'talk', duration: 15, speaker: 'Conoce FlutterConf y empieza con nosotros el evento' },
@@ -113,5 +159,3 @@ export const day2Schedule: AgendaEvent[] = [
    { time: '12:15', title: 'Lightning talks sobre temas Dart y Flutter', type: 'talk', duration: 45 },
    { time: '13:00', title: 'Cierre evento', type: 'talk', duration: 15 },
 ];
-
-

@@ -12,6 +12,16 @@ export type Speaker = {
   };
 };
 
+export type CommunitySpeaker = {
+  name: string;
+  title: string;
+  avatarUrl: string;
+  socials: {
+    twitter?: string;
+    linkedin?: string;
+  };
+};
+
 export type AgendaEvent = {
   time: string;
   title: string;

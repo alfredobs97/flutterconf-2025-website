@@ -1,6 +1,6 @@
 import type { AgendaEvent, Speaker } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { User, Coffee, Mic, Code, Loader2, Twitter, Linkedin } from 'lucide-react';
+import { User, Coffee, Mic, Code, Loader2, Twitter, Linkedin, ArrowRight } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -13,6 +13,7 @@ import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { day1Schedule, day1AfternoonSchedule, day2Schedule, speakers } from '@/lib/data';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 const EventIcon = ({type}: {type: AgendaEvent['type']}) => {
     switch(type) {
@@ -125,11 +126,16 @@ export default function Agenda() {
                     </TabsList>
                     <TabsContent value="day1">
                         <AgendaView schedule={day1Schedule} />
-                        <div className="mt-12">
+                        <div className="mt-12 text-center">
                             <h3 className="text-2xl font-headline font-bold text-center mb-4">Tarde de Comunidad (Opcional)</h3>
-                            <p className="text-center text-muted-foreground mb-8">
-                                Después del programa principal, únete a nosotros para unas sesiones extra organizadas por la comunidad.
+                            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+                                Después del programa principal, únete a nosotros para unas sesiones extra organizadas por y para la comunidad Flutter.
                             </p>
+                             <Button asChild variant="outline" className="mb-8">
+                                <Link href="/community">
+                                    Conoce a la comunidad <ArrowRight className="ml-2 h-4 w-4" />
+                                </Link>
+                            </Button>
                             <AgendaView schedule={day1AfternoonSchedule} />
                         </div>
                     </TabsContent>
