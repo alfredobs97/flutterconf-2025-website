@@ -93,13 +93,13 @@ export const communitySpeakers: CommunitySpeaker[] = [
     },
     {
         name: 'Lukas Klingsbo',
-        title: 'Open Source Engineer, Blue Fire',
+        title: 'Flutter & Friends',
         avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758041773/profile_gde-lukas_kvjv9z.jpg',
         socials: { twitter: 'https://x.com/spydon', linkedin: 'https://linkedin.com/in/spydon' }
     },
     {
         name: 'Victor Carreras',
-        title: 'Coorganizador Flutter Barcelona',
+        title: 'Coorganizador Flutter Lleida',
         avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758280957/codemotion_smaller-min_ioacua.jpg',
         socials: { twitter: 'https://x.com/vicajilau', linkedin: 'linkedin.com/in/vicajilau' }
     },
