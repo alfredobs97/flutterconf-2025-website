@@ -118,7 +118,7 @@ export const communitySpeakers: CommunitySpeaker[] = [
     {
         name: 'Ahmed Hamdan',
         title: 'Coorganizador Flutter Valencia',
-        avatarUrl: 'https://picsum.photos/seed/ahmed/400/400',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759565138/4e08-400o400o2-wxJHAgFWS4GPfUxQsKuKoX_vsflke.jpg',
         socials: { twitter: 'https://x.com/ahmedbamdan', linkedin: 'https://www.linkedin.com/in/ahmed-h-34448687/' }
     },
     {
