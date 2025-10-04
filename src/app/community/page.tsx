@@ -46,10 +46,6 @@ export default function CommunityPage() {
                                     <div className="flex flex-col items-start p-4 bg-secondary/30 flex-grow">
                                         <h3 className="font-bold font-headline text-lg">{speaker.name}</h3>
                                         <p className="text-sm text-primary flex-grow">{speaker.title}</p>
-                                        <div className="flex gap-2 mt-2">
-                                            {speaker.socials.twitter && <a href={speaker.socials.twitter} target="_blank" rel="noopener noreferrer"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary"/></a>}
-                                            {speaker.socials.linkedin && <a href={speaker.socials.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary"/></a>}
-                                        </div>
                                     </div>
                                 </Card>
                             ))}
