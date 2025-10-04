@@ -26,6 +26,9 @@ export default function CommunityPage() {
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                             FlutterConf España nace del esfuerzo y la pasión de la propia comunidad. Organizada por GDG Marbella con la colaboración de grupos de Flutter de toda España, queremos que ese espíritu colaborativo se refleje en la conferencia. Por eso, dedicamos la tarde del primer día a lo que más nos importa: compartir ideas, estrechar lazos y conocernos mejor entre todas las comunidades que participan.
                         </p>
+                        <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-4">
+                            ¿Quieres conocer mejor a las comunidades? ¿Como otras comunidades pueden ayudar a tu comunidad local? Esta segunda parte de la conferencia es el mejor lugar para crear esas conexiones y aprender de la experiencia de otras comunidades
+                        </p>
                     </section>
 
                     <section className="mb-12">
