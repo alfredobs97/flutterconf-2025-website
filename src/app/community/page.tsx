@@ -10,7 +10,7 @@ export default function CommunityPage() {
         <div className="bg-background py-8 md:py-12">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="max-w-5xl mx-auto">
-                    <section className="text-center mb-12">
+                    <section className="text-center mb-6">
                         <h1 className="text-4xl font-headline font-black tracking-tighter sm:text-5xl md:text-6xl">
                             FlutterConf: Desde la comunidad, para la comunidad
                         </h1>
