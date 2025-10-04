@@ -16,6 +16,14 @@ const collaborators: Sponsor[] = [
     { name: 'Labhouse', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758880674/Copia_de_LABHOUSE_Logo_01-removebg-preview_v2en1s.png', website: 'https://labhouse.io/' },
 ];
 
+const communities: Sponsor[] = [
+    { name: 'GDG Marbella', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759567683/z_ztQtzy_400x400_jv0j8b.jpg', website: 'https://gdg.community.dev/gdg-marbella/' },
+    { name: 'GDG Spain', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759567740/spain-vertical-transp_1_r4symm.png', website: 'https://gdg.community.dev/gdg-spain/' },
+    { name: 'Flutter Lleida', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759567771/logoflutterlleida_1_ht3nuf.png', website: 'https://www.meetup.com/flutter-lleida/' },
+    { name: 'Flutter Vienna', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759567832/photo_5981224993633192602_y_ih8jyr.jpg', website: 'https://www.meetup.com/flutter-vienna/' },
+    { name: 'Flutter Valencia', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759567864/WhatsApp_Image_2025-10-03_at_19.04.33_nyovn8.jpg', website: 'https://www.meetup.com/flutter-valencia/' },
+];
+
 export default function Sponsors() {
   return (
     <section id="sponsors">
@@ -53,6 +61,16 @@ export default function Sponsors() {
                           </CardContent>
                         </Card>
                     )}
+                </div>
+            </div>
+            <div>
+                <h3 className="text-2xl font-headline text-center mb-8 text-primary font-bold">Comunidades</h3>
+                 <div className="flex justify-center items-center gap-8 flex-wrap">
+                    {communities.map(sponsor => (
+                        <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                           <Image src={sponsor.logoUrl} alt={sponsor.name} data-ai-hint="community logo" width={120} height={60} className="object-contain" />
+                        </Link>
+                    ))}
                 </div>
             </div>
         </div>

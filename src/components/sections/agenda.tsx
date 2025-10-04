@@ -112,7 +112,7 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
 export default function Agenda() {
     return (
         <section id="agenda" className="bg-secondary/30">
-            <div className="container mx-auto px-4 md:px-6">
+            <div className="container mx-auto px-4">
                 <div className="flex flex-col items-center text-center space-y-4 mb-12">
                     <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">Agenda del Evento</h2>
                     <p className="max-w-2xl text-muted-foreground text-lg">
