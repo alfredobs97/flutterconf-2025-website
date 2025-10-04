@@ -106,25 +106,25 @@ export const communitySpeakers: CommunitySpeaker[] = [
     {
         name: 'Andreu Ibañez',
         title: 'Coorganizador Flutter Lleida',
-        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759556885/andreu_wwhh3s.jpg',
+        avatarUrl: 'https://picsum.photos/seed/andreu/400/400',
         socials: { twitter: 'https://x.com/andreuipan', linkedin: 'https://www.linkedin.com/in/andreuibanez/' }
     },
     {
         name: 'Félix Wielander',
         title: 'Coorganizador Flutter Málaga',
-        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759556885/felix_n2nkrj.jpg',
+        avatarUrl: 'https://picsum.photos/seed/felix/400/400',
         socials: { twitter: 'https://x.com/FeliEW', linkedin: 'https://www.linkedin.com/in/felix-wielander/' }
     },
     {
         name: 'Ahmed Hamdan',
         title: 'Coorganizador Flutter Valencia',
-        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759556885/ahmed_gogl6y.jpg',
+        avatarUrl: 'https://picsum.photos/seed/ahmed/400/400',
         socials: { twitter: 'https://x.com/ahmedbamdan', linkedin: 'https://www.linkedin.com/in/ahmed-h-34448687/' }
     },
     {
         name: 'Simon Eckerstorfer',
         title: 'Coorganizador Flutter Vienna',
-        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759556885/simon_pajayf.jpg',
+        avatarUrl: 'https://picsum.photos/seed/simon/400/400',
         socials: { twitter: 'https://x.com/SimonEcky', linkedin: 'https://www.linkedin.com/in/simon-eckerstorfer-3051a617a/' }
     },
 ];

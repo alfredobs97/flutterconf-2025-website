@@ -1,69 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Twitter, Linkedin } from 'lucide-react';
+import { ArrowRight, Twitter, Linkedin, MessageSquare, Beer, Users } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { communitySpeakers, day1AfternoonSchedule } from '@/lib/data';
-import type { AgendaEvent } from '@/types';
-import { Mic, Coffee, User } from 'lucide-react';
-import { cn } from '@/lib/utils';
-
-const EventIcon = ({type}: {type: AgendaEvent['type']}) => {
-    switch(type) {
-        case 'talk': return <Mic className="h-5 w-5 text-accent" />;
-        case 'panel': return <User className="h-5 w-5 text-accent" />;
-        case 'break': return <Coffee className="h-5 w-5 text-accent" />;
-        default: return null;
-    }
-}
-
-const calculateEndTime = (startTime: string, duration: number): string => {
-    const [hours, minutes] = startTime.split(':').map(Number);
-    const startDate = new Date();
-    startDate.setHours(hours, minutes, 0, 0);
-    const endDate = new Date(startDate.getTime() + duration * 60000);
-    const endHours = endDate.getHours().toString().padStart(2, '0');
-    const endMinutes = endDate.getMinutes().toString().padStart(2, '0');
-    return `${endHours}:${endMinutes}`;
-};
-
-const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
-    <div className="divide-y divide-border rounded-lg border bg-card">
-        {schedule.map((event, index) => {
-            const endTime = calculateEndTime(event.time, event.duration);
-            return (
-                <div key={index} className={cn(
-                    "p-4 flex flex-col sm:flex-row gap-4 justify-between items-start",
-                    event.type === 'break' && 'bg-secondary/30'
-                )}>
-                    <div className="flex gap-4 items-center">
-                        <div className="text-center flex-shrink-0 w-20">
-                            <p className="text-sm font-bold text-primary whitespace-nowrap">
-                                {event.time}
-                            </p>
-                            <p className="text-xs text-muted-foreground">{endTime}</p>
-                        </div>
-                        <div className="pl-4 border-l-2 border-accent">
-                            <h3 className="font-bold text-lg font-headline">{event.title}</h3>
-                            {event.speaker && <p className="text-muted-foreground text-sm">{event.speaker}</p>}
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground ml-auto sm:ml-0 pl-1 sm:pl-0">
-                       <span className="w-16 text-right">{event.duration} min</span>
-                       <EventIcon type={event.type} />
-                    </div>
-                </div>
-            )
-        })}
-    </div>
-);
-
+import { communitySpeakers } from '@/lib/data';
 
 export default function CommunityPage() {
     return (
-        <div className="bg-background py-16 md:py-24 lg:py-32">
+        <div className="bg-background py-12 md:py-16">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-5xl mx-auto">
                     <section className="text-center mb-16">
                         <h1 className="text-4xl font-headline font-black tracking-tighter sm:text-5xl md:text-6xl">
                             FlutterConf: Desde la comunidad, para la comunidad
@@ -84,7 +30,7 @@ export default function CommunityPage() {
 
                     <section className="mb-16">
                         <h2 className="text-3xl font-headline font-bold text-center tracking-tight sm:text-4xl mb-12">Ponentes de la Comunidad</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                             {communitySpeakers.map((speaker) => (
                                 <Card key={speaker.name} className="overflow-hidden group flex flex-col">
                                     <CardContent className="p-0">
@@ -112,7 +58,29 @@ export default function CommunityPage() {
 
                     <section>
                         <h2 className="text-3xl font-headline font-bold text-center tracking-tight sm:text-4xl mb-12">Agenda de la Tarde</h2>
-                        <AgendaView schedule={day1AfternoonSchedule} />
+                         <div className="grid md:grid-cols-1 gap-8">
+                            <Card className="flex flex-col md:flex-row items-center gap-6 p-6">
+                                <Users className="h-12 w-12 text-primary shrink-0" />
+                                <div>
+                                    <h3 className="text-2xl font-headline font-bold text-foreground mb-2">Mesa de Comunidades</h3>
+                                    <p className="text-muted-foreground">Un panel de debate donde representantes de diferentes grupos de Flutter y GDGs de toda España compartirán sus experiencias, retos y planes de futuro. Una oportunidad única para conocer a los líderes que dinamizan el ecosistema local y descubrir cómo puedes involucrarte.</p>
+                                </div>
+                            </Card>
+                             <Card className="flex flex-col md:flex-row items-center gap-6 p-6">
+                                <MessageSquare className="h-12 w-12 text-primary shrink-0" />
+                                <div>
+                                    <h3 className="text-2xl font-headline font-bold text-foreground mb-2">Dart Conversations (Podcast en vivo)</h3>
+                                    <p className="text-muted-foreground">Asiste a la grabación en directo de nuestro podcast "Dart Conversations". Comentaremos los momentos más destacados de la FlutterConf, analizaremos las charlas y contaremos con invitados especiales. ¡Tu oportunidad de ver cómo se hace un podcast desde dentro!</p>
+                                </div>
+                            </Card>
+                             <Card className="flex flex-col md:flex-row items-center gap-6 p-6">
+                                <Beer className="h-12 w-12 text-primary shrink-0" />
+                                <div>
+                                    <h3 className="text-2xl font-headline font-bold text-foreground mb-2">Networking con Cervezas Victoria</h3>
+                                    <p className="text-muted-foreground">El broche de oro del día. Relájate y comparte una Cerveza Victoria mientras charlas de manera informal con los ponentes, organizadores y otros asistentes. Este es el momento perfecto para hacer contactos valiosos, resolver dudas y simplemente, disfrutar de la comunidad.</p>
+                                </div>
+                            </Card>
+                        </div>
                     </section>
                 </div>
             </div>
