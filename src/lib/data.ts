@@ -93,7 +93,7 @@ export const communitySpeakers: CommunitySpeaker[] = [
     },
     {
         name: 'Lukas Klingsbo',
-        title: 'Flutter & Friends',
+        title: 'Coorganizador de Flutter & Friends',
         avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758041773/profile_gde-lukas_kvjv9z.jpg',
         socials: { twitter: 'https://x.com/spydon', linkedin: 'https://linkedin.com/in/spydon' }
     },
@@ -112,7 +112,7 @@ export const communitySpeakers: CommunitySpeaker[] = [
     {
         name: 'Félix Wielander',
         title: 'Coorganizador Flutter Málaga',
-        avatarUrl: 'https://picsum.photos/seed/felix/400/400',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759566037/0b8c9c76-ec08-4f1e-8018-40d2ede7fb81_nebezq.jpg',
         socials: { twitter: 'https://x.com/FeliEW', linkedin: 'https://www.linkedin.com/in/felix-wielander/' }
     },
     {
