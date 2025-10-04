@@ -16,7 +16,7 @@ export default function CommunityPage() {
                         </h1>
                         <div className="relative h-96 rounded-lg overflow-hidden shadow-xl my-8">
                             <Image
-                                src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553865/48952394171_3a1cd7872d_b_qsqqs2.jpg"
+                                src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1759565379/48945818273_ec88bbb5a0_c_odrdti.jpg"
                                 alt="Comunidad FlutterConf"
                                 layout="fill"
                                 objectFit="cover"
