@@ -106,7 +106,7 @@ export const communitySpeakers: CommunitySpeaker[] = [
     {
         name: 'Andreu Ibañez',
         title: 'Coorganizador Flutter Lleida',
-        avatarUrl: 'https://picsum.photos/seed/andreu/400/400',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759565483/andreuIO2017-1-min_glrteb.jpg',
         socials: { twitter: 'https://x.com/andreuipan', linkedin: 'https://www.linkedin.com/in/andreuibanez/' }
     },
     {
