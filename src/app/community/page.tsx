@@ -7,10 +7,10 @@ import { communitySpeakers } from '@/lib/data';
 
 export default function CommunityPage() {
     return (
-        <div className="bg-background py-8 md:py-12">
+        <div className="bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="max-w-5xl mx-auto">
-                    <section className="text-center mb-6">
+                    <section className="text-center ">
                         <h1 className="text-4xl font-headline font-black tracking-tighter sm:text-5xl md:text-6xl mb-8">
                             FlutterConf: Desde la comunidad, para la comunidad
                         </h1>
@@ -35,7 +35,7 @@ export default function CommunityPage() {
                         </Card>
                     </section>
 
-                    <section className="mb-12">
+                    <section className="mb-2 pt-1">
                         <h2 className="text-3xl font-headline font-bold text-center tracking-tight sm:text-4xl mb-8">Representantes de la comunidad</h2>
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                             {communitySpeakers.map((speaker) => (
@@ -59,7 +59,7 @@ export default function CommunityPage() {
                         </div>
                     </section>
 
-                    <section>
+                    <section className="mb-2 pt-1">
                         <h2 className="text-3xl font-headline font-bold text-center tracking-tight sm:text-4xl mb-8">Agenda de la Tarde</h2>
                          <div className="grid md:grid-cols-1 gap-6">
                             <Card className="flex flex-col md:flex-row items-center gap-6 p-6">
