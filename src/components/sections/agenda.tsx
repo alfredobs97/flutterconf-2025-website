@@ -48,19 +48,19 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
                         event.type === 'break' && 'bg-secondary/30',
                         speaker ? 'cursor-pointer hover:bg-secondary/20' : ''
                     )}>
-                        <div className="flex gap-4 items-center">
+                        <div className="flex gap-4 items-start sm:items-center w-full">
                             <div className="text-center flex-shrink-0 w-20">
                                 <p className="text-sm font-bold text-primary whitespace-nowrap">
                                     {event.time}
                                 </p>
                                 <p className="text-xs text-muted-foreground">{endTime}</p>
                             </div>
-                            <div className="pl-4 border-l-2 border-accent">
+                            <div className="pl-4 border-l-2 border-accent flex-grow">
                                 <h3 className="font-bold text-lg font-headline">{event.title}</h3>
                                 {event.speaker && <p className="text-muted-foreground text-sm">{event.speaker}</p>}
                             </div>
                         </div>
-                        <div className="flex items-center gap-4 text-sm text-muted-foreground ml-auto sm:ml-0 pl-1 sm:pl-0">
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground ml-auto pl-1 sm:pl-0">
                            <span className="w-16 text-right">{event.duration} min</span>
                            <EventIcon type={event.type} />
                         </div>
