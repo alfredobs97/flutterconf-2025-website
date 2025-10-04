@@ -42,8 +42,20 @@ export default function Speakers() {
                   </CardContent>
                   <CardFooter className="flex flex-col items-start p-4 bg-secondary/30 flex-grow">
                     <h3 className="font-bold font-headline text-lg">{speaker.name}</h3>
-                    <p className="text-sm text-primary">{speaker.title}</p>
+                    <p className="text-sm text-primary flex-grow">{speaker.title}</p>
                     <p className="text-sm text-muted-foreground">{speaker.company}</p>
+                     <div className="flex gap-2 mt-2">
+                        {speaker.socials.twitter && (
+                          <a href={speaker.socials.twitter} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                            <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary"/>
+                          </a>
+                        )}
+                        {speaker.socials.linkedin && (
+                          <a href={speaker.socials.linkedin} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                            <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary"/>
+                          </a>
+                        )}
+                    </div>
                   </CardFooter>
                 </Card>
               </DialogTrigger>
