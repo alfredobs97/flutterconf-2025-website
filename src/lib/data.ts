@@ -124,7 +124,7 @@ export const communitySpeakers: CommunitySpeaker[] = [
     {
         name: 'Simon Eckerstorfer',
         title: 'Coorganizador Flutter Vienna',
-        avatarUrl: 'https://picsum.photos/seed/simon/400/400',
+        avatarUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759565177/photo_5978730987728783446_y_pdamsd.jpg',
         socials: { twitter: 'https://x.com/SimonEcky', linkedin: 'https://www.linkedin.com/in/simon-eckerstorfer-3051a617a/' }
     },
 ];
