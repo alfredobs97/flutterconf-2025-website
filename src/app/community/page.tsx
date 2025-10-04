@@ -23,7 +23,7 @@ export default function CommunityPage() {
                                 data-ai-hint="community event"
                             />
                         </div>
-                        <Card className="text-left bg-secondary/30">
+                        <Card className="text-left bg-card">
                             <CardContent className="p-6">
                                 <p className="text-lg text-muted-foreground">
                                     FlutterConf España nace del esfuerzo y la pasión de la propia comunidad. Organizada por GDG Marbella con la inestimable colaboración de grupos de Flutter y GDGs de toda España, queremos que ese espíritu colaborativo no solo sea la base, sino el corazón de la conferencia. Por ello, la tarde del primer día la dedicamos a lo que más nos importa: conectar, compartir ideas, estrechar lazos y, en definitiva, fortalecernos mutuamente.
