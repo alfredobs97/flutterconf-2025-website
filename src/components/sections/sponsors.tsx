@@ -23,7 +23,7 @@ const communities: Sponsor[] = [
     { name: 'Flutter Málaga', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759572425/d8011cdc-ecb6-4861-aefa-3cb71bc53e1f_Tn4VHgw-removebg-preview_qwprzr.png', website: 'https://www.meetup.com/flutter-malaga/' },
     { name: 'Flutter Vienna', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759570279/photo_5981224993633192602_y-removebg-preview_1_zu9b84.png', website: 'https://www.meetup.com/flutter-vienna/' },
     { name: 'Flutter Valencia', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759769030/Screenshot_2025-10-06_at_6.43.11_PM-removebg-preview_u1btnb.png', website: 'https://www.meetup.com/flutter-valencia/' },
-    { name: 'Flutter & Friends', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759769099/maxresdefault-removebg-preview_swazmv.png', website: 'https://www.flutterfriends.dev/'},
+    { name: 'Flutter & Friends', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759769383/Untitled_design-removebg-preview_ll1djf.png', website: 'https://www.flutterfriends.dev/'},
 ];
 
 export default function Sponsors() {
