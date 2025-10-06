@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const sponsors: Sponsor[] = [
     { name: 'Flutter', logoUrl: 'https://storage.googleapis.com/cms-storage-bucket/lockup_flutter_horizontal.847ae81f5430402216fd.svg', website: 'https://flutter.dev' },
+    { name: 'Serverpod', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759394985/logo-horizontal_gtbby0.png', website: 'https://serverpod.dev' },
 ];
 
 const collaborators: Sponsor[] = [
