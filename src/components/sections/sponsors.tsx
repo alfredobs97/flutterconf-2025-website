@@ -18,7 +18,7 @@ const collaborators: Sponsor[] = [
 
 const communities: Sponsor[] = [
     { name: 'GDG Marbella', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759570285/z_ztQtzy_400x400-removebg-preview_lqhtqz.png', website: 'https://gdg.community.dev/gdg-marbella/' },
-    { name: 'GDG Spain', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759567740/spain-vertical-transp_1_r4symm.png', website: 'https://gdg.community.dev/gdg-spain/' },
+    { name: 'GDG Spain', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759769544/spain-vertical-transp_1_1_nyqdpy.png', website: 'https://gdg.community.dev/gdg-spain/' },
     { name: 'Flutter Lleida', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759567771/logoflutterlleida_1_ht3nuf.png', website: 'https://www.meetup.com/flutter-lleida/' },
     { name: 'Flutter Málaga', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759572425/d8011cdc-ecb6-4861-aefa-3cb71bc53e1f_Tn4VHgw-removebg-preview_qwprzr.png', website: 'https://www.meetup.com/flutter-malaga/' },
     { name: 'Flutter Vienna', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759570279/photo_5981224993633192602_y-removebg-preview_1_zu9b84.png', website: 'https://www.meetup.com/flutter-vienna/' },
