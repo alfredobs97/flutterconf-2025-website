@@ -22,7 +22,7 @@ const communities: Sponsor[] = [
     { name: 'Flutter Lleida', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759567771/logoflutterlleida_1_ht3nuf.png', website: 'https://www.meetup.com/flutter-lleida/' },
     { name: 'Flutter Málaga', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759572425/d8011cdc-ecb6-4861-aefa-3cb71bc53e1f_Tn4VHgw-removebg-preview_qwprzr.png', website: 'https://www.meetup.com/flutter-malaga/' },
     { name: 'Flutter Vienna', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759570279/photo_5981224993633192602_y-removebg-preview_1_zu9b84.png', website: 'https://www.meetup.com/flutter-vienna/' },
-    { name: 'Flutter Valencia', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759570323/WhatsApp_Image_2025-10-03_at_19.04.33-removebg-preview_jgt4sq.png', website: 'https://www.meetup.com/flutter-valencia/' },
+    { name: 'Flutter Valencia', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759769030/Screenshot_2025-10-06_at_6.43.11_PM-removebg-preview_u1btnb.png', website: 'https://www.meetup.com/flutter-valencia/' },
 ];
 
 export default function Sponsors() {
