@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+
+
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
@@ -23,7 +25,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Plus+Jakarta+Sans:wght@900&display=swap" rel="stylesheet" />
       </head>
       <body className={cn('font-body antialiased')}>
         <div className="relative flex min-h-dvh flex-col bg-background">

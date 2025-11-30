@@ -10,10 +10,10 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <Link href="#" className="flex items-center gap-2 font-bold text-lg" prefetch={false}>
             <Image src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553212/tliFrVJi_400x400_v0nnvh.jpg" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8 rounded-full" />
-            <span className="font-headline">FlutterConf España 2025</span>
+            <span className="font-headline">FlutterConf España 2026</span>
           </Link>
           <p className="text-sm text-muted-foreground">
-            Organized by GDG Marbella & Google Developers Spain. GDG Marbella is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.
+            Organized by Google Developers Group Marbella. GDG Marbella is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 text-sm md:grid-cols-3 md:col-span-2">
@@ -48,7 +48,7 @@ export default function Footer() {
       </div>
       <div className="border-t py-4">
         <p className="text-center text-xs text-muted-foreground">
-          © 2025 FlutterConf España. All rights reserved.
+          © 2026 FlutterConf España. All rights reserved.
         </p>
       </div>
     </footer>

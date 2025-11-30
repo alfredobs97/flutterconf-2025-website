@@ -6,28 +6,20 @@ import Link from 'next/link';
 
 const faqItems: FaqItem[] = [
     {
-        question: '¿Cómo puedo asistir al evento?',
-        answer: '¡Estaremos encantados de contar contigo! Estate atento a nuestras redes sociales donde anunciaremos cuando lancemos las primeras entradas para poder asistir al evento.'
+        question: '¿Dónde puedo ver las charlas?',
+        answer: 'El evento de 2025 ya ha finalizado. Puedes revivir todas las charlas en nuestro canal de YouTube a través del botón "Revive las charlas de 2025" que encontrarás en la cabecera.'
     },
     {
         question: '¿Qué está incluido en la entrada?',
         answer: 'Tu entrada incluye acceso a todas las charlas del evento, coffee breaks, y el networking. También participarás en el sorte de swag de nuestros sponsors.'
     },
     {
-        question: '¿Qué significa que el evento es diferente para estudiantes y profesionales?',
-        answer: 'Queremos que FlutterConf sea un evento excepcional tanto para estudiantes como profesionales del sector, por lo que hemos decidido dividirlo en dos partes diferenciadas para que el contenido sea el más adecuado para cada audiencia. Aun así, daremos la posibilidad de poder asistir a los dos tracks en casos concretos.'
-    },
-    {
-        question: 'Soy estudiante y quiero atender al evento',
-        answer: 'Nos alegra mucho que los estudiantes se interesen en este evento, por lo que te recomendamos que compartas con tu tutor o centro nuestras redes sociales y nos contacten para poder invitaros a asistir al evento.'
-    },
-    {
         question: '¿En qué idioma serán las charlas?',
-        answer: 'En el formato para estudiantes las charlas serán en español. En la parte de profesionales las charlas serán en inglés para hacer un evento internacional e inclusivo con el talento mundial.'
+        answer: 'La mayoría de las charlas serán en español. Algunas charlas de ponentes internacionales podrían ser en inglés, pero estará indicado en la agenda.'
     },
     {
         question: '¿Se grabarán las charlas?',
-        answer: 'La grabación de las charlas todavía no está confirmada, así que te recomendamos encarecidamente que asistas en persona al evento para no perderte ninguna de las charlas.'
+        answer: 'Sí, todas las charlas de los tracks principales serán grabadas y subidas a nuestro canal de YouTube después del evento.'
     },
     {
         question: '¿Quién organiza el evento?',
@@ -40,9 +32,7 @@ export default function Info() {
         <section id="info" className="bg-secondary/30">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex flex-col items-center text-center space-y-4 mb-12">
-                    <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">
-                        <Link href="#info" className="hover:text-primary transition-colors">Información y Preguntas Frecuentes</Link>
-                    </h2>
+                    <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">Información y Preguntas Frecuentes</h2>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -52,8 +42,10 @@ export default function Info() {
                             <CardTitle>Sede del Evento</CardTitle>
                         </CardHeader>
                         <CardContent className="text-left">
-                            <a href="https://maps.app.goo.gl/M97HgC2hcrkPEymn6" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">Google Safety Engineering Center Málaga</a>
-                            <p className="text-muted-foreground">Málaga, España</p>
+                            <p className="font-semibold text-foreground">E.T.S. de Ingeniería de Telecomunicación de la UMA</p>
+                            <a href="https://www.google.com/maps/place/E.T.S.+Ingenier%C3%ADa+de+Telecomunicaci%C3%B3n/@36.7154231,-4.4807153,17z/data=!3m1!4b1!4m6!3m5!1s0xd72f792a7e1178f:0x539e8d2be2651535!8m2!3d36.7154231!4d-4.4781404!16s%2Fg%2F1s05p4vkg?entry=ttu&g_ep=EgoyMDI1MDkwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                                Campus de Teatinos, Blvr. Louis Pasteur, 35, Teatinos-Universidad, 29010 Málaga, España
+                            </a>
                         </CardContent>
                     </Card>
                     <Card>
