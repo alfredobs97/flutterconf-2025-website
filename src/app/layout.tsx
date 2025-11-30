@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
+import { I18nProvider } from '@/components/providers/i18n-provider';
 
 export const metadata: Metadata = {
   title: 'FlutterConf España 2025',
@@ -28,12 +29,14 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Plus+Jakarta+Sans:wght@900&display=swap" rel="stylesheet" />
       </head>
       <body className={cn('font-body antialiased')}>
-        <div className="relative flex min-h-dvh flex-col bg-background">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-        <Toaster />
+        <I18nProvider>
+          <div className="relative flex min-h-dvh flex-col bg-background">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+          <Toaster />
+        </I18nProvider>
       </body>
     </html>
   );
