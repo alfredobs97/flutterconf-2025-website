@@ -13,7 +13,7 @@ export default function Footer() {
             <span className="font-headline">FlutterConf España 2026</span>
           </Link>
           <p className="text-sm text-muted-foreground">
-            Organized by Google Developers Group Marbella. GDG Marbella is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.
+            Organized by GDG Marbella, GDG Spain, Flutter Málaga & Flutter Lleida. We are independent groups; our activities and the opinions expressed here should in no way be linked to Google, the corporation.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 text-sm md:grid-cols-3 md:col-span-2">
