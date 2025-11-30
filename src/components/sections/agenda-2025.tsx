@@ -1,22 +1,25 @@
+'use client';
+
 import type { AgendaEvent, Speaker } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { User, Coffee, Mic, Code, Loader2, Twitter, Linkedin, ArrowRight } from 'lucide-react';
 import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogTrigger,
+    Dialog,
+    DialogContent,
+    DialogHeader,
+    DialogTitle,
+    DialogDescription,
+    DialogTrigger,
 } from "@/components/ui/dialog";
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { day1Schedule, day1AfternoonSchedule, day2Schedule, speakers } from '@/lib/data';
 import { Button } from '../ui/button';
 import Link from 'next/link';
+import { useTranslation } from '@/hooks/useTranslation';
 
-const EventIcon = ({type}: {type: AgendaEvent['type']}) => {
-    switch(type) {
+const EventIcon = ({ type }: { type: AgendaEvent['type'] }) => {
+    switch (type) {
         case 'talk': return <Mic className="h-5 w-5 text-accent" />;
         case 'workshop': return <Code className="h-5 w-5 text-accent" />;
         case 'panel': return <User className="h-5 w-5 text-accent" />;
@@ -35,7 +38,7 @@ const calculateEndTime = (startTime: string, duration: number): string => {
     return `${endHours}:${endMinutes}`;
 };
 
-const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
+const AgendaView = ({ schedule, t }: { schedule: AgendaEvent[]; t: any }) => (
     <div className="divide-y divide-border rounded-lg border bg-card text-left">
         {schedule.length > 0 ? (
             schedule.map((event, index) => {
@@ -61,8 +64,8 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
                             </div>
                         </div>
                         <div className="flex items-center gap-4 text-sm text-muted-foreground ml-auto pl-1 sm:pl-0">
-                           <span className="w-16 text-right">{event.duration} min</span>
-                           <EventIcon type={event.type} />
+                            <span className="w-16 text-right">{event.duration} min</span>
+                            <EventIcon type={event.type} />
                         </div>
                     </div>
                 );
@@ -80,8 +83,8 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
                                             {speaker.title} at {speaker.company}
                                         </DialogDescription>
                                         <div className="flex gap-2">
-                                            {speaker.socials.twitter && <a href={speaker.socials.twitter} target="_blank" rel="noopener noreferrer"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary"/></a>}
-                                            {speaker.socials.linkedin && <a href={speaker.socials.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary"/></a>}
+                                            {speaker.socials.twitter && <a href={speaker.socials.twitter} target="_blank" rel="noopener noreferrer"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" /></a>}
+                                            {speaker.socials.linkedin && <a href={speaker.socials.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" /></a>}
                                         </div>
                                     </div>
                                 </DialogHeader>
@@ -102,54 +105,56 @@ const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
         ) : (
             <div className="p-12 text-center text-muted-foreground">
                 <Loader2 className="mx-auto h-12 w-12 text-primary animate-spin mb-4" />
-                <h3 className="text-xl font-headline font-bold text-foreground">Estamos preparando la agenda</h3>
-                <p>¡Pronto compartiremos todos los detalles de las charlas y ponentes!</p>
+                <h3 className="text-xl font-headline font-bold text-foreground">{t('agenda2025.preparingAgenda')}</h3>
+                <p>{t('agenda2025.agendaSoon')}</p>
             </div>
         )}
     </div>
 );
 
 export default function Agenda() {
+    const { t } = useTranslation();
+
     return (
         <section id="agenda" className="bg-secondary/30">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col items-center text-center space-y-4 mb-12">
-                    <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">Agenda del Evento</h2>
+                    <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">{t('agenda2025.title')}</h2>
                     <p className="max-w-2xl text-muted-foreground text-lg">
-                        Dos días repletos de contenido inspirador, talleres prácticos y networking.
+                        {t('agenda2025.subtitle')}
                     </p>
                 </div>
                 <Tabs defaultValue="day1" className="w-full">
                     <TabsList className="grid w-full grid-cols-2 mb-8">
-                        <TabsTrigger value="day1">Día 1 (Octubre 17)</TabsTrigger>
-                        <TabsTrigger value="day2">Día 2 (Octubre 18)</TabsTrigger>
+                        <TabsTrigger value="day1">{t('agenda2025.day1')}</TabsTrigger>
+                        <TabsTrigger value="day2">{t('agenda2025.day2')}</TabsTrigger>
                     </TabsList>
                     <TabsContent value="day1">
-                        <AgendaView schedule={day1Schedule} />
+                        <AgendaView schedule={day1Schedule} t={t} />
                         <div className="mt-12 text-center">
-                            <h3 className="text-2xl font-headline font-bold text-center mb-4">Tarde de Comunidad (Opcional)</h3>
+                            <h3 className="text-2xl font-headline font-bold text-center mb-4">{t('agenda2025.communityAfternoon')}</h3>
                             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-                                Después del programa principal, únete a nosotros para unas sesiones extra organizadas por y para la comunidad Flutter.
+                                {t('agenda2025.communityAfternoonDesc')}
                             </p>
-                             <Button asChild variant="outline" className="mb-8">
+                            <Button asChild variant="outline" className="mb-8">
                                 <Link href="/community">
-                                    Conoce a la comunidad <ArrowRight className="ml-2 h-4 w-4" />
+                                    {t('agenda2025.meetCommunity')} <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
-                            <AgendaView schedule={day1AfternoonSchedule} />
+                            <AgendaView schedule={day1AfternoonSchedule} t={t} />
                         </div>
                     </TabsContent>
                     <TabsContent value="day2">
                         <div className="text-center mb-8 p-6 bg-card rounded-lg border">
-                            <h3 className="text-2xl font-headline font-bold text-center mb-2">Día de Comunidad</h3>
-                            <p className="text-muted-foreground mb-4">El segundo día es una jornada abierta a la comunidad, con lightning talks. ¡Las plazas son limitadas!</p>
+                            <h3 className="text-2xl font-headline font-bold text-center mb-2">{t('agenda2025.communityDay')}</h3>
+                            <p className="text-muted-foreground mb-4">{t('agenda2025.communityDayDesc')}</p>
                             <Button asChild>
                                 <a href="https://gdg.community.dev/e/mjc8ks/" target="_blank" rel="noopener noreferrer">
-                                    Apúntate al Día 2
+                                    {t('agenda2025.registerDay2')}
                                 </a>
                             </Button>
                         </div>
-                        <AgendaView schedule={day2Schedule} />
+                        <AgendaView schedule={day2Schedule} t={t} />
                     </TabsContent>
                 </Tabs>
             </div>

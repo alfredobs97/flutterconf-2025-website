@@ -1,47 +1,24 @@
+'use client';
+
 import type { FaqItem } from '@/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
-
-const faqItems: FaqItem[] = [
-    {
-        question: '¿Cómo puedo asistir al evento?',
-        answer: '¡Estaremos encantados de contar contigo! Estate atento a nuestras redes sociales donde anunciaremos cuando lancemos las primeras entradas para poder asistir al evento.'
-    },
-    {
-        question: '¿Qué está incluido en la entrada?',
-        answer: 'Tu entrada incluye acceso a todas las charlas del evento, coffee breaks, y el networking. También participarás en el sorte de swag de nuestros sponsors.'
-    },
-    {
-        question: '¿Qué significa que el evento es diferente para estudiantes y profesionales?',
-        answer: 'Queremos que FlutterConf sea un evento excepcional tanto para estudiantes como profesionales del sector, por lo que hemos decidido dividirlo en dos partes diferenciadas para que el contenido sea el más adecuado para cada audiencia. Aun así, daremos la posibilidad de poder asistir a los dos tracks en casos concretos.'
-    },
-    {
-        question: 'Soy estudiante y quiero atender al evento',
-        answer: 'Nos alegra mucho que los estudiantes se interesen en este evento, por lo que te recomendamos que compartas con tu tutor o centro nuestras redes sociales y nos contacten para poder invitaros a asistir al evento.'
-    },
-    {
-        question: '¿En qué idioma serán las charlas?',
-        answer: 'En el formato para estudiantes las charlas serán en español. En la parte de profesionales las charlas serán en inglés para hacer un evento internacional e inclusivo con el talento mundial.'
-    },
-    {
-        question: '¿Se grabarán las charlas?',
-        answer: 'La grabación de las charlas todavía no está confirmada, así que te recomendamos encarecidamente que asistas en persona al evento para no perderte ninguna de las charlas.'
-    },
-    {
-        question: '¿Quién organiza el evento?',
-        answer: 'FlutterConf España está organizado por GDG Marbella, GDG Spain, Flutter Lleida y Flutter Málaga, somos una agrupación de comunidades sin ánimo de lucro dedicado a hacer crecer la comunidad tecnológica. Contamos con el apoyo de voluntarios de la comunidad Flutter de toda España.'
-    },
-];
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Info() {
+    const { t } = useTranslation();
+
+    const faqData = t('info.faq', { returnObjects: true });
+    const faqItems = Array.isArray(faqData) ? faqData : [];
+
     return (
         <section id="info" className="bg-secondary/30">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex flex-col items-center text-center space-y-4 mb-12">
                     <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">
-                        <Link href="#info" className="hover:text-primary transition-colors">Información y Preguntas Frecuentes</Link>
+                        <Link href="#info" className="hover:text-primary transition-colors">{t('info.title')}</Link>
                     </h2>
                 </div>
 
@@ -49,26 +26,26 @@ export default function Info() {
                     <Card>
                         <CardHeader className="flex flex-row items-center gap-4">
                             <MapPin className="h-8 w-8 text-primary" />
-                            <CardTitle>Sede del Evento</CardTitle>
+                            <CardTitle>{t('info.venueTitle')}</CardTitle>
                         </CardHeader>
                         <CardContent className="text-left">
-                            <a href="https://maps.app.goo.gl/M97HgC2hcrkPEymn6" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">Google Safety Engineering Center Málaga</a>
-                            <p className="text-muted-foreground">Málaga, España</p>
+                            <a href="https://maps.app.goo.gl/M97HgC2hcrkPEymn6" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">{t('info.venueName')}</a>
+                            <p className="text-muted-foreground">{t('info.venueLocation')}</p>
                         </CardContent>
                     </Card>
                     <Card>
                         <CardHeader className="flex flex-row items-center gap-4">
                             <ShieldCheck className="h-8 w-8 text-primary" />
-                            <CardTitle>Código de Conducta</CardTitle>
+                            <CardTitle>{t('info.codeOfConductTitle')}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-muted-foreground">Nos comprometemos a proporcionar una experiencia segura, inclusiva y acogedora para todos. Se espera que todos los asistentes, ponentes, sponsors y voluntarios cumplan con nuestro <Link href="/code-of-conduct" className="text-primary underline hover:no-underline">Código de Conducta</Link>.</p>
+                            <p className="text-muted-foreground">{t('info.codeOfConductText')} <Link href="/code-of-conduct" className="text-primary underline hover:no-underline">{t('info.codeOfConductLink')}</Link>.</p>
                         </CardContent>
                     </Card>
                 </div>
 
                 <div>
-                    <h3 className="text-2xl font-headline font-bold text-center mb-8">Preguntas Frecuentes</h3>
+                    <h3 className="text-2xl font-headline font-bold text-center mb-8">{t('info.faqTitle')}</h3>
                     <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
                         {faqItems.map((item, index) => (
                             <AccordionItem key={index} value={`item-${index}`}>

@@ -9,18 +9,21 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-
-const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '/about-us', label: 'Nuestra Historia' },
-  { href: '#contact', label: 'Contact' },
-  { href: '/2025', label: 'Edición 2025' },
-];
+import { useTranslation } from '@/hooks/useTranslation';
+import { LanguageSwitcher } from '@/components/layout/language-switcher';
 
 export default function Header() {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const isHomePage = pathname === '/';
+
+  const navLinks = [
+    { href: '#about', labelKey: 'header.about' },
+    { href: '/about-us', labelKey: 'header.ourHistory' },
+    { href: '#contact', labelKey: 'header.contact' },
+    { href: '/2025', labelKey: 'header.edition2025' },
+  ];
 
   const getLinkHref = (href: string) => {
     if (href.startsWith('/')) {
@@ -53,21 +56,22 @@ export default function Header() {
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
             <Link key={link.href} href={getLinkHref(link.href)} className="text-sm font-medium hover:text-primary transition-colors" prefetch={false}>
-              {link.label}
+              {t(link.labelKey)}
             </Link>
           ))}
         </nav>
         <div className="flex items-center gap-4">
+          <LanguageSwitcher />
           {!pathname.includes('/2025') && (
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Button disabled className="hidden md:inline-flex bg-accent/50 text-accent-foreground opacity-60 cursor-not-allowed">
-                    Próximamente
+                    {t('header.comingSoon')}
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>Atento a nuestras RRSS</p>
+                  <p>{t('header.followUs')}</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -80,9 +84,9 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
+              <SheetTitle className="sr-only">{t('header.navigationMenu')}</SheetTitle>
               <SheetDescription className="sr-only">
-                Navegación principal del sitio, con enlaces a las diferentes secciones.
+                {t('header.navigationDescription')}
               </SheetDescription>
               <div className="grid gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 font-bold text-lg" prefetch={false}>
@@ -92,7 +96,7 @@ export default function Header() {
                 <nav className="grid gap-4">
                   {navLinks.map((link) => (
                     <Link key={link.href} href={getLinkHref(link.href)} className="text-base font-medium hover:text-primary transition-colors" prefetch={false}>
-                      {link.label}
+                      {t(link.labelKey)}
                     </Link>
                   ))}
                 </nav>
@@ -100,11 +104,11 @@ export default function Header() {
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button disabled className="w-full bg-accent/50 text-accent-foreground opacity-60 cursor-not-allowed">
-                        Próximamente
+                        {t('header.comingSoon')}
                       </Button>
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>Atento a nuestras RRSS</p>
+                      <p>{t('header.followUs')}</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>

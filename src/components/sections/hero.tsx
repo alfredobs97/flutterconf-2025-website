@@ -1,9 +1,13 @@
+'use client';
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Twitter, Linkedin, Instagram } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Hero() {
+  const { t } = useTranslation();
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 bg-primary/80 z-10" />
@@ -19,10 +23,10 @@ export default function Hero() {
         <div className="flex flex-col items-center space-y-8">
           <div className="space-y-4">
             <h1 className="text-5xl font-black tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl" style={{ fontFamily: '"Plus Jakarta Sans", sans-serif' }}>
-              FlutterConf España 2026
+              {t('hero.title')}
             </h1>
             <p className="max-w-[800px] mx-auto text-xl md:text-2xl text-gray-200 font-light">
-              La cita anual para la comunidad de Flutter en España.
+              {t('hero.subtitle')}
             </p>
           </div>
 
@@ -30,30 +34,30 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-medium bg-white/10 backdrop-blur-md py-4 px-8 rounded-full border border-white/20">
               <div className="flex items-center gap-2">
                 <Calendar className="h-5 w-5 text-accent" />
-                <span>8 de Mayo, 2026</span>
+                <span>{t('hero.date')}</span>
               </div>
               <div className="hidden sm:block text-white/30">|</div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-accent" />
-                <span>Google Safety Engineering Center Málaga</span>
+                <span>{t('hero.location')}</span>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-base font-medium">
               <div className="bg-black/40 backdrop-blur-sm p-4 rounded-xl border border-white/10 flex flex-col items-center gap-1 hover:bg-black/50 transition-colors">
-                <span className="text-accent font-bold uppercase tracking-wider text-sm">Por la mañana</span>
-                <span>Estudiantes</span>
+                <span className="text-accent font-bold uppercase tracking-wider text-sm">{t('hero.morningSession')}</span>
+                <span>{t('hero.students')}</span>
               </div>
               <div className="bg-black/40 backdrop-blur-sm p-4 rounded-xl border border-white/10 flex flex-col items-center gap-1 hover:bg-black/50 transition-colors">
-                <span className="text-accent font-bold uppercase tracking-wider text-sm">Por la tarde</span>
-                <span>Profesionales</span>
+                <span className="text-accent font-bold uppercase tracking-wider text-sm">{t('hero.afternoonSession')}</span>
+                <span>{t('hero.professionals')}</span>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col items-center gap-8 mt-4">
             <Button size="lg" disabled className="bg-white text-black hover:bg-white/90 font-bold text-lg py-8 px-12 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] opacity-50 cursor-not-allowed">
-              Próximamente
+              {t('hero.comingSoon')}
             </Button>
 
             <div className="flex items-center gap-6">
