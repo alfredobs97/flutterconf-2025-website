@@ -1,0 +1,267 @@
+{
+    "header": {
+        "about": "About",
+        "ourHistory": "Nuestra Historia",
+        "contact": "Contact",
+        "edition2025": "Edición 2025",
+        "comingSoon": "Próximamente",
+        "followUs": "Atento a nuestras RRSS",
+        "navigationMenu": "Menú de Navegación",
+        "navigationDescription": "Navegación principal del sitio, con enlaces a las diferentes secciones."
+    },
+    "hero": {
+        "title": "FlutterConf España 2026",
+        "subtitle": "La cita anual para la comunidad de Flutter en España.",
+        "date": "8 de Mayo, 2026",
+        "location": "Google Safety Engineering Center Málaga",
+        "morningSession": "Por la mañana",
+        "students": "Estudiantes",
+        "afternoonSession": "Por la tarde",
+        "professionals": "Profesionales",
+        "comingSoon": "Próximamente"
+    },
+    "about": {
+        "title": "¿Qué es FlutterConf España?",
+        "paragraph1": "FlutterConf España es la conferencia anual clave en España para profesionales y empresas que lideran el camino con Flutter. Nuestra misión es ser un punto de encuentro para compartir conocimientos, hacer networking y expandir los límites de lo que es posible con esta tecnología.",
+        "paragraph2": "Esta conferencia está organizada por y para la comunidad, con el apoyo de GDG Marbella y otras comunidades. Siguiendo el éxito de la primera FlutterConf en Europa, celebrada en Marbella en 2019 que reunió a expertos de empresas como InfoJobs, Philips y BBVA, seguimos construyendo una base sólida para la comunidad."
+    },
+    "callForPapers": {
+        "title": "¿Quieres proponer una charla?",
+        "subtitle": "¡Te invitamos a compartir tu conocimiento con la comunidad Flutter!\nEnvía tu propuesta para participar como speaker en FlutterConf España 2026.",
+        "description": "Buscamos charlas técnicas, casos de uso reales, experiencias con Flutter,\ny cualquier tema que pueda inspirar y educar a nuestra comunidad.",
+        "submitButton": "Enviar propuesta"
+    },
+    "sponsors": {
+        "title": "¿Quieres apoyar la FlutterConf?",
+        "subtitle": "Únete a las empresas que apoyan el crecimiento de la comunidad Flutter en España.\nGana visibilidad y conecta con desarrolladores talentosos.",
+        "sponsors2025": "Sponsors 2025",
+        "collaborators2025": "Colaboradores 2025",
+        "viewDossier": "Ver dossier para sponsors"
+    },
+    "info": {
+        "title": "Información y Preguntas Frecuentes",
+        "venueTitle": "Sede del Evento",
+        "venueName": "Google Safety Engineering Center Málaga",
+        "venueLocation": "Málaga, España",
+        "codeOfConductTitle": "Código de Conducta",
+        "codeOfConductText": "Nos comprometemos a proporcionar una experiencia segura, inclusiva y acogedora para todos. Se espera que todos los asistentes, ponentes, sponsors y voluntarios cumplan con nuestro",
+        "codeOfConductLink": "Código de Conducta",
+        "faqTitle": "Preguntas Frecuentes",
+        "faq": [
+            {
+                "question": "¿Cómo puedo asistir al evento?",
+                "answer": "¡Estaremos encantados de contar contigo! Estate atento a nuestras redes sociales donde anunciaremos cuando lancemos las primeras entradas para poder asistir al evento."
+            },
+            {
+                "question": "¿Qué está incluido en la entrada?",
+                "answer": "Tu entrada incluye acceso a todas las charlas del evento, coffee breaks, y el networking. También participarás en el sorte de swag de nuestros sponsors."
+            },
+            {
+                "question": "¿Qué significa que el evento es diferente para estudiantes y profesionales?",
+                "answer": "Queremos que FlutterConf sea un evento excepcional tanto para estudiantes como profesionales del sector, por lo que hemos decidido dividirlo en dos partes diferenciadas para que el contenido sea el más adecuado para cada audiencia. Aun así, daremos la posibilidad de poder asistir a los dos tracks en casos concretos."
+            },
+            {
+                "question": "Soy estudiante y quiero atender al evento",
+                "answer": "Nos alegra mucho que los estudiantes se interesen en este evento, por lo que te recomendamos que compartas con tu tutor o centro nuestras redes sociales y nos contacten para poder invitaros a asistir al evento."
+            },
+            {
+                "question": "¿En qué idioma serán las charlas?",
+                "answer": "En el formato para estudiantes las charlas serán en español. En la parte de profesionales las charlas serán en inglés para hacer un evento internacional e inclusivo con el talento mundial."
+            },
+            {
+                "question": "¿Se grabarán las charlas?",
+                "answer": "La grabación de las charlas todavía no está confirmada, así que te recomendamos encarecidamente que asistas en persona al evento para no perderte ninguna de las charlas."
+            },
+            {
+                "question": "¿Quién organiza el evento?",
+                "answer": "FlutterConf España está organizado por GDG Marbella, GDG Spain, Flutter Lleida y Flutter Málaga, somos una agrupación de comunidades sin ánimo de lucro dedicado a hacer crecer la comunidad tecnológica. Contamos con el apoyo de voluntarios de la comunidad Flutter de toda España."
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contacta con Nosotros",
+        "subtitle": "¿Tienes alguna pregunta sobre el evento, patrocinios o quieres colaborar? ¡Nos encantaría saber de ti!",
+        "emailPrompt": "Para cualquier consulta, puedes escribirnos a:",
+        "copyEmail": "Copiar correo",
+        "sendEmail": "Enviar un Email",
+        "followUs": "Síguenos en nuestras redes:",
+        "copied": "¡Copiado!",
+        "copiedDescription": "El correo electrónico ha sido copiado al portapapeles.",
+        "copyError": "Error",
+        "copyErrorDescription": "No se pudo copiar el correo electrónico."
+    },
+    "pastEvent": {
+        "title2025": "FlutterConf España 2025",
+        "subtitle2025": "El evento más reciente reunió a la comunidad Flutter en un día inolvidable de conocimiento y networking.",
+        "reliveTitle": "Revive las charlas de 2025",
+        "reliveDescription": "Ponentes internacionales, casos de éxito en producción, y las últimas novedades del ecosistema Flutter. Toda la conferencia está disponible en nuestro canal de YouTube.",
+        "watchTalks": "Ver charlas de 2025",
+        "viewAlbum": "Ver álbum oficial",
+        "title2019": "El Origen: FlutterConf 2019",
+        "description2019Part1": "En 2019, sentamos un precedente organizando la primera FlutterConf en Europa en la soleada Marbella. El evento fue un rotundo éxito, reuniendo a pioneros y expertos de la comunidad Flutter.",
+        "description2019Part2": "Contamos con la participación de ponentes de empresas líderes como InfoJobs, Philips y BBVA, que compartieron sus experiencias y conocimientos, sentando las bases de una comunidad fuerte y colaborativa en España que no ha dejado de crecer desde entonces.",
+        "learnMore": "¿Quieres saber más?"
+    },
+    "hero2025": {
+        "title": "FlutterConf España 2025",
+        "subtitle": "La cita anual para la comunidad de Flutter en España, desarrollada conjuntamente con Google Developers Spain. Únete a los líderes que están revolucionando el desarrollo mobile.",
+        "date": "Octubre 17-18, 2025",
+        "location": "Málaga, Spain",
+        "reliveButton": "Revive las charlas",
+        "findUs": "Encuéntranos en:"
+    },
+    "aboutUs": {
+        "pageTitle": "Nuestra Historia",
+        "section2019Title": "2019: La Primera Conferencia Europea en Marbella",
+        "section2019Para1": "FlutterConf fue la primera conferencia europea sobre Flutter y Dart, la nueva tecnología de Google que está revolucionando el mundo de la programación de aplicaciones móviles.",
+        "section2019Para2": "Google Developer Group Marbella reunió durante los días 18 y 19 de octubre a expertos de toda Europa que se formaron y expusieron los avances de esta nueva tecnología. Con la participación de Google Developers Experts y responsables técnicos de empresas como InfoJobs, Philips o BBVA, cuya app móvil ha sido nombrada mejor aplicación de finanzas del mundo.",
+        "section2019Para3": "El evento se celebró los próximos 18 y 19 de octubre en el Centro Cultural El Trapiche de San Pedro de Alcántara congregando a más de 120 personas que recibieron talleres formativos y charlas durante dos días. Para incentivar a que talento local se inicie en esta tecnología, se realizaron también talleres de nivel principiante para estudiantes o profesionales en el desarrollo de tecnología que quieran dar sus primeros pasos con Flutter y Dart.",
+        "section2019Para4": "FlutterConf abordó los últimos avances de esta tecnología de Google y gracias a Google Developers Experts y ponentes de empresas internacionales expusieron cómo han usado estas tecnologías en proyectos de gran impacto para empresas como BBVA o Philips.",
+        "photoAlbum2019": "Álbum de fotos 2019",
+        "section2020Title": "2020-2023: Crecimiento Online",
+        "section2020Para": "A pesar de los desafíos globales, la comunidad de Flutter en España no dejó de crecer. Durante estos años, nos adaptamos y organizamos múltiples eventos online para mantener a la comunidad conectada, incluyendo hackathons y conferencias virtuales que llegaron a miles de desarrolladores:",
+        "section2023Title": "2023: Nueva edición en Marbella",
+        "section2023Para": "Nuestro último gran evento presencial fue un éxito rotundo. La Edición 2023 en Marbella congregó a más de 200 personas en Andalucía Lab, con la participación de colegios de la zona y ponentes de talla internacional como Nilay Yener, Developer Relations de Flutter en Google (EE. UU.).",
+        "photoAlbum2023": "Álbum de fotos 2023",
+        "section2025Title": "2025: Un Hito en la Comunidad Flutter en España",
+        "section2025Para1": "La edición de 2025 de FlutterConf España se celebró en un nuevo lugar: la E.T.S. de Ingeniería de Telecomunicación de la UMA. Este evento marcó un hito con la participación de más de 250 asistentes y charlas de alto nivel que cubrieron las últimas novedades en Flutter y Dart.",
+        "section2025Para2": "Contamos con 8 ponentes internacionales que ofrecieron contenido tanto en español como en inglés, enriqueciendo la experiencia de todos nuestros participantes. Nos acompañaron muchos estudiantes de centros de toda la provincia, demostrando la fuerte conexión de FlutterConf con la comunidad estudiantil.",
+        "section2025Para3": "Además, el evento incluyó una jornada especial el sábado, diseñada para fomentar la conexión y el intercambio de conocimientos entre las diferentes comunidades Flutter nacionales, consolidando lazos y generando nuevas oportunidades de colaboración.",
+        "photoAlbum2025": "Álbum de fotos 2025",
+        "talks2025": "Charlas 2025",
+        "communityTitle": "Una Iniciativa Comunitaria",
+        "communityText": "FlutterConf surge como iniciativa de GDG Marbella (Google Developers Group Marbella) con la colaboración de la asociación Marbella Digital. Una iniciativa que nació desde la comunidad para la comunidad, con amplia experiencia organizando eventos sin ánimo de lucro.",
+        "recognitionTitle": "Reconocimiento Global",
+        "recognitionText": "El evento cuenta con un alcance global y una reputación validada por el equipo de Flutter en Estados Unidos, atrayendo a ponentes y asistentes de todo el mundo.",
+        "supportTitle": "Soporte de la Industria",
+        "supportText": "A lo largo de nuestra historia, hemos contado con el apoyo de empresas líderes que creen en el poder de la comunidad y la tecnología. Algunos de nuestros colaboradores han sido:",
+        "supportCompanies": "Google, Flutter, Hidralia, Andalucía Lab, HandCash, Malt, OpenWebinars, Serverpod, Shorebird y muchos más."
+    },
+    "speakers2025": {
+        "title": "Ponentes Confirmados",
+        "subtitle": "Expertos y líderes de la industria que compartirán sus conocimientos y experiencias con Flutter.",
+        "moreSpeakers": "¡Más ponentes por confirmar!",
+        "workingOnIt": "Estamos trabajando para traerte a los mejores."
+    },
+    "agenda2025": {
+        "title": "Agenda del Evento",
+        "subtitle": "Dos días repletos de contenido inspirador, talleres prácticos y networking.",
+        "day1": "Día 1 (Octubre 17)",
+        "day2": "Día 2 (Octubre 18)",
+        "communityAfternoon": "Tarde de Comunidad (Opcional)",
+        "communityAfternoonDesc": "Después del programa principal, únete a nosotros para unas sesiones extra organizadas por y para la comunidad Flutter.",
+        "meetCommunity": "Conoce a la comunidad",
+        "communityDay": "Día de Comunidad",
+        "communityDayDesc": "El segundo día es una jornada abierta a la comunidad, con lightning talks. ¡Las plazas son limitadas!",
+        "registerDay2": "Apúntate al Día 2",
+        "preparingAgenda": "Estamos preparando la agenda",
+        "agendaSoon": "¡Pronto compartiremos todos los detalles de las charlas y ponentes!"
+    },
+    "info2025": {
+        "title": "Información y Preguntas Frecuentes",
+        "venueTitle": "Sede del Evento",
+        "venueName": "E.T.S. de Ingeniería de Telecomunicación de la UMA",
+        "venueAddress": "Campus de Teatinos, Blvr. Louis Pasteur, 35, Teatinos-Universidad, 29010 Málaga, España",
+        "codeOfConductTitle": "Código de Conducta",
+        "codeOfConductText": "Nos comprometemos a proporcionar una experiencia segura, inclusiva y acogedora para todos. Se espera que todos los asistentes, ponentes, sponsors y voluntarios cumplan con nuestro",
+        "codeOfConductLink": "Código de Conducta",
+        "faqTitle": "Preguntas Frecuentes",
+        "faq": [
+            {
+                "question": "¿Dónde puedo ver las charlas?",
+                "answer": "El evento de 2025 ya ha finalizado. Puedes revivir todas las charlas en nuestro canal de YouTube a través del botón 'Revive las charlas de 2025' que encontrarás en la cabecera."
+            },
+            {
+                "question": "¿Qué está incluido en la entrada?",
+                "answer": "Tu entrada incluye acceso a todas las charlas del evento, coffee breaks, y el networking. También participarás en el sorte de swag de nuestros sponsors."
+            },
+            {
+                "question": "¿En qué idioma serán las charlas?",
+                "answer": "La mayoría de las charlas serán en español. Algunas charlas de ponentes internacionales podrían ser en inglés, pero estará indicado en la agenda."
+            },
+            {
+                "question": "¿Se grabarán las charlas?",
+                "answer": "Sí, todas las charlas de los tracks principales serán grabadas y subidas a nuestro canal de YouTube después del evento."
+            },
+            {
+                "question": "¿Quién organiza el evento?",
+                "answer": "FlutterConf España está organizado por GDG Marbella, GDG Spain, Flutter Lleida y Flutter Málaga, somos una agrupación de comunidades sin ánimo de lucro dedicado a hacer crecer la comunidad tecnológica. Contamos con el apoyo de voluntarios de la comunidad Flutter de toda España."
+            }
+        ]
+    },
+    "sponsors2025": {
+        "title": "Nuestros Sponsors",
+        "subtitle": "Agradecemos a nuestros sponsors y colaboradores por hacer posible este evento.",
+        "sponsorsTitle": "Sponsors",
+        "collaboratorsTitle": "Colaboradores",
+        "communitiesTitle": "Comunidades",
+        "becomeCollaborator": "¿Quieres que tu marca aparezca aquí? ¡Estamos buscando colaboradores!",
+        "wantToBeSponsor": "¿Quieres ser Sponsor?",
+        "sponsorDescription": "Apoya a la comunidad Flutter y gana visibilidad para tu marca.",
+        "downloadDossier": "¡Descarga nuestro dossier!",
+        "downloadDeck": "Download our deck! (English)"
+    },
+    "codeOfConduct": {
+        "title": "Código de Conducta de FlutterConf España 2025",
+        "missionTitle": "Nuestra Misión",
+        "missionText": "En FlutterConf España, nuestro objetivo es crear un espacio de encuentro inclusivo, profesional y seguro para toda la comunidad tecnológica. Queremos que cada asistente, ponente, patrocinador y voluntario disfrute del evento en un entorno libre de acoso, donde prime el respeto, la colaboración y el aprendizaje mutuo. Este código de conducta refleja nuestro compromiso con esa misión y se aplica a todos los espacios del evento, tanto físicos como digitales (charlas, talleres, zonas de descanso, redes sociales y canales de comunicación oficiales).",
+        "expectedBehaviorTitle": "Comportamiento Esperado",
+        "expectedBehaviorText": "Para garantizar un ambiente positivo para todos, esperamos que los miembros de nuestra comunidad se comporten de la siguiente manera:",
+        "expectedBehaviorList": {
+            "respect": "Sé respetuoso y considerado: Trata a todos los participantes con respeto. Valora la diversidad de opiniones, experiencias y orígenes. Las críticas constructivas son bienvenidas, pero siempre desde la educación y el respeto.",
+            "inclusive": "Sé inclusivo y acogedor: Haz un esfuerzo por incluir a todos los participantes en las conversaciones y actividades. Evita el uso de lenguaje o humor que pueda ser excluyente, ofensivo o que perpetúe estereotipos.",
+            "professional": "Sé profesional: Compórtate de manera profesional. Esto incluye ser consciente del impacto de tus palabras y acciones en los demás. Recuerda que las bromas que a ti te parecen inofensivas pueden ofender a otros.",
+            "collaborate": "Colabora y participa de buena fe: El objetivo de este evento es compartir conocimiento. Participa activamente, haz preguntas y ayuda a otros cuando puedas."
+        },
+        "unacceptableBehaviorTitle": "Comportamiento Inaceptable",
+        "unacceptableBehaviorText": "No se tolerará ningún tipo de acoso o comportamiento inaceptable. Esto incluye, entre otros:",
+        "unacceptableBehaviorList": [
+            "Comentarios ofensivos o despectivos relacionados con la identidad de género, orientación sexual, discapacidad, apariencia física, raza, etnia, religión o edad.",
+            "Intimidación deliberada, acoso, acecho o seguimiento.",
+            "Publicación de imágenes o uso de lenguaje de naturaleza sexual en espacios públicos o charlas.",
+            "Interrupción continuada de charlas, talleres u otros eventos.",
+            "Contacto físico inapropiado y atención sexual no deseada.",
+            "Incitar a cualquiera de los comportamientos anteriores."
+        ],
+        "unacceptableBehaviorFooter": "Este tipo de conductas no tienen cabida en FlutterConf España.",
+        "reportingTitle": "¿Cómo Reportar una Incidencia?",
+        "reportingText1": "Si te sientes inseguro/a, eres testigo de una violación de este código de conducta, o tienes cualquier otra preocupación, por favor, contacta inmediatamente con un miembro de la organización del evento. Los organizadores serán fácilmente identificables por su camiseta o credencial.",
+        "reportingText2": "Tu reporte será tratado con la máxima confidencialidad y seriedad. Puedes hacerlo de las siguientes maneras:",
+        "reportingList": {
+            "inPerson": "En persona: Acércate a cualquier miembro del equipo de organización.",
+            "email": "Por correo electrónico: Escribe a gdgmarbella@gmail.com. Este correo será monitorizado constantemente durante el evento."
+        },
+        "reportingText3": "Al reportar, por favor, intenta incluir tantos detalles como sea posible (qué pasó, quién estuvo involucrado, cuándo y dónde ocurrió) para que podamos actuar de manera efectiva. La seguridad y el bienestar de nuestros asistentes es nuestra máxima prioridad.",
+        "consequencesTitle": "Consecuencias de un Comportamiento Inaceptable",
+        "consequencesText1": "Cualquier participante a quien se le pida que cese un comportamiento inaceptable deberá cumplir la petición de inmediato.",
+        "consequencesText2": "El equipo de organización se reserva el derecho de tomar las medidas que considere apropiadas, incluyendo la advertencia verbal, la expulsión del evento sin reembolso, o la prohibición de asistir a futuros eventos. En casos graves, nos pondremos en contacto con las autoridades locales.",
+        "consequencesText3": "Este Código de Conducta se basa en las directrices de la comunidad GDG y otros eventos tecnológicos de referencia. Nuestro objetivo es que todos los que participen en FlutterConf España se sientan bienvenidos y seguros."
+    },
+    "community": {
+        "title": "FlutterConf: Desde la comunidad, para la comunidad",
+        "description1": "FlutterConf España nace del esfuerzo y la pasión de la propia comunidad. Organizada por GDG Marbella con la inestimable colaboración de grupos de Flutter y GDGs de toda España, queremos que ese espíritu colaborativo no solo sea la base, sino el corazón de la conferencia. Por ello, la tarde del primer día la dedicamos a lo que más nos importa: conectar, compartir ideas, estrechar lazos y, en definitiva, fortalecernos mutuamente.",
+        "description2": "¿Quieres conocer mejor a las comunidades que mueven el ecosistema? ¿Te preguntas cómo otras pueden ayudar a tu grupo local a crecer o cómo puedes empezar el tuyo propio? Esta segunda parte de la conferencia es el lugar ideal para forjar esas conexiones, aprender de la experiencia de otros líderes y descubrir nuevas oportunidades de colaboración.",
+        "representativesTitle": "Representantes de la comunidad",
+        "agendaTitle": "Agenda de la Tarde",
+        "roundtableTitle": "Mesa de Comunidades",
+        "roundtableDesc": "Un panel de debate donde representantes de diferentes grupos de Flutter y GDGs de toda España compartirán sus experiencias, retos y planes de futuro. Una oportunidad única para conocer a los líderes que dinamizan el ecosistema local y descubrir cómo puedes involucrarte.",
+        "podcastTitle": "Dart Conversations (Podcast en vivo)",
+        "podcastDesc": "Asiste a la grabación en directo de nuestro podcast \"Dart Conversations\". Comentaremos los momentos más destacados de la FlutterConf, analizaremos las charlas y contaremos con invitados especiales. ¡Tu oportunidad de ver cómo se hace un podcast desde dentro!",
+        "networkingTitle": "Networking con Cervezas Victoria",
+        "networkingDesc": "El broche de oro del día. Relájate y comparte una Cerveza Victoria mientras charlas de manera informal con los ponentes, organizadores y otros asistentes. Este es el momento perfecto para hacer contactos valiosos, resolver dudas y simplemente, disfrutar de la comunidad."
+    },
+    "footer": {
+        "organizedBy": "Organized by GDG Marbella, GDG Spain, Flutter Málaga & Flutter Lleida. We are independent groups; our activities and the opinions expressed here should in no way be linked to Google, the corporation.",
+        "navigation": "Navigation",
+        "about": "About",
+        "speakers": "Speakers",
+        "agenda": "Agenda",
+        "sponsors": "Sponsors",
+        "resources": "Resources",
+        "info": "Info & FAQ",
+        "codeOfConduct": "Code of Conduct",
+        "contact": "Contact",
+        "connect": "Connect",
+        "copyright": "© 2026 FlutterConf España. All rights reserved."
+    }
+}
