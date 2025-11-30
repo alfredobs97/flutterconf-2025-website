@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 bg-primary/80 z-10" />
-      <Image 
-        src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553216/48946377431_c3d0469ef1_b_1_pnqi7u.jpg" 
+      <Image
+        src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1764417304/54874170126_2d285a3d8a_b_1_eini1h.jpg"
         alt="Speakers on stage at FlutterConf"
         layout="fill"
         objectFit="cover"
@@ -16,41 +16,56 @@ export default function Hero() {
         priority
       />
       <div className="relative z-20 container mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center space-y-6">
-          <h1 className="text-4xl font-headline font-black tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            FlutterConf España 2025
-          </h1>
-          <p className="max-w-[700px] text-lg md:text-xl text-primary-foreground/90">
-            La cita anual para la comunidad de Flutter en España, desarrollada conjuntamente con Google Developers Spain. Únete a los líderes que están revolucionando el desarrollo mobile.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4 text-lg font-medium">
-            <div className="flex items-center gap-2">
-              <Calendar className="h-5 w-5" />
-              <span>Octubre 17-18, 2025</span>
+        <div className="flex flex-col items-center space-y-8">
+          <div className="space-y-4">
+            <h1 className="text-5xl font-black tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl" style={{ fontFamily: '"Plus Jakarta Sans", sans-serif' }}>
+              FlutterConf España 2026
+            </h1>
+            <p className="max-w-[800px] mx-auto text-xl md:text-2xl text-gray-200 font-light">
+              La cita anual para la comunidad de Flutter en España.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-6 w-full max-w-3xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-medium bg-white/10 backdrop-blur-md py-4 px-8 rounded-full border border-white/20">
+              <div className="flex items-center gap-2">
+                <Calendar className="h-5 w-5 text-accent" />
+                <span>8 de Mayo, 2026</span>
+              </div>
+              <div className="hidden sm:block text-white/30">|</div>
+              <div className="flex items-center gap-2">
+                <MapPin className="h-5 w-5 text-accent" />
+                <span>Google Safety Engineering Center Málaga</span>
+              </div>
             </div>
-            <div className="hidden sm:block">|</div>
-            <div className="flex items-center gap-2">
-              <MapPin className="h-5 w-5" />
-              <span>Málaga, Spain</span>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-base font-medium">
+              <div className="bg-black/40 backdrop-blur-sm p-4 rounded-xl border border-white/10 flex flex-col items-center gap-1 hover:bg-black/50 transition-colors">
+                <span className="text-accent font-bold uppercase tracking-wider text-sm">Por la mañana</span>
+                <span>Estudiantes</span>
+              </div>
+              <div className="bg-black/40 backdrop-blur-sm p-4 rounded-xl border border-white/10 flex flex-col items-center gap-1 hover:bg-black/50 transition-colors">
+                <span className="text-accent font-bold uppercase tracking-wider text-sm">Por la tarde</span>
+                <span>Profesionales</span>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-6">
-            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg py-7 px-10 shadow-lg transition-transform transform hover:scale-105">
-              <a href="https://gdg.community.dev/events/details/google-gdg-marbella-presents-flutterconf-espana-2025/cohost-gdg-marbella" target="_blank" rel="noopener noreferrer">Apúntate</a>
+
+          <div className="flex flex-col items-center gap-8 mt-4">
+            <Button size="lg" disabled className="bg-white text-black hover:bg-white/90 font-bold text-lg py-8 px-12 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] opacity-50 cursor-not-allowed">
+              Próximamente
             </Button>
-            <div className="flex items-center gap-2">
-                <p className="text-sm font-semibold text-primary-foreground">Encuéntranos en:</p>
-                <div className="flex items-center gap-4">
-                    <a href="https://x.com/flutterconfes" target="_blank" rel="noopener noreferrer" aria-label="Twitter de FlutterConf ES" className="hover:text-accent transition-colors">
-                        <Twitter className="h-6 w-6" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/flutterconf-es" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de FlutterConf ES" className="hover:text-accent transition-colors">
-                        <Linkedin className="h-6 w-6" />
-                    </a>
-                    <a href="https://www.instagram.com/flutterconfdev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de FlutterConf ES" className="hover:text-accent transition-colors">
-                        <Instagram className="h-6 w-6" />
-                    </a>
-                </div>
+
+            <div className="flex items-center gap-6">
+              <a href="https://x.com/flutterconfes" target="_blank" rel="noopener noreferrer" aria-label="Twitter de FlutterConf ES" className="text-white/70 hover:text-white hover:scale-110 transition-all">
+                <Twitter className="h-6 w-6" />
+              </a>
+              <a href="https://www.linkedin.com/company/flutterconf-es" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de FlutterConf ES" className="text-white/70 hover:text-white hover:scale-110 transition-all">
+                <Linkedin className="h-6 w-6" />
+              </a>
+              <a href="https://www.instagram.com/flutterconfdev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de FlutterConf ES" className="text-white/70 hover:text-white hover:scale-110 transition-all">
+                <Instagram className="h-6 w-6" />
+              </a>
             </div>
           </div>
         </div>
