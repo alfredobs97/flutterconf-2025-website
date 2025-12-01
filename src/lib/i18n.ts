@@ -23,7 +23,7 @@ i18n
         resources,
         fallbackLng: 'es',
         defaultNS,
-        lng: 'es',
+        load: 'languageOnly',
         supportedLngs: ['es', 'en'],
         detection: {
             order: ['querystring', 'localStorage', 'navigator'],
