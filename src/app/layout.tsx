@@ -11,9 +11,6 @@ import { I18nProvider } from '@/components/providers/i18n-provider';
 export const metadata: Metadata = {
   title: 'FlutterConf España 2025',
   description: 'La cita anual para la comunidad de Flutter en España. Únete a los líderes que están revolucionando el desarrollo mobile.',
-  icons: {
-    icon: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553212/tliFrVJi_400x400_v0nnvh.jpg',
-  },
 };
 
 export default function RootLayout({
