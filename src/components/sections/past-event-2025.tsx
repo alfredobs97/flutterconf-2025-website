@@ -1,9 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function PastEvent() {
+    const { t } = useTranslation();
     return (
         <section id="past-event" className="">
             <div className="container mx-auto px-4 md:px-6">
@@ -20,16 +24,16 @@ export default function PastEvent() {
                         </div>
                     </div>
                     <div className="order-1 md:order-2 space-y-4">
-                        <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">El Origen: FlutterConf 2019</h2>
+                        <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">{t('pastEvent.title2019')}</h2>
                         <p className="text-muted-foreground text-lg">
-                            En 2019, sentamos un precedente organizando la primera FlutterConf en Europa en la soleada Marbella. El evento fue un rotundo éxito, reuniendo a pioneros y expertos de la comunidad Flutter.
+                            {t('pastEvent.description2019Part1')}
                         </p>
                         <p className="text-muted-foreground text-lg">
-                            Contamos con la participación de ponentes de empresas líderes como <strong>InfoJobs, Philips y BBVA</strong>, que compartieron sus experiencias y conocimientos, sentando las bases de una comunidad fuerte y colaborativa en España que no ha dejado de crecer desde entonces.
+                            {t('pastEvent.description2019Part2')}
                         </p>
                         <Button asChild variant="outline">
                             <Link href="/about-us">
-                                ¿Quieres saber más? <ArrowRight className="ml-2 h-4 w-4" />
+                                {t('pastEvent.learnMore')} <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
                         </Button>
                     </div>
