@@ -10,7 +10,7 @@ import { I18nProvider } from '@/components/providers/i18n-provider';
 import { AnalyticsProvider } from '@/components/analytics/analytics-provider';
 
 export const metadata: Metadata = {
-  title: 'FlutterConf España 2025',
+  title: 'FlutterConf España 2026',
   description: 'La cita anual para la comunidad de Flutter en España. Únete a los líderes que están revolucionando el desarrollo mobile.',
 };
 
