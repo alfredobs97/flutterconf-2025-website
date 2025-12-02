@@ -8,6 +8,22 @@ import { useTranslation } from '@/hooks/useTranslation';
 
 export default function CallForPapers() {
     const { t } = useTranslation();
+
+    const handleTrackClick = () => {
+        import('@/lib/firebase').then(({ initFirebase }) => {
+            initFirebase().then(({ analytics }) => {
+                if (analytics) {
+                    import('firebase/analytics').then(({ logEvent }) => {
+                        logEvent(analytics, 'select_content', {
+                            content_type: 'c4_papers',
+                            content_id: 'c4_papers_submit'
+                        });
+                    });
+                }
+            });
+        });
+    };
+
     return (
         <section id="call-for-papers" className="py-16 bg-secondary/30">
             <div className="container mx-auto px-4 md:px-6">
@@ -30,7 +46,12 @@ export default function CallForPapers() {
                             {t('callForPapers.description')}
                         </p>
                         <Button size="lg" asChild className="bg-primary hover:bg-primary/90 font-semibold text-lg mt-4">
-                            <a href="https://forms.gle/mMT5JK7FuiHnLVoF9" target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="https://forms.gle/mMT5JK7FuiHnLVoF9"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={handleTrackClick}
+                            >
                                 {t('callForPapers.submitButton')} <ExternalLink className="ml-2 h-5 w-5" />
                             </a>
                         </Button>

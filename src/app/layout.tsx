@@ -7,6 +7,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
 import { I18nProvider } from '@/components/providers/i18n-provider';
+import { AnalyticsProvider } from '@/components/analytics/analytics-provider';
 
 export const metadata: Metadata = {
   title: 'FlutterConf España 2025',
@@ -27,12 +28,14 @@ export default function RootLayout({
       </head>
       <body className={cn('font-body antialiased')}>
         <I18nProvider>
-          <div className="relative flex min-h-dvh flex-col bg-background">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-          <Toaster />
+          <AnalyticsProvider>
+            <div className="relative flex min-h-dvh flex-col bg-background">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+            <Toaster />
+          </AnalyticsProvider>
         </I18nProvider>
       </body>
     </html>
