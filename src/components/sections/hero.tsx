@@ -9,7 +9,7 @@ import { useTranslation } from '@/hooks/useTranslation';
 export default function Hero() {
   const { t } = useTranslation();
   return (
-    <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+    <section id="home" className="relative w-full h-[80vh] min-h-[800px] flex items-start justify-center text-center text-white pt-24">
       <div className="absolute inset-0 bg-primary/80 z-10" />
       <Image
         src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1764417304/54874170126_2d285a3d8a_b_1_eini1h.jpg"
