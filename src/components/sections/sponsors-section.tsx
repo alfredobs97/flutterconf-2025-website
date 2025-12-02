@@ -18,6 +18,22 @@ const sponsors2025: Sponsor[] = [
 
 export default function SponsorsSection() {
     const { t } = useTranslation();
+
+    const handleTrackClick = () => {
+        import('@/lib/firebase').then(({ initFirebase }) => {
+            initFirebase().then(({ analytics }) => {
+                if (analytics) {
+                    import('firebase/analytics').then(({ logEvent }) => {
+                        logEvent(analytics, 'select_content', {
+                            content_type: 'c4_sponsors',
+                            content_id: 'c4_sponsors_dossier'
+                        });
+                    });
+                }
+            });
+        });
+    };
+
     return (
         <section id="sponsors" className="py-16">
             <div className="container mx-auto px-4 md:px-6">
@@ -83,7 +99,12 @@ export default function SponsorsSection() {
 
                             <div className="flex justify-center">
                                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 font-semibold text-lg">
-                                    <a href="https://docs.google.com/presentation/d/1CU-YNX9JdQ82mDxo6BqJF72wa90G6HZio2_QfEuHtt4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    <a
+                                        href="https://docs.google.com/presentation/d/1CU-YNX9JdQ82mDxo6BqJF72wa90G6HZio2_QfEuHtt4/edit?usp=sharing"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={handleTrackClick}
+                                    >
                                         <Download className="mr-2 h-5 w-5" />
                                         {t('sponsors.viewDossier')}
                                     </a>
