@@ -31,6 +31,12 @@
         "description": "We are looking for technical talks, real use cases, Flutter experiences,\nand any topic that can inspire and educate our community.",
         "submitButton": "Submit proposal"
     },
+    "volunteers": {
+        "title": "Want to be a volunteer?",
+        "subtitle": "Are you passionate about the community and want to help us make the event a success?",
+        "description": "We are looking for people who want to collaborate in the organization, logistics, and support during the event days. Your help is essential!",
+        "submitButton": "Sign up as a volunteer"
+    },
     "sponsors": {
         "title": "Want to support FlutterConf?",
         "subtitle": "Join the companies supporting the growth of the Flutter community in Spain.\nGain visibility and connect with talented developers.",

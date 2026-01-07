@@ -31,6 +31,12 @@
         "description": "Buscamos charlas técnicas, casos de uso reales, experiencias con Flutter,\ny cualquier tema que pueda inspirar y educar a nuestra comunidad.",
         "submitButton": "Enviar propuesta"
     },
+    "volunteers": {
+        "title": "¿Quieres ser voluntario?",
+        "subtitle": "¿Te apasiona la comunidad y quieres ayudarnos a que el evento sea un éxito?",
+        "description": "Buscamos personas con ganas de colaborar en la organización, logística y apoyo durante los días del evento. ¡Tu ayuda es fundamental!",
+        "submitButton": "Inscribirse como voluntario"
+    },
     "sponsors": {
         "title": "¿Quieres apoyar la FlutterConf?",
         "subtitle": "Únete a las empresas que apoyan el crecimiento de la comunidad Flutter en España.\nGana visibilidad y conecta con desarrolladores talentosos.",
