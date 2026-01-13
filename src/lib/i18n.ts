@@ -21,15 +21,16 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        fallbackLng: 'es',
+        fallbackLng: 'en',
         defaultNS,
         load: 'languageOnly',
         supportedLngs: ['es', 'en'],
+        nonExplicitSupportedLngs: true, // Allows 'en-US' to match 'en' automatically
         detection: {
-            order: ['querystring', 'localStorage', 'navigator'],
-            caches: ['localStorage'],
+            order: ['cookie', 'querystring', 'navigator'],
+            caches: [], // No caching, rely on cookie or browser every time
             lookupQuerystring: 'lang',
-            lookupLocalStorage: 'i18nextLng',
+            lookupCookie: 'user_lang',
         },
         interpolation: {
             escapeValue: false,
