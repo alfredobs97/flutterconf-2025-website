@@ -26,7 +26,7 @@ if (!i18n.isInitialized) {
         .use(initReactI18next)
         .init({
             resources,
-            fallbackLng: 'en',
+            fallbackLng: 'es',
             defaultNS: 'common',
             lng: undefined, // Let detector handle it
             supportedLngs: ['es', 'en'],
@@ -54,7 +54,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     }, []);
 
     if (!isReady) {
-        return null; // Or a loading spinner
+        return null;
     }
 
     return <I18nextProvider i18n={i18n}>{children}</I18nextProvider>;
