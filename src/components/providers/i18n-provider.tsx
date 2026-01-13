@@ -18,6 +18,7 @@ const resources = {
     },
 };
 
+
 // Initialize i18next
 if (!i18n.isInitialized) {
     i18n
@@ -27,13 +28,14 @@ if (!i18n.isInitialized) {
             resources,
             fallbackLng: 'es',
             defaultNS: 'common',
-            lng: 'es',
+            lng: undefined, // Let detector handle it
             supportedLngs: ['es', 'en'],
+            nonExplicitSupportedLngs: true,
             detection: {
-                order: ['querystring', 'localStorage', 'navigator'],
-                caches: ['localStorage'],
+                order: ['cookie', 'querystring', 'navigator'],
+                caches: [],
                 lookupQuerystring: 'lang',
-                lookupLocalStorage: 'i18nextLng',
+                lookupCookie: 'user_lang',
             },
             interpolation: {
                 escapeValue: false,

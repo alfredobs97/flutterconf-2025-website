@@ -10,24 +10,20 @@ export function useTranslation() {
     const searchParams = useSearchParams();
     const router = useRouter();
 
-    // Sync language with URL and localStorage
+    // Sync language with URL
     useEffect(() => {
         const urlLang = searchParams.get('lang');
-        const storedLang = localStorage.getItem('i18nextLng');
 
         if (urlLang && ['es', 'en'].includes(urlLang)) {
             if (i18n.language !== urlLang) {
                 i18n.changeLanguage(urlLang);
-            }
-        } else if (storedLang && ['es', 'en'].includes(storedLang)) {
-            if (i18n.language !== storedLang) {
-                i18n.changeLanguage(storedLang);
             }
         }
     }, [searchParams, i18n]);
 
     const changeLanguage = (lang: string) => {
         i18n.changeLanguage(lang);
+        document.cookie = `user_lang=${lang}; path=/; max-age=31536000; SameSite=Lax`;
 
         // Update URL with language parameter
         const params = new URLSearchParams(searchParams.toString());
