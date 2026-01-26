@@ -28,9 +28,16 @@ export default function Info() {
                             <MapPin className="h-8 w-8 text-primary" />
                             <CardTitle>{t('info.venueTitle')}</CardTitle>
                         </CardHeader>
-                        <CardContent className="text-left">
-                            <a href="https://maps.app.goo.gl/M97HgC2hcrkPEymn6" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">{t('info.venueName')}</a>
-                            <p className="text-muted-foreground">{t('info.venueLocation')}</p>
+                        <CardContent className="text-left space-y-4">
+                            <img
+                                src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1769420206/gsec_ig6vkp.png"
+                                alt="Google Safety Engineering Center Málaga Logo"
+                                className="max-h-16"
+                            />
+                            <div>
+                                <a href="https://maps.app.goo.gl/M97HgC2hcrkPEymn6" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">{t('info.venueName')}</a>
+                                <p className="text-muted-foreground">{t('info.venueLocation')}</p>
+                            </div>
                         </CardContent>
                     </Card>
                     <Card>

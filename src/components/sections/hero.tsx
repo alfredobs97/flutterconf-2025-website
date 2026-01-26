@@ -37,10 +37,15 @@ export default function Hero() {
                 <span>{t('hero.date')}</span>
               </div>
               <div className="hidden sm:block text-white/30">|</div>
-              <div className="flex items-center gap-2">
+              <a
+                href="https://maps.app.goo.gl/M97HgC2hcrkPEymn6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-accent transition-colors"
+              >
                 <MapPin className="h-5 w-5 text-accent" />
                 <span>{t('hero.location')}</span>
-              </div>
+              </a>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-base font-medium">
