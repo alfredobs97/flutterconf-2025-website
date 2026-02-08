@@ -18,7 +18,8 @@
         "students": "Estudiantes",
         "afternoonSession": "Por la tarde",
         "professionals": "Profesionales",
-        "comingSoon": "Próximamente"
+        "comingSoon": "Próximamente",
+        "register": "¡Apúntate aquí!"
     },
     "about": {
         "title": "¿Qué es FlutterConf España?",

@@ -61,8 +61,10 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col items-center gap-8 mt-4">
-            <Button size="lg" disabled className="bg-white text-black hover:bg-white/90 font-bold text-lg py-8 px-12 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] opacity-50 cursor-not-allowed">
-              {t('hero.comingSoon')}
+            <Button size="lg" asChild className="bg-white text-black hover:bg-white/90 font-bold text-lg py-8 px-12 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all hover:scale-105 active:scale-95">
+              <a href="https://forms.gle/placeholder" target="_blank" rel="noopener noreferrer">
+                {t('hero.register')}
+              </a>
             </Button>
 
             <div className="flex items-center gap-6">
