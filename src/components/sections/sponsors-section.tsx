@@ -19,14 +19,14 @@ const sponsors2025: Sponsor[] = [
 export default function SponsorsSection() {
     const { t } = useTranslation();
 
-    const handleTrackClick = () => {
+    const handleTrackClick = (dossierId: string) => {
         import('@/lib/firebase').then(({ initFirebase }) => {
             initFirebase().then(({ analytics }) => {
                 if (analytics) {
                     import('firebase/analytics').then(({ logEvent }) => {
                         logEvent(analytics, 'select_content', {
                             content_type: 'c4_sponsors',
-                            content_id: 'c4_sponsors_dossier'
+                            content_id: dossierId
                         });
                     });
                 }
@@ -96,16 +96,27 @@ export default function SponsorsSection() {
                             </div>
                         </div>
 
-                        <div className="flex justify-center">
-                            <Button size="lg" asChild className="bg-primary hover:bg-primary/90 font-semibold text-lg">
+                        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                            <Button size="lg" asChild className="bg-primary hover:bg-primary/90 font-semibold text-lg w-full sm:w-auto">
                                 <a
                                     href="https://docs.google.com/presentation/d/1CU-YNX9JdQ82mDxo6BqJF72wa90G6HZio2_QfEuHtt4/edit?usp=sharing"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    onClick={handleTrackClick}
+                                    onClick={() => handleTrackClick('c4_sponsors_dossier_es')}
                                 >
                                     <Download className="mr-2 h-5 w-5" />
                                     {t('sponsors.viewDossier')}
+                                </a>
+                            </Button>
+                            <Button size="lg" variant="outline" asChild className="font-semibold text-lg w-full sm:w-auto border-primary text-primary hover:bg-primary/10">
+                                <a
+                                    href="https://drive.google.com/file/d/177UYS80iwz1US4nRCBe51uGmE_hN4fbs/view?usp=drive_link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={() => handleTrackClick('c4_sponsors_dossier_en')}
+                                >
+                                    <Download className="mr-2 h-5 w-5" />
+                                    {t('sponsors.viewDossierEn')}
                                 </a>
                             </Button>
                         </div>
