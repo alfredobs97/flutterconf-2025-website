@@ -62,7 +62,7 @@ export default function Hero() {
 
           <div className="flex flex-col items-center gap-8 mt-4">
             <Button size="lg" asChild className="bg-white text-black hover:bg-white/90 font-bold text-lg py-8 px-12 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all hover:scale-105 active:scale-95">
-              <a href="https://forms.gle/Z3LqEMzcWGnovDPC9r" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScRoBYP7Fmd5qibAYYm6Ezvc3Ipo_ot1QQOWpzc9WW_Khc-1Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                 {t('hero.register')}
               </a>
             </Button>

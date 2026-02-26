@@ -94,7 +94,7 @@ export default function Header() {
                   ))}
                 </nav>
                 <Button asChild className="w-full">
-                  <a href="https://forms.gle/Z3LqEMzcWGnovDPC9r" target="_blank" rel="noopener noreferrer">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScRoBYP7Fmd5qibAYYm6Ezvc3Ipo_ot1QQOWpzc9WW_Khc-1Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                     {t('hero.register')}
                   </a>
                 </Button>
