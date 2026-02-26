@@ -63,18 +63,11 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
           {!pathname.includes('/2025') && (
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Button disabled className="hidden md:inline-flex bg-accent/50 text-accent-foreground opacity-60 cursor-not-allowed">
-                    {t('header.comingSoon')}
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{t('header.followUs')}</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+            <Button asChild className="hidden md:inline-flex">
+              <a href="https://forms.gle/Z3LqEMzcWGnovDPC9r" target="_blank" rel="noopener noreferrer">
+                {t('hero.register')}
+              </a>
+            </Button>
           )}
           <Sheet>
             <SheetTrigger asChild>
@@ -100,18 +93,11 @@ export default function Header() {
                     </Link>
                   ))}
                 </nav>
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Button disabled className="w-full bg-accent/50 text-accent-foreground opacity-60 cursor-not-allowed">
-                        {t('header.comingSoon')}
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>{t('header.followUs')}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
+                <Button asChild className="w-full">
+                  <a href="https://forms.gle/Z3LqEMzcWGnovDPC9r" target="_blank" rel="noopener noreferrer">
+                    {t('hero.register')}
+                  </a>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>
