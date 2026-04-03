@@ -164,7 +164,7 @@ export const agendaData: Session[] = [
   },
   {
     time: "19:30 - 20:30",
-    title: "Cierre y Networking Final",
+    title: "Closing, Networking and Drinks",
     type: "event",
     track: "afternoon"
   }
