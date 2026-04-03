@@ -12,9 +12,10 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import { Twitter, Linkedin, UserPlus } from 'lucide-react';
+import { UserPlus } from 'lucide-react';
 import { speakers } from '@/lib/data';
 import { useTranslation } from '@/hooks/useTranslation';
+import { Twitter, Linkedin } from '@/components/icons/social-icons';
 
 export default function Speakers() {
   const { t } = useTranslation();

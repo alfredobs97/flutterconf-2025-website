@@ -2,9 +2,10 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Calendar, MapPin, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/useTranslation';
+import { Twitter, Linkedin, Instagram } from '@/components/icons/social-icons';
 
 export default function Hero() {
   const { t } = useTranslation();

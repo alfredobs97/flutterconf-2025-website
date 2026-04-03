@@ -2,7 +2,7 @@
 
 import type { AgendaEvent, Speaker } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { User, Coffee, Mic, Code, Loader2, Twitter, Linkedin, ArrowRight } from 'lucide-react';
+import { User, Coffee, Mic, Code, Loader2, ArrowRight } from 'lucide-react';
 import {
     Dialog,
     DialogContent,
@@ -17,6 +17,7 @@ import { day1Schedule, day1AfternoonSchedule, day2Schedule, speakers } from '@/l
 import { Button } from '../ui/button';
 import Link from 'next/link';
 import { useTranslation } from '@/hooks/useTranslation';
+import { Twitter, Linkedin } from '@/components/icons/social-icons';
 
 const EventIcon = ({ type }: { type: AgendaEvent['type'] }) => {
     switch (type) {
