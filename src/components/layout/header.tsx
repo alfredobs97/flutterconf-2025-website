@@ -21,6 +21,7 @@ export default function Header() {
   const navLinks = [
     { href: '#about', labelKey: 'header.about' },
     { href: '/about-us', labelKey: 'header.ourHistory' },
+    { href: '#agenda', labelKey: 'header.agenda' },
     { href: '#contact', labelKey: 'header.contact' },
     { href: '/2025', labelKey: 'header.edition2025' },
   ];
@@ -63,18 +64,11 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
           {!pathname.includes('/2025') && (
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Button disabled className="hidden md:inline-flex bg-accent/50 text-accent-foreground opacity-60 cursor-not-allowed">
-                    {t('header.comingSoon')}
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{t('header.followUs')}</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+            <Button asChild className="hidden md:inline-flex">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScRoBYP7Fmd5qibAYYm6Ezvc3Ipo_ot1QQOWpzc9WW_Khc-1Q/viewform" target="_blank" rel="noopener noreferrer">
+                {t('hero.register')}
+              </a>
+            </Button>
           )}
           <Sheet>
             <SheetTrigger asChild>
@@ -100,18 +94,11 @@ export default function Header() {
                     </Link>
                   ))}
                 </nav>
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Button disabled className="w-full bg-accent/50 text-accent-foreground opacity-60 cursor-not-allowed">
-                        {t('header.comingSoon')}
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>{t('header.followUs')}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
+                <Button asChild className="w-full">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScRoBYP7Fmd5qibAYYm6Ezvc3Ipo_ot1QQOWpzc9WW_Khc-1Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                    {t('hero.register')}
+                  </a>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>

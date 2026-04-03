@@ -1,158 +1,165 @@
-import type { AgendaEvent, Speaker } from '@/types';
+"use client";
+
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { User, Coffee, Mic, Code, Loader2, Twitter, Linkedin, ArrowRight } from 'lucide-react';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { cn } from '@/lib/utils';
-import Image from 'next/image';
-import { day1Schedule, day1AfternoonSchedule, day2Schedule, speakers } from '@/lib/data';
-import { Button } from '../ui/button';
-import Link from 'next/link';
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Clock, User, Coffee, PartyPopper, Presentation, Link as LinkIcon } from "lucide-react";
+import { agendaData, Session } from "@/lib/agenda-data";
+import { cn } from "@/lib/utils";
 
-const EventIcon = ({type}: {type: AgendaEvent['type']}) => {
-    switch(type) {
-        case 'talk': return <Mic className="h-5 w-5 text-accent" />;
-        case 'workshop': return <Code className="h-5 w-5 text-accent" />;
-        case 'panel': return <User className="h-5 w-5 text-accent" />;
-        case 'break': return <Coffee className="h-5 w-5 text-accent" />;
-        default: return null;
-    }
-}
+const Agenda = () => {
+  const { t } = useTranslation('common');
+  const morningSessions = agendaData.filter((s) => s.track === "morning");
+  const afternoonSessions = agendaData.filter((s) => s.track === "afternoon");
 
-const calculateEndTime = (startTime: string, duration: number): string => {
-    const [hours, minutes] = startTime.split(':').map(Number);
-    const startDate = new Date();
-    startDate.setHours(hours, minutes, 0, 0);
-    const endDate = new Date(startDate.getTime() + duration * 60000);
-    const endHours = endDate.getHours().toString().padStart(2, '0');
-    const endMinutes = endDate.getMinutes().toString().padStart(2, '0');
-    return `${endHours}:${endMinutes}`;
+  return (
+    <section id="agenda" className="container mx-auto px-4 py-20 scroll-mt-20">
+      <div className="mb-16 text-center">
+        <Badge variant="outline" className="mb-4 border-primary/30 text-primary">
+          {t('agenda2026.title')}
+        </Badge>
+        <div>
+          <a href="#agenda" className="group inline-flex items-center justify-center gap-2 mb-4 transition-all hover:opacity-80">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Agenda <span className="text-primary">FlutterConf 2026</span>
+            </h2>
+            <LinkIcon className="w-6 h-6 md:w-8 md:h-8 opacity-0 group-hover:opacity-50 transition-opacity text-foreground" />
+          </a>
+        </div>
+        <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          {t('agenda2026.subtitle')}
+        </p>
+      </div>
+
+      <Tabs defaultValue="morning" className="w-full max-w-4xl mx-auto">
+        <TabsList className="flex w-full mb-8 sm:mb-12 h-auto p-1 bg-muted/50 backdrop-blur-sm border border-border/50">
+          <TabsTrigger 
+            value="morning" 
+            className="flex-1 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm md:text-base py-3 sm:py-3 data-[state=active]:bg-background data-[state=active]:shadow-md transition-all whitespace-normal sm:whitespace-nowrap h-full min-h-[3.5rem] sm:min-h-[3rem]"
+          >
+            <span className="font-bold sm:font-medium">{t('agenda2026.tabs.morning')}</span>
+            <span className="text-[10px] sm:text-sm opacity-70 sm:opacity-100">(09:00 - 13:30)</span>
+          </TabsTrigger>
+          <TabsTrigger 
+            value="afternoon" 
+            className="flex-1 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm md:text-base py-3 sm:py-3 data-[state=active]:bg-background data-[state=active]:shadow-md transition-all whitespace-normal sm:whitespace-nowrap h-full min-h-[3.5rem] sm:min-h-[3rem]"
+          >
+            <span className="font-bold sm:font-medium">{t('agenda2026.tabs.afternoon')}</span>
+            <span className="text-[10px] sm:text-sm opacity-70 sm:opacity-100">(15:00 - 20:30)</span>
+          </TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="morning" className="space-y-6 focus-visible:ring-0">
+          <TrackTimeline sessions={morningSessions} />
+        </TabsContent>
+
+        <TabsContent value="afternoon" className="space-y-6 focus-visible:ring-0">
+          <TrackTimeline sessions={afternoonSessions} />
+        </TabsContent>
+      </Tabs>
+    </section>
+  );
 };
 
-const AgendaView = ({ schedule }: { schedule: AgendaEvent[] }) => (
-    <div className="divide-y divide-border rounded-lg border bg-card text-left">
-        {schedule.length > 0 ? (
-            schedule.map((event, index) => {
-                const endTime = calculateEndTime(event.time, event.duration);
-                const speaker = speakers.find(s => s.name === event.speaker);
+const TrackTimeline = ({ sessions }: { sessions: Session[] }) => {
+  const { t } = useTranslation('common');
 
-                const eventContent = (
-                    <div className={cn(
-                        "p-4 flex flex-col sm:flex-row gap-4 justify-between items-start",
-                        event.type === 'break' && 'bg-secondary/30',
-                        speaker ? 'cursor-pointer hover:bg-secondary/20' : ''
-                    )}>
-                        <div className="flex gap-4 items-start sm:items-center w-full">
-                            <div className="text-center flex-shrink-0 w-20">
-                                <p className="text-sm font-bold text-primary whitespace-nowrap">
-                                    {event.time}
-                                </p>
-                                <p className="text-xs text-muted-foreground">{endTime}</p>
-                            </div>
-                            <div className="pl-4 border-l-2 border-accent flex-grow">
-                                <h3 className="font-bold text-lg font-headline">{event.title}</h3>
-                                {event.speaker && <p className="text-muted-foreground text-sm">{event.speaker}</p>}
-                            </div>
-                        </div>
-                        <div className="flex items-center gap-4 text-sm text-muted-foreground ml-auto pl-1 sm:pl-0">
-                           <span className="w-16 text-right">{event.duration} min</span>
-                           <EventIcon type={event.type} />
-                        </div>
-                    </div>
-                );
+  return (
+    <div className="relative space-y-6 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
+      {sessions.map((session, index) => (
+        <div
+          key={index}
+          className={cn(
+            "relative flex items-center gap-4 md:gap-0 md:justify-normal md:odd:flex-row-reverse group animate-in fade-in slide-in-from-bottom-4 duration-500",
+            index === 0 ? "" : "mt-8"
+          )}
+          style={{ animationDelay: `${index * 50}ms` }}
+        >
+          {/* Dot */}
+          <div className="flex shrink-0 items-center justify-center w-10 h-10 rounded-full border border-background bg-muted shadow md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 group-hover:scale-110 group-hover:border-primary/50 transition-all duration-300 z-10">
+            {session.type === "break" ? (
+              <Coffee className="w-5 h-5 text-muted-foreground" />
+            ) : session.type === "event" ? (
+              <PartyPopper className="w-5 h-5 text-accent" />
+            ) : (
+              <Presentation className="w-5 h-5 text-primary" />
+            )}
+          </div>
 
-                if (speaker) {
-                    return (
-                        <Dialog key={index}>
-                            <DialogTrigger asChild>{eventContent}</DialogTrigger>
-                            <DialogContent className="sm:max-w-[625px]">
-                                <DialogHeader className="flex flex-col sm:flex-row gap-6">
-                                    <Image src={speaker.avatarUrl} alt={speaker.name} data-ai-hint="person portrait" width={150} height={150} className="rounded-lg aspect-square object-cover object-center" />
-                                    <div className="space-y-2 text-left">
-                                        <DialogTitle className="text-2xl font-headline">{speaker.name}</DialogTitle>
-                                        <DialogDescription>
-                                            {speaker.title} at {speaker.company}
-                                        </DialogDescription>
-                                        <div className="flex gap-2">
-                                            {speaker.socials.twitter && <a href={speaker.socials.twitter} target="_blank" rel="noopener noreferrer"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary"/></a>}
-                                            {speaker.socials.linkedin && <a href={speaker.socials.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary"/></a>}
-                                        </div>
-                                    </div>
-                                </DialogHeader>
-                                <div className="py-4 space-y-4">
-                                    <p className="text-sm text-foreground">{speaker.bio}</p>
-                                    <div className="p-4 bg-secondary/50 rounded-lg">
-                                        <h4 className="font-bold font-headline mb-2">Talk: {speaker.talkTitle}</h4>
-                                        <p className="text-sm text-muted-foreground">{speaker.talkAbstract}</p>
-                                    </div>
-                                </div>
-                            </DialogContent>
-                        </Dialog>
-                    );
-                }
-
-                return <div key={index}>{eventContent}</div>;
-            })
-        ) : (
-            <div className="p-12 text-center text-muted-foreground">
-                <Loader2 className="mx-auto h-12 w-12 text-primary animate-spin mb-4" />
-                <h3 className="text-xl font-headline font-bold text-foreground">Estamos preparando la agenda</h3>
-                <p>¡Pronto compartiremos todos los detalles de las charlas y ponentes!</p>
-            </div>
-        )}
-    </div>
-);
-
-export default function Agenda() {
-    return (
-        <section id="agenda" className="bg-secondary/30">
-            <div className="container mx-auto px-4">
-                <div className="flex flex-col items-center text-center space-y-4 mb-12">
-                    <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">Agenda del Evento</h2>
-                    <p className="max-w-2xl text-muted-foreground text-lg">
-                        Dos días repletos de contenido inspirador, talleres prácticos y networking.
-                    </p>
+          {/* Card */}
+          <Card className={cn(
+            "flex-1 min-w-0 md:w-[calc(50%-2.5rem)] md:flex-none bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all duration-300 shadow-sm hover:shadow-md",
+            session.speaker ? "border-l-4 border-l-primary" : ""
+          )}>
+            <CardContent className="p-4 md:p-6">
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                <div className="flex items-center gap-1.5 text-primary font-bold text-sm">
+                  <Clock className="w-4 h-4 shrink-0" />
+                  <span className="truncate">{session.time}</span>
                 </div>
-                <Tabs defaultValue="day1" className="w-full">
-                    <TabsList className="grid w-full grid-cols-2 mb-8">
-                        <TabsTrigger value="day1">Día 1 (Octubre 17)</TabsTrigger>
-                        <TabsTrigger value="day2">Día 2 (Octubre 18)</TabsTrigger>
-                    </TabsList>
-                    <TabsContent value="day1">
-                        <AgendaView schedule={day1Schedule} />
-                        <div className="mt-12 text-center">
-                            <h3 className="text-2xl font-headline font-bold text-center mb-4">Tarde de Comunidad (Opcional)</h3>
-                            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-                                Después del programa principal, únete a nosotros para unas sesiones extra organizadas por y para la comunidad Flutter.
-                            </p>
-                             <Button asChild variant="outline" className="mb-8">
-                                <Link href="/community">
-                                    Conoce a la comunidad <ArrowRight className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
-                            <AgendaView schedule={day1AfternoonSchedule} />
-                        </div>
-                    </TabsContent>
-                    <TabsContent value="day2">
-                        <div className="text-center mb-8 p-6 bg-card rounded-lg border">
-                            <h3 className="text-2xl font-headline font-bold text-center mb-2">Día de Comunidad</h3>
-                            <p className="text-muted-foreground mb-4">El segundo día es una jornada abierta a la comunidad, con lightning talks. ¡Las plazas son limitadas!</p>
-                            <Button asChild>
-                                <a href="https://gdg.community.dev/e/mjc8ks/" target="_blank" rel="noopener noreferrer">
-                                    Apúntate al Día 2
-                                </a>
-                            </Button>
-                        </div>
-                        <AgendaView schedule={day2Schedule} />
-                    </TabsContent>
-                </Tabs>
-            </div>
-        </section>
-    );
-}
+                {session.type === 'session' && (
+                  <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20 border-none shrink-0">
+                    {t('agenda2026.badges.sessionTalk')}
+                  </Badge>
+                )}
+                {session.type === "break" && (
+                  <Badge variant="outline" className="text-muted-foreground font-normal shrink-0">
+                    {t('agenda2026.badges.break')}
+                  </Badge>
+                )}
+                {session.type === "event" && (
+                  <Badge variant="outline" className="text-accent/80 border-accent/30 font-normal shrink-0">
+                    {t('agenda2026.badges.event')}
+                  </Badge>
+                )}
+              </div>
+
+              <h3 className="text-lg md:text-xl font-bold mb-2 group-hover:text-primary transition-colors text-wrap break-words">
+                {session.title}
+                {session.language && (
+                  <span className="ml-2 text-base md:text-lg opacity-80 inline-block align-baseline" title={session.language === 'es' ? 'Spanish' : 'English'}>
+                    {session.language === 'es' ? '🇪🇸' : '🇬🇧'}
+                  </span>
+                )}
+              </h3>
+
+              {session.speaker && (
+                <div className="mt-4 pt-4 border-t border-border/50">
+                  <div className="flex items-start gap-4">
+                    <div className="mt-1 h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full bg-muted flex items-center justify-center overflow-hidden border border-border/50">
+                      {session.imageUrl ? (
+                        <img 
+                          src={session.imageUrl} 
+                          alt={session.speaker} 
+                          className="w-full h-full object-cover"
+                          referrerPolicy="no-referrer"
+                        />
+                      ) : (
+                        <User className="w-5 h-5 md:w-6 md:h-6 text-muted-foreground" />
+                      )}
+                    </div>
+                    <div className="min-w-0 flex-1 pt-0.5">
+                      <div className="font-bold text-sm truncate">{session.speaker}</div>
+                      {session.role && (
+                        <div className="text-xs text-muted-foreground mb-2 break-words">{session.role}</div>
+                      )}
+                      {session.descriptionKey && (
+                        <p className="text-sm text-muted-foreground leading-relaxed mt-1 italic break-words">
+                          "{t(session.descriptionKey)}"
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Agenda;
