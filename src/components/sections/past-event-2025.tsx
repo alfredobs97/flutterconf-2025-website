@@ -17,8 +17,8 @@ export default function PastEvent() {
                             <Image
                                 src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753554068/48952580842_785e732a06_c_mcnurg.jpg"
                                 alt="Foto del evento de 2019"
-                                layout="fill"
-                                objectFit="cover"
+                                fill
+                                className="object-cover"
                                 data-ai-hint="conference event"
                             />
                         </div>

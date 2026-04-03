@@ -15,9 +15,8 @@ export default function Hero() {
       <Image
         src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1764417304/54874170126_2d285a3d8a_b_1_eini1h.jpg"
         alt="Speakers on stage at FlutterConf"
-        layout="fill"
-        objectFit="cover"
-        className="absolute inset-0"
+        fill
+        className="absolute inset-0 object-cover"
         priority
       />
       <div className="relative z-20 container mx-auto px-4 md:px-6">

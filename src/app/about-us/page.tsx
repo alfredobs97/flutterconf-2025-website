@@ -25,8 +25,8 @@ export default function AboutUsPage() {
                                 <Image
                                     src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753698587/48952397566_63ebd371e5_c_fz4j04.jpg"
                                     alt="Foto del evento de 2019"
-                                    layout="fill"
-                                    objectFit="cover"
+                                    fill
+                                    className="object-cover"
                                     data-ai-hint="conference event"
                                 />
                             </div>
@@ -99,8 +99,8 @@ export default function AboutUsPage() {
                                 <Image
                                     src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1764427830/54874840808_afebda20fe_b_dfvwho.jpg"
                                     alt="Foto del evento de 2025"
-                                    layout="fill"
-                                    objectFit="cover"
+                                    fill
+                                    className="object-cover"
                                     data-ai-hint="conference event 2025"
                                 />
                             </div>

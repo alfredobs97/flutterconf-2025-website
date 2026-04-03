@@ -28,9 +28,8 @@ export default function About() {
                         <Image
                             src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553865/48952394171_3a1cd7872d_b_qsqqs2.jpg"
                             alt="FlutterConf Logo"
-                            layout="fill"
-                            objectFit="cover"
-                            className="h-32 w-32 opacity-80"
+                            fill
+                            className="h-32 w-32 object-cover opacity-80"
                         />
                     </div>
                 </div>

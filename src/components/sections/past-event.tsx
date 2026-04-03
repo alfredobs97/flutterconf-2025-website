@@ -47,8 +47,8 @@ export default function PastEvent() {
                             <Image
                                 src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1764417475/54874401078_cc28e85840_b_bila6r.jpg"
                                 alt="FlutterConf España 2025"
-                                layout="fill"
-                                objectFit="cover"
+                                fill
+                                className="object-cover"
                                 data-ai-hint="conference event 2025"
                             />
                         </div>
@@ -61,8 +61,8 @@ export default function PastEvent() {
                         <Image
                             src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753554068/48952580842_785e732a06_c_mcnurg.jpg"
                             alt="FlutterConf España 2019"
-                            layout="fill"
-                            objectFit="cover"
+                            fill
+                            className="object-cover"
                             data-ai-hint="conference event 2019"
                         />
                     </div>
