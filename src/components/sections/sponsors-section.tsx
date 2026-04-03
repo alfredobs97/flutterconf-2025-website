@@ -68,7 +68,7 @@ export default function SponsorsSection() {
                                         data-ai-hint="company logo"
                                         width={200}
                                         height={100}
-                                        className="object-contain"
+                                        className="h-auto w-auto max-w-full object-contain"
                                     />
                                 </Link>
                             </div>
@@ -89,7 +89,7 @@ export default function SponsorsSection() {
                                             data-ai-hint="company logo"
                                             width={140}
                                             height={70}
-                                            className="object-contain"
+                                            className="h-auto w-auto max-w-full object-contain"
                                         />
                                     </Link>
                                 ))}

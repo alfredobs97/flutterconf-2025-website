@@ -23,8 +23,8 @@ export default function CommunityPage() {
                             <Image
                                 src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1759565379/48945818273_ec88bbb5a0_c_odrdti.jpg"
                                 alt="Comunidad FlutterConf"
-                                layout="fill"
-                                objectFit="cover"
+                                fill
+                                className="object-cover"
                                 data-ai-hint="community event"
                             />
                         </div>

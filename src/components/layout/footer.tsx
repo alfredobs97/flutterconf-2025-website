@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { Twitter, Linkedin, Github, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/useTranslation';
+import { Twitter, Linkedin, Github, Instagram } from '@/components/icons/social-icons';
 
 export default function Footer() {
   const { t } = useTranslation();

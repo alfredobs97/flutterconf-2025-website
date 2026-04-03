@@ -2,11 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from '@/components/ui/card';
-import { Mail, Copy, Check, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Copy, Check } from 'lucide-react';
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import Link from 'next/link';
 import { useTranslation } from '@/hooks/useTranslation';
+import { Twitter, Linkedin, Instagram } from '@/components/icons/social-icons';
 
 export default function Contact() {
   const { t } = useTranslation();

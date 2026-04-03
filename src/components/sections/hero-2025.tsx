@@ -2,9 +2,10 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Calendar, MapPin, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/useTranslation';
+import { Twitter, Linkedin, Instagram } from '@/components/icons/social-icons';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -14,9 +15,8 @@ export default function Hero() {
       <Image
         src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553216/48946377431_c3d0469ef1_b_1_pnqi7u.jpg"
         alt="Speakers on stage at FlutterConf"
-        layout="fill"
-        objectFit="cover"
-        className="absolute inset-0"
+        fill
+        className="absolute inset-0 object-cover"
         priority
       />
       <div className="relative z-20 container mx-auto px-4 md:px-6">
