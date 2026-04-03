@@ -44,7 +44,7 @@ export default function Sponsors() {
                         <div className="flex justify-center items-center gap-12 flex-wrap">
                             {sponsors.map(sponsor => (
                                 <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <Image src={sponsor.logoUrl} alt={sponsor.name} data-ai-hint="company logo" width={220} height={75} className="h-auto w-auto max-w-full object-contain" />
+                                    <Image src={sponsor.logoUrl} alt={sponsor.name} data-ai-hint="company logo" width={220} height={75} className="max-h-[75px] max-w-[220px] w-auto object-contain" style={{height:'75px', width:'auto', maxWidth:'220px'}} />
                                 </Link>
                             ))}
                         </div>
@@ -55,7 +55,7 @@ export default function Sponsors() {
                         <div className="flex justify-center items-center gap-8 flex-wrap">
                             {collaborators.length > 0 ? collaborators.map(sponsor => (
                                 <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <Image src={sponsor.logoUrl} alt={sponsor.name} data-ai-hint="company logo" width={180} height={90} className="h-auto w-auto max-w-full object-contain" />
+                                    <Image src={sponsor.logoUrl} alt={sponsor.name} data-ai-hint="company logo" width={180} height={90} className="max-h-[60px] max-w-[180px] w-auto object-contain" style={{height:'60px', width:'auto', maxWidth:'180px'}} />
                                 </Link>
                             )) : (
                                 <Card className="w-full max-w-2xl">
@@ -71,7 +71,7 @@ export default function Sponsors() {
                         <div className="flex justify-center items-center gap-8 flex-wrap">
                             {communities.map(sponsor => (
                                 <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <Image src={sponsor.logoUrl} alt={sponsor.name} data-ai-hint="community logo" width={120} height={60} className="h-auto w-auto max-w-full object-contain" />
+                                    <Image src={sponsor.logoUrl} alt={sponsor.name} data-ai-hint="community logo" width={120} height={60} className="max-h-[50px] max-w-[120px] w-auto object-contain" style={{height:'50px', width:'auto', maxWidth:'120px'}} />
                                 </Link>
                             ))}
                         </div>
