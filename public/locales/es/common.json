@@ -1,9 +1,9 @@
 {
     "header": {
-        "about": "About",
+        "about": "Acerca de",
         "ourHistory": "Nuestra Historia",
         "agenda": "Agenda",
-        "contact": "Contact",
+        "contact": "Contacto",
         "edition2025": "Edición 2025",
         "comingSoon": "Próximamente",
         "followUs": "Atento a nuestras RRSS",
@@ -304,17 +304,18 @@
         "networkingDesc": "El broche de oro del día. Relájate y comparte una Cerveza Victoria mientras charlas de manera informal con los ponentes, organizadores y otros asistentes. Este es el momento perfecto para hacer contactos valiosos, resolver dudas y simplemente, disfrutar de la comunidad."
     },
     "footer": {
-        "organizedBy": "Organized by GDG Marbella, GDG Spain, Flutter Málaga & Flutter Lleida. We are independent groups; our activities and the opinions expressed here should in no way be linked to Google, the corporation.",
-        "navigation": "Navigation",
-        "about": "About",
-        "speakers": "Speakers",
+        "logoAlt": "Logo de FlutterConf",
+        "organizedBy": "Organizado por GDG Marbella, GDG Spain, Flutter Málaga y Flutter Lleida. Somos grupos independientes; nuestras actividades y opiniones expresadas aquí no deben vincularse en ningún caso con Google, la corporación.",
+        "navigation": "Navegación",
+        "about": "Acerca de",
+        "speakers": "Ponentes",
         "agenda": "Agenda",
-        "sponsors": "Sponsors",
-        "resources": "Resources",
-        "info": "Info & FAQ",
-        "codeOfConduct": "Code of Conduct",
-        "contact": "Contact",
-        "connect": "Connect",
-        "copyright": "© 2026 FlutterConf España. All rights reserved."
+        "sponsors": "Patrocinadores",
+        "resources": "Recursos",
+        "info": "Info y FAQ",
+        "codeOfConduct": "Código de Conducta",
+        "contact": "Contacto",
+        "connect": "Conecta",
+        "copyright": "© 2026 FlutterConf España. Todos los derechos reservados."
     }
 }
