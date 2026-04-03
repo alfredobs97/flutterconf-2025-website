@@ -304,6 +304,7 @@
         "networkingDesc": "The finishing touch of the day. Relax and share a Victoria Beer while chatting informally with speakers, organizers, and other attendees. This is the perfect moment to make valuable contacts, resolve doubts, and simply enjoy the community."
     },
     "footer": {
+        "logoAlt": "FlutterConf Logo",
         "organizedBy": "Organized by GDG Marbella, GDG Spain, Flutter Málaga & Flutter Lleida. We are independent groups; our activities and the opinions expressed here should in no way be linked to Google, the corporation.",
         "navigation": "Navigation",
         "about": "About",
