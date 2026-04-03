@@ -2,6 +2,7 @@
     "header": {
         "about": "About",
         "ourHistory": "Our History",
+        "agenda": "Agenda",
         "contact": "Contact",
         "edition2025": "2025 Edition",
         "comingSoon": "Coming Soon",
@@ -208,6 +209,50 @@
         "sponsorDescription": "Support the Flutter community and gain visibility for your brand.",
         "downloadDossier": "Download our dossier!",
         "downloadDeck": "Download our deck! (English)"
+    },
+    "agenda2026": {
+        "title": "Event Agenda",
+        "subtitle": "Two tracks designed to inspire and dive deep.",
+        "tabs": {
+            "morning": "Morning (Students)",
+            "afternoon": "Afternoon (Pros)"
+        },
+        "badges": {
+            "sessionTalk": "Tech Session",
+            "break": "Break",
+            "event": "Event"
+        },
+        "sessions": {
+            "welcome": "Welcome and Networking",
+            "opening": "Opening Session",
+            "openingTarde": "Afternoon Opening",
+            "ivannaTitle": "From Uncertainty to Opportunity",
+            "ivannaDesc": "In a world where artificial intelligence rapidly reshapes the job market, many students wonder: what skills will matter tomorrow? Choosing the right tools is a strategic decision. This keynote explores why Flutter stands out as a powerful option for its combination of stability, versatility, and future relevance.",
+            "marcosTitle": "From Flutter to Dart Frog",
+            "marcosDesc": "Explore how to bring your Dart and Flutter knowledge to the backend world. This introductory talk will guide you through the first steps with Dart Frog, learning how to build robust APIs and handle requests to build scalable services.",
+            "juanTitle": "GenUI: UX in the hands of an LLM",
+            "juanDesc": "Current LLMs and models are powerful enough to generate interfaces on the fly based on each person's context. This talk explores the benefits of every user being able to receive a personalized interface and discusses the challenges this poses across technology, product, design, usability, accessibility, and legal aspects.",
+            "coffee": "Coffee Break",
+            "alfredoTitle": "Workshop - Live Coding Agentic Apps",
+            "alfredoDesc": "Practical live coding session building applications based on agents and intelligent automation.",
+            "closingMañana": "Morning Closing",
+            "networkingStudents": "Students Networking",
+            "dacoTitle": "Interoperability with Native Code",
+            "dacoDesc": "Flutter is famous for its aggressive tree-shaking, but why stop there? Imagine an app where every byte is strictly necessary, from code and images to translations. In this session we will explore the power of Link Hooks and the @RecordUse experiment to tree-shake native binaries based on the code actually used.",
+            "wiktoriaTitle": "A Tale of Two Tests",
+            "wiktoriaDesc": "A/B testing is often associated with complex analytics. In practice, Flutter teams operate at vastly different scales. This talk compares an A/B test implemented in two environments: a small team using Firebase Remote Config vs a large-scale product supported by dashboards and statistical models.",
+            "victorTitle": "Generative SDUI with Flutter",
+            "victorDesc": "What if your application was built in real-time according to the needs of each user? In this session, we will explore how to combine Server-Driven UI (SDUI) with Generative AI using Flutter, Serverpod, and Gemini to create truly adaptive and intelligent experiences.",
+            "breakTarde": "Break and Networking",
+            "lukasTitle": "Teaching Coding Agents to Judge UI",
+            "lukasDesc": "AI models are good at generating Flutter code, but they struggle to evaluate visual hierarchy well. In this talk, I will show how Flutter's render tree gives us a structured representation to create an automated quality evaluation engine that scores widgets against Figma designs.",
+            "ahmedTitle": "Multi-Radio Flutter",
+            "ahmedDesc": "Have you ever wondered how Flutter could handle multiple wireless technologies like UWB and BLE? We will dive into multi-radio applications to tackle real-world scenarios, discuss architectural patterns to maintain code, and examine performance considerations.",
+            "sashaTitle": "Evolution of flutter_gemma",
+            "sashaDesc": "flutter_gemma started as a simple MediaPipe wrapper. Today it is a complete on-device AI platform across 6 platforms. We will analyze key engineering decisions, the use of the Strategy pattern, and dive deep into on-device RAG: building a cross-platform SQLite VectorStore.",
+            "closing": "Closing Session",
+            "finalNetworking": "Final Networking"
+        }
     },
     "codeOfConduct": {
         "title": "FlutterConf Spain 2025 Code of Conduct",

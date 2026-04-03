@@ -21,6 +21,7 @@ export default function Header() {
   const navLinks = [
     { href: '#about', labelKey: 'header.about' },
     { href: '/about-us', labelKey: 'header.ourHistory' },
+    { href: '#agenda', labelKey: 'header.agenda' },
     { href: '#contact', labelKey: 'header.contact' },
     { href: '/2025', labelKey: 'header.edition2025' },
   ];
