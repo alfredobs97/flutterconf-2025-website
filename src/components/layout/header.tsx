@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
+import { Sheet, SheetClose, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -83,22 +83,28 @@ export default function Header() {
                 {t('header.navigationDescription')}
               </SheetDescription>
               <div className="grid gap-6 p-6">
-                <Link href="/" className="flex items-center gap-2 font-bold text-lg" prefetch={false}>
-                  <Image src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553212/tliFrVJi_400x400_v0nnvh.jpg" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8 rounded-full" />
-                  <span className="font-headline">FlutterConf ES</span>
-                </Link>
+                <SheetClose asChild>
+                  <Link href="/" className="flex items-center gap-2 font-bold text-lg" prefetch={false}>
+                    <Image src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1753553212/tliFrVJi_400x400_v0nnvh.jpg" alt="FlutterConf Logo" width={32} height={32} className="h-8 w-8 rounded-full" />
+                    <span className="font-headline">FlutterConf ES</span>
+                  </Link>
+                </SheetClose>
                 <nav className="grid gap-4">
                   {navLinks.map((link) => (
-                    <Link key={link.href} href={getLinkHref(link.href)} className="text-base font-medium hover:text-primary transition-colors" prefetch={false}>
-                      {t(link.labelKey)}
-                    </Link>
+                    <SheetClose asChild key={link.href}>
+                      <Link href={getLinkHref(link.href)} className="text-base font-medium hover:text-primary transition-colors" prefetch={false}>
+                        {t(link.labelKey)}
+                      </Link>
+                    </SheetClose>
                   ))}
                 </nav>
-                <Button asChild className="w-full">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScRoBYP7Fmd5qibAYYm6Ezvc3Ipo_ot1QQOWpzc9WW_Khc-1Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-                    {t('hero.register')}
-                  </a>
-                </Button>
+                <SheetClose asChild>
+                  <Button asChild className="w-full">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScRoBYP7Fmd5qibAYYm6Ezvc3Ipo_ot1QQOWpzc9WW_Khc-1Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                      {t('hero.register')}
+                    </a>
+                  </Button>
+                </SheetClose>
               </div>
             </SheetContent>
           </Sheet>
