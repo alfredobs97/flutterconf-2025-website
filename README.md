@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="./.github/assets/flutterconf-logo.png" alt="FlutterConf Spain logo" width="100">
+	<img src="./.github/assets/flutterconf-logo.png" alt="FlutterConf Spain logo" width="150">
 </p>
 
 <p align="center">
