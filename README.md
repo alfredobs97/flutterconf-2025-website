@@ -48,3 +48,7 @@ The application runs at `http://localhost:9002`.
 - `npm run build`: generates the production build.
 - `npm run start`: starts the generated build.
 - `npm run typecheck`: runs TypeScript without emitting files.
+
+## License
+
+This project is distributed under the custom FlutterConf Spain license. See [LICENSE](LICENSE) for the full text.
