@@ -3,7 +3,7 @@
 import type { FaqItem } from '@/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { MapPin, ShieldCheck } from 'lucide-react';
+import { MapPin, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 import { useTranslation } from '@/hooks/useTranslation';
 
@@ -12,6 +12,9 @@ export default function Info() {
 
     const faqData = t('info.faq', { returnObjects: true });
     const faqItems = Array.isArray(faqData) ? faqData : [];
+
+    const principlesData = t('info.codeOfConductPrinciples', { returnObjects: true });
+    const principles = Array.isArray(principlesData) ? principlesData : [];
 
     return (
         <section id="info" className="bg-secondary/30">
@@ -69,8 +72,29 @@ export default function Info() {
                             <ShieldCheck className="h-8 w-8 text-primary" />
                             <CardTitle>{t('info.codeOfConductTitle')}</CardTitle>
                         </CardHeader>
-                        <CardContent>
-                            <p className="text-muted-foreground">{t('info.codeOfConductText')} <Link href="/code-of-conduct" className="text-primary underline hover:no-underline">{t('info.codeOfConductLink')}</Link>.</p>
+                        <CardContent className="space-y-6">
+                            <p className="text-muted-foreground">
+                                {t('info.codeOfConductText')}{' '}
+                                <Link href="/code-of-conduct" className="text-primary font-semibold underline hover:no-underline">
+                                    {t('info.codeOfConductLink')}
+                                </Link>.
+                            </p>
+
+                            <div className="pt-4 border-t border-border space-y-4">
+                                <p className="text-sm font-semibold text-foreground/90">
+                                    {t('info.codeOfConductExpectation')}
+                                </p>
+                                {principles.length > 0 && (
+                                    <ul className="space-y-3">
+                                        {principles.map((principle, i) => (
+                                            <li key={i} className="flex items-start gap-3">
+                                                <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                                                <span className="text-sm font-medium text-foreground/80">{principle}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </div>
                         </CardContent>
                     </Card>
                 </div>

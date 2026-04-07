@@ -59,6 +59,13 @@
         "codeOfConductTitle": "Code of Conduct",
         "codeOfConductText": "We are committed to providing a safe, inclusive, and welcoming experience for everyone. All attendees, speakers, sponsors, and volunteers are expected to comply with our",
         "codeOfConductLink": "Code of Conduct",
+        "codeOfConductExpectation": "Basically, we expect this from all participants:",
+        "codeOfConductPrinciples": [
+            "Mutual respect and professional treatment",
+            "Environment free of harassment and discrimination",
+            "Inclusive language and ethical behavior",
+            "Collaboration and community spirit"
+        ],
         "faqTitle": "Frequently Asked Questions",
         "faq": [
             {

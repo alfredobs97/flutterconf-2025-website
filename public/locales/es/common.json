@@ -59,6 +59,13 @@
         "codeOfConductTitle": "Código de Conducta",
         "codeOfConductText": "Nos comprometemos a proporcionar una experiencia segura, inclusiva y acogedora para todos. Se espera que todos los asistentes, ponentes, sponsors y voluntarios cumplan con nuestro",
         "codeOfConductLink": "Código de Conducta",
+        "codeOfConductExpectation": "Básicamente, esperamos esto de todos los participantes:",
+        "codeOfConductPrinciples": [
+            "Respeto mutuo y trato profesional",
+            "Entorno libre de acoso y discriminación",
+            "Lenguaje inclusivo y comportamiento ético",
+            "Colaboración y espíritu comunitario"
+        ],
         "faqTitle": "Preguntas Frecuentes",
         "faq": [
             {
@@ -217,13 +224,10 @@
     "sponsors2026": {
         "title": "Nuestros Sponsors",
         "subtitle": "Agradecemos a nuestros sponsors y colaboradores por hacer posible este evento.",
-        "platinumTitle": "Sponsors Platinum",
-        "goldTitle": "Sponsors Gold",
-        "becomeCollaborator": "¿Quieres que tu marca aparezca aquí? ¡Estamos buscando colaboradores!",
-        "wantToBeSponsor": "¿Quieres ser Sponsor?",
-        "sponsorDescription": "Apoya a la comunidad Flutter y gana visibilidad para tu marca.",
-        "downloadDossier": "¡Descarga nuestro dossier!",
-        "downloadDeck": "Download our deck! (English)"
+        "platinumSponsors": "Sponsors Platinum",
+        "goldSponsors": "Sponsors Gold",
+        "viewDossier": "Ver dossier para sponsors (Español)",
+        "viewDossierEn": "Ver dossier para sponsors (Inglés)"
     },
     "agenda2026": {
         "title": "Agenda del Evento",
