@@ -8,26 +8,14 @@ import { Download, HeartHandshake } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useTranslation } from '@/hooks/useTranslation';
 
-const sponsors2025: Sponsor[] = [
+const platinumSponsors2026: Sponsor[] = [
     { name: 'Flutter', logoUrl: 'https://storage.googleapis.com/cms-storage-bucket/lockup_flutter_horizontal.847ae81f5430402216fd.svg', website: 'https://flutter.dev' },
 ];
 
-const collaborators2025: Sponsor[] = [
-    { name: 'Netscrapers', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758470884/logo_netscrapers_ekzcmj.svg', website: 'https://netscrapers.com/' },
-    { name: 'Xtorm', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758470968/4-XTORM-logoFC-free-standing-grey_upqyow.png', website: 'https://www.xtorm.eu/' },
-    { name: 'Shorebird', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758471011/logo_wordmark_c89fo5.png', website: 'https://shorebird.dev/' },
-    { name: 'Labhouse', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758880674/Copia_de_LABHOUSE_Logo_01-removebg-preview_v2en1s.png', website: 'https://labhouse.io/' },
-    { name: 'Serverpod', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759394985/logo-horizontal_gtbby0.png', website: 'https://serverpod.dev' },
-];
-
-const communities2025: Sponsor[] = [
-    { name: 'GDG Marbella', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759570285/z_ztQtzy_400x400-removebg-preview_lqhtqz.png', website: 'https://gdg.community.dev/gdg-marbella/' },
-    { name: 'GDG Spain', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759769544/spain-vertical-transp_1_1_nyqdpy.png', website: 'https://gdg.community.dev/gdg-spain/' },
-    { name: 'Flutter Lleida', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759567771/logoflutterlleida_1_ht3nuf.png', website: 'https://www.meetup.com/flutter-lleida/' },
-    { name: 'Flutter Málaga', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759572425/d8011cdc-ecb6-4861-aefa-3cb71bc53e1f_Tn4VHgw-removebg-preview_qwprzr.png', website: 'https://www.meetup.com/flutter-malaga/' },
-    { name: 'Flutter Vienna', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759570279/photo_5981224993633192602_y-removebg-preview_1_zu9b84.png', website: 'https://www.meetup.com/flutter-vienna/' },
-    { name: 'Flutter Valencia', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759769030/Screenshot_2025-10-06_at_6.43.11_PM-removebg-preview_u1btnb.png', website: 'https://www.meetup.com/flutter-valencia/' },
-    { name: 'Flutter & Friends', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759769383/Untitled_design-removebg-preview_ll1djf.png', website: 'https://www.flutterfriends.dev/' },
+const goldSponsors2026: Sponsor[] = [
+    { name: 'Google', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png', website: 'https://google.com' },
+    { name: 'Widgetbook', logoUrl: 'https://www.tecup.de/wp-content/uploads/2022/04/Widgetbook-Logo.png', website: 'https://widgetbook.io' },
+    { name: 'Shorebird', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758471011/logo_wordmark_c89fo5.png', website: 'https://shorebird.dev' },
 ];
 
 export default function SponsorsSection() {
@@ -60,17 +48,17 @@ export default function SponsorsSection() {
 
                         <div className="space-y-16 py-8">
                             <div>
-                                <h3 className="text-2xl font-headline text-center mb-10 text-primary font-bold">{t('sponsors.sponsors2025')}</h3>
+                                <h3 className="text-2xl font-headline text-center mb-10 text-primary font-bold uppercase tracking-wider">{t('sponsors.platinumSponsors')}</h3>
                                 <div className="flex justify-center items-center gap-14 flex-wrap">
-                                    {sponsors2025.map(sponsor => (
-                                        <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                            <Image 
-                                                src={sponsor.logoUrl} 
-                                                alt={sponsor.name} 
-                                                width={220} 
-                                                height={75} 
-                                                className="max-h-[75px] max-w-[220px] w-auto object-contain" 
-                                                style={{ height: '75px', width: 'auto', maxWidth: '220px' }}
+                                    {platinumSponsors2026.map(sponsor => (
+                                        <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105">
+                                            <Image
+                                                src={sponsor.logoUrl}
+                                                alt={sponsor.name}
+                                                width={280}
+                                                height={95}
+                                                className="max-h-[95px] max-w-[280px] w-auto object-contain"
+                                                style={{ height: '95px', width: 'auto', maxWidth: '280px' }}
                                             />
                                         </Link>
                                     ))}
@@ -78,35 +66,17 @@ export default function SponsorsSection() {
                             </div>
 
                             <div>
-                                <h3 className="text-2xl font-headline text-center mb-10 text-primary font-bold">{t('sponsors.collaborators2025')}</h3>
-                                <div className="flex justify-center items-center gap-10 flex-wrap">
-                                    {collaborators2025.map(sponsor => (
-                                        <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                            <Image 
-                                                src={sponsor.logoUrl} 
-                                                alt={sponsor.name} 
-                                                width={180} 
-                                                height={90} 
-                                                className="max-h-[60px] max-w-[180px] w-auto object-contain" 
-                                                style={{ height: '60px', width: 'auto', maxWidth: '180px' }}
-                                            />
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="pt-4">
-                                <h3 className="text-xl font-headline text-center mb-8 text-primary/70 font-semibold italic">Comunidades 2025</h3>
-                                <div className="flex justify-center items-center gap-8 flex-wrap">
-                                    {communities2025.map(sponsor => (
-                                        <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-70 hover:grayscale-0 hover:opacity-90 transition-all duration-300">
-                                            <Image 
-                                                src={sponsor.logoUrl} 
-                                                alt={sponsor.name} 
-                                                width={120} 
-                                                height={60} 
-                                                className="max-h-[50px] max-w-[120px] w-auto object-contain" 
-                                                style={{ height: '50px', width: 'auto', maxWidth: '120px' }}
+                                <h3 className="text-xl font-headline text-center mb-10 text-primary/80 font-bold uppercase tracking-wider">{t('sponsors.goldSponsors')}</h3>
+                                <div className="flex justify-center items-center gap-12 flex-wrap">
+                                    {goldSponsors2026.map(sponsor => (
+                                        <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105">
+                                            <Image
+                                                src={sponsor.logoUrl}
+                                                alt={sponsor.name}
+                                                width={200}
+                                                height={800}
+                                                className="max-h-[70px] max-w-[200px] w-auto object-contain"
+                                                style={{ height: '70px', width: 'auto', maxWidth: '200px' }}
                                             />
                                         </Link>
                                     ))}

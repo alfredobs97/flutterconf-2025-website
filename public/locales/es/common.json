@@ -40,10 +40,10 @@
         "submitButton": "Inscribirse como voluntario"
     },
     "sponsors": {
-        "title": "¿Quieres apoyar la FlutterConf?",
-        "subtitle": "Únete a las empresas que apoyan el crecimiento de la comunidad Flutter en España.\nGana visibilidad y conecta con desarrolladores talentosos.",
-        "sponsors2025": "Sponsors 2025",
-        "collaborators2025": "Colaboradores 2025",
+        "title": "Nuestros Patrocinadores",
+        "subtitle": "Gracias a las empresas que apoyan el crecimiento de la comunidad Flutter en España.\nSu compromiso hace posible este evento.",
+        "platinumSponsors": "Sponsors Platinum",
+        "goldSponsors": "Sponsors Gold",
         "viewDossier": "Ver dossier para sponsors (Español)",
         "viewDossierEn": "Ver dossier para sponsors (Inglés)"
     },
@@ -84,6 +84,18 @@
             {
                 "question": "¿Quién organiza el evento?",
                 "answer": "FlutterConf España está organizado por GDG Marbella, GDG Spain, Flutter Lleida y Flutter Málaga, somos una agrupación de comunidades sin ánimo de lucro dedicado a hacer crecer la comunidad tecnológica. Contamos con el apoyo de voluntarios de la comunidad Flutter de toda España."
+            },
+            {
+                "question": "¿Son los dos días en la misma venue?",
+                "answer": "No, el Conference day es en el GSEC y el segundo es en el Innovation Campus Malaga Terrace."
+            },
+            {
+                "question": "¿Es el mismo evento los dos días?",
+                "answer": "No, el primer día el evento es en formato conferencia, con charlas y tiempo de networking y el segundo está dedicado a las comunidades y a conectar con los asistentes, donde podrás conectar con speakers, líderes de comunidad y otros participantes. Recuerda que la venue es diferente en los dos días."
+            },
+            {
+                "question": "¿Necesito una entrada diferente para el segundo día?",
+                "answer": "No, en el formulario para pedir tu entrada, has tenido que seleccionar que días querías atender"
             }
         ]
     },
@@ -198,12 +210,11 @@
             }
         ]
     },
-    "sponsors2025": {
+    "sponsors2026": {
         "title": "Nuestros Sponsors",
         "subtitle": "Agradecemos a nuestros sponsors y colaboradores por hacer posible este evento.",
-        "sponsorsTitle": "Sponsors",
-        "collaboratorsTitle": "Colaboradores",
-        "communitiesTitle": "Comunidades",
+        "platinumTitle": "Sponsors Platinum",
+        "goldTitle": "Sponsors Gold",
         "becomeCollaborator": "¿Quieres que tu marca aparezca aquí? ¡Estamos buscando colaboradores!",
         "wantToBeSponsor": "¿Quieres ser Sponsor?",
         "sponsorDescription": "Apoya a la comunidad Flutter y gana visibilidad para tu marca.",

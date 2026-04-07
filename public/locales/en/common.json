@@ -40,10 +40,10 @@
         "submitButton": "Sign up as a volunteer"
     },
     "sponsors": {
-        "title": "Want to support FlutterConf?",
-        "subtitle": "Join the companies supporting the growth of the Flutter community in Spain.\nGain visibility and connect with talented developers.",
-        "sponsors2025": "Sponsors 2025",
-        "collaborators2025": "Collaborators 2025",
+        "title": "Our Sponsors",
+        "subtitle": "Thank you to the companies supporting the growth of the Flutter community in Spain.\nTheir commitment makes this conference possible.",
+        "platinumSponsors": "Platinum Sponsors",
+        "goldSponsors": "Gold Sponsors",
         "viewDossier": "View sponsor dossier (Spanish)",
         "viewDossierEn": "View sponsor dossier (English)"
     },
@@ -84,6 +84,14 @@
             {
                 "question": "Who organizes the event?",
                 "answer": "FlutterConf Spain is organized by GDG Marbella, GDG Spain, Flutter Lleida, and Flutter Málaga. We are a group of non-profit communities dedicated to growing the tech community. We have the support of volunteers from the Flutter community throughout Spain."
+            },
+            {
+                "question": "Are both days at the same venue?",
+                "answer": "No, the Conference day is at GSEC and the second day is at Innovation Campus Malaga Terrace."
+            },
+            {
+                "question": "Is it the same event on both days?",
+                "answer": "No, the first day is a conference format with talks and networking time, and the second day is dedicated to communities and connecting with attendees, where you can connect with speakers, community leaders, and other participants. Remember that the venue is different on both days."
             }
         ]
     },
@@ -198,12 +206,11 @@
             }
         ]
     },
-    "sponsors2025": {
+    "sponsors2026": {
         "title": "Our Sponsors",
         "subtitle": "We thank our sponsors and collaborators for making this event possible.",
-        "sponsorsTitle": "Sponsors",
-        "collaboratorsTitle": "Collaborators",
-        "communitiesTitle": "Communities",
+        "platinumTitle": "Platinum Sponsors",
+        "goldTitle": "Gold Sponsors",
         "becomeCollaborator": "Want your brand to appear here? We are looking for collaborators!",
         "wantToBeSponsor": "Want to be a Sponsor?",
         "sponsorDescription": "Support the Flutter community and gain visibility for your brand.",
