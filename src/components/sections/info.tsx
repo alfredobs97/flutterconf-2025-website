@@ -28,15 +28,39 @@ export default function Info() {
                             <MapPin className="h-8 w-8 text-primary" />
                             <CardTitle>{t('info.venueTitle')}</CardTitle>
                         </CardHeader>
-                        <CardContent className="text-left space-y-4">
-                            <img
-                                src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1769420206/gsec_ig6vkp.png"
-                                alt="Google Safety Engineering Center Málaga Logo"
-                                className="max-h-16"
-                            />
-                            <div>
-                                <a href="https://maps.app.goo.gl/M97HgC2hcrkPEymn6" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">{t('info.venueName')}</a>
-                                <p className="text-muted-foreground">{t('info.venueLocation')}</p>
+                        <CardContent className="text-left space-y-6">
+                            <div className="space-y-3">
+                                <p className="font-bold text-primary">{t('info.conferenceDay')}</p>
+                                <div className="flex flex-col space-y-2">
+                                    <div className="h-20 flex items-center">
+                                        <img
+                                            src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1769420206/gsec_ig6vkp.png"
+                                            alt="Google Safety Engineering Center Málaga Logo"
+                                            className="w-64 h-auto object-contain"
+                                        />
+                                    </div>
+                                    <div>
+                                        <a href="https://maps.app.goo.gl/M97HgC2hcrkPEymn6" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">{t('info.venueName')}</a>
+                                        <p className="text-muted-foreground text-sm">{t('info.venueLocation')}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="pt-4 border-t border-border space-y-3">
+                                <p className="font-bold text-primary">{t('info.communityDay')}</p>
+                                <div className="flex flex-col space-y-2">
+                                    <div className="h-20 flex items-center">
+                                        <img
+                                            src="https://res.cloudinary.com/dxifmrvbs/image/upload/v1775554252/Firma_Digital_qrjlox.png"
+                                            alt="Innovation Campus Málaga Logo"
+                                            className="w-64 h-auto object-contain"
+                                        />
+                                    </div>
+                                    <div>
+                                        <a href="https://maps.app.goo.gl/oJVUEJ2yWi2JoxqAA" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">{t('info.communityVenueName')}</a>
+                                        <p className="text-muted-foreground text-sm">{t('info.communityVenueLocation')}</p>
+                                    </div>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>

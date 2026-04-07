@@ -49,9 +49,13 @@
     },
     "info": {
         "title": "Information and Frequently Asked Questions",
-        "venueTitle": "Event Venue",
+        "venueTitle": "Event Venues",
+        "conferenceDay": "Day 1: Conference Day",
         "venueName": "Google Safety Engineering Center Málaga",
         "venueLocation": "Málaga, Spain",
+        "communityDay": "Day 2: Community Day",
+        "communityVenueName": "Innovation Campus Málaga Terrace",
+        "communityVenueLocation": "Málaga, Spain",
         "codeOfConductTitle": "Code of Conduct",
         "codeOfConductText": "We are committed to providing a safe, inclusive, and welcoming experience for everyone. All attendees, speakers, sponsors, and volunteers are expected to comply with our",
         "codeOfConductLink": "Code of Conduct",
@@ -75,7 +79,7 @@
             },
             {
                 "question": "What language will the talks be in?",
-                "answer": "In the student format, talks will be in Spanish. In the professional part, talks will be in English to make it an international and inclusive event with global talent."
+                "answer": "Most talks will be in Spanish. Some talks by international speakers might be in English, but this will be indicated in the agenda."
             },
             {
                 "question": "Will the talks be recorded?",
@@ -92,6 +96,10 @@
             {
                 "question": "Is it the same event on both days?",
                 "answer": "No, the first day is a conference format with talks and networking time, and the second day is dedicated to communities and connecting with attendees, where you can connect with speakers, community leaders, and other participants. Remember that the venue is different on both days."
+            },
+            {
+                "question": "Do I need a different ticket for the second day?",
+                "answer": "No, in the ticket request form, you had to select which days you wanted to attend."
             }
         ]
     },
