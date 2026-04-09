@@ -14,7 +14,7 @@ const platinumSponsors2026: Sponsor[] = [
 
 const goldSponsors2026: Sponsor[] = [
     { name: 'Google', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png', website: 'https://google.com' },
-    { name: 'Widgetbook', logoUrl: 'https://www.tecup.de/wp-content/uploads/2022/04/Widgetbook-Logo.png', website: 'https://widgetbook.io' },
+    { name: 'Widgetbook', logoUrl: 'https://miro.medium.com/v2/resize:fit:4313/1%2APWmAKfRltV_7PDb3oywvGg.png', website: 'https://widgetbook.io' },
     { name: 'Shorebird', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758471011/logo_wordmark_c89fo5.png', website: 'https://shorebird.dev' },
 ];
 
