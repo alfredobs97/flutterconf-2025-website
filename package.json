@@ -60,7 +60,7 @@
     "@types/nodemailer": "^8.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.12",
     "tailwindcss": "^4.2.2",
     "typescript": "^6.0.3"
   }
