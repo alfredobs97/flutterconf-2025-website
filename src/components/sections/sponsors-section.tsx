@@ -9,7 +9,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { useTranslation } from '@/hooks/useTranslation';
 
 const platinumSponsors2026: Sponsor[] = [
-    { name: 'Flutter', logoUrl: 'https://storage.googleapis.com/cms-storage-bucket/lockup_flutter_horizontal.847ae81f5430402216fd.svg', website: 'https://flutter.dev' },
+    { name: 'Flutter', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Google-flutter-logo.svg/1280px-Google-flutter-logo.svg.png', website: 'https://flutter.dev' },
 ];
 
 const goldSponsors2026: Sponsor[] = [
