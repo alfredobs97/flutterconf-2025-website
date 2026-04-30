@@ -18,6 +18,11 @@ const goldSponsors2026: Sponsor[] = [
     { name: 'Shorebird', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758471011/logo_wordmark_c89fo5.png', website: 'https://shorebird.dev' },
 ];
 
+const collaborators2026: Sponsor[] = [
+    { name: 'Netscrapers', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758470884/logo_netscrapers_ekzcmj.svg', website: 'https://netscrapers.com/' },
+    { name: 'Serverpod', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759394985/logo-horizontal_gtbby0.png', website: 'https://serverpod.dev' },
+];
+
 export default function SponsorsSection() {
     const { t } = useTranslation();
 
@@ -39,16 +44,16 @@ export default function SponsorsSection() {
                                 </div>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-headline font-bold tracking-tight text-primary">
-                                {t('sponsors.title')}
+                                {t('sponsors2026.title')}
                             </h2>
                             <p className="text-xl md:text-2xl text-muted-foreground whitespace-pre-line max-w-3xl mx-auto">
-                                {t('sponsors.subtitle')}
+                                {t('sponsors2026.subtitle')}
                             </p>
                         </div>
 
                         <div className="space-y-16 py-8">
                             <div>
-                                <h3 className="text-2xl font-headline text-center mb-10 text-primary font-bold uppercase tracking-wider">{t('sponsors.platinumSponsors')}</h3>
+                                <h3 className="text-2xl font-headline text-center mb-10 text-primary font-bold uppercase tracking-wider">{t('sponsors2026.platinumSponsors')}</h3>
                                 <div className="flex justify-center items-center gap-14 flex-wrap">
                                     {platinumSponsors2026.map(sponsor => (
                                         <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105">
@@ -66,7 +71,7 @@ export default function SponsorsSection() {
                             </div>
 
                             <div>
-                                <h3 className="text-xl font-headline text-center mb-10 text-primary/80 font-bold uppercase tracking-wider">{t('sponsors.goldSponsors')}</h3>
+                                <h3 className="text-xl font-headline text-center mb-10 text-primary/80 font-bold uppercase tracking-wider">{t('sponsors2026.goldSponsors')}</h3>
                                 <div className="flex justify-center items-center gap-12 flex-wrap">
                                     {goldSponsors2026.map(sponsor => (
                                         <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105">
@@ -74,9 +79,27 @@ export default function SponsorsSection() {
                                                 src={sponsor.logoUrl}
                                                 alt={sponsor.name}
                                                 width={200}
-                                                height={800}
+                                                height={80}
                                                 className="max-h-[70px] max-w-[200px] w-auto object-contain"
                                                 style={{ height: '70px', width: 'auto', maxWidth: '200px' }}
+                                            />
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 className="text-xl font-headline text-center mb-10 text-primary/80 font-bold uppercase tracking-wider">{t('sponsors2026.collaboratorsTitle')}</h3>
+                                <div className="flex justify-center items-center gap-12 flex-wrap">
+                                    {collaborators2026.map(sponsor => (
+                                        <Link key={sponsor.name} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105">
+                                            <Image
+                                                src={sponsor.logoUrl}
+                                                alt={sponsor.name}
+                                                width={180}
+                                                height={70}
+                                                className="max-h-[60px] max-w-[180px] w-auto object-contain"
+                                                style={{ height: '60px', width: 'auto', maxWidth: '180px' }}
                                             />
                                         </Link>
                                     ))}

@@ -224,8 +224,9 @@
     "sponsors2026": {
         "title": "Our Sponsors",
         "subtitle": "We thank our sponsors and collaborators for making this event possible.",
-        "platinumTitle": "Platinum Sponsors",
-        "goldTitle": "Gold Sponsors",
+        "platinumSponsors": "Platinum Sponsors",
+        "goldSponsors": "Gold Sponsors",
+        "collaboratorsTitle": "Collaborators",
         "becomeCollaborator": "Want your brand to appear here? We are looking for collaborators!",
         "wantToBeSponsor": "Want to be a Sponsor?",
         "sponsorDescription": "Support the Flutter community and gain visibility for your brand.",
