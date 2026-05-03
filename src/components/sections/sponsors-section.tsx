@@ -21,6 +21,7 @@ const goldSponsors2026: Sponsor[] = [
 const collaborators2026: Sponsor[] = [
     { name: 'Netscrapers', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758470884/logo_netscrapers_ekzcmj.svg', website: 'https://netscrapers.com/' },
     { name: 'Serverpod', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1759394985/logo-horizontal_gtbby0.png', website: 'https://serverpod.dev' },
+    { name: 'Xtorm', logoUrl: 'https://res.cloudinary.com/dxifmrvbs/image/upload/v1758470968/4-XTORM-logoFC-free-standing-grey_upqyow.png', website: 'https://www.xtorm.eu/' },
 ];
 
 export default function SponsorsSection() {
