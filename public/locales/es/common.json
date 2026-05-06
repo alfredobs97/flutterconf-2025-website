@@ -265,7 +265,7 @@
             "victorDesc": "¿Y si tu aplicación se construyera en tiempo real según las necesidades de cada usuario? En esta sesión exploraremos cómo combinar Server-Driven UI (SDUI) con IA Generativa usando Flutter, Serverpod y Gemini para crear experiencias verdaderamente adaptativas e inteligentes.",
             "breakTarde": "Break y networking",
             "lukasTitle": "Teaching Coding Agents to Judge UI",
-            "lukasDesc": "Los modelos de IA son buenos generando código Flutter, pero no evalúan bien la jerarquía visual. En esta charla, mostraré cómo el render tree de Flutter nos da una representación estructurada para crear un motor de evaluación de calidad automatizado que puntúa widgets frente a diseños de Figma.",
+            "lukasDesc": "Los agentes de IA generan código Flutter rápidamente, pero les cuesta juzgar si es realmente bueno. Los revisores humanos no tienen tiempo para comprobar cada línea de código y cada píxel en todos los diferentes casos de uso (temas, tamaños de dispositivos, idiomas, factores de escala de texto, etc.). En esta charla mostraré cómo los árboles de Widgets y Semantics de Flutter, junto con Widgetbook v4, permiten que los agentes se autocorrijan en dos bucles antes de que un humano revise fácilmente la PR.",
             "ahmedTitle": "Multi-Radio Flutter",
             "ahmedDesc": "¿Alguna vez te preguntaste cómo Flutter podría manejar múltiples tecnologías inalámbricas como UWB y BLE? Nos sumergiremos en aplicaciones multi-radio para abordar escenarios reales, discutir patrones de arquitectura para mantener el código y revisar consideraciones de rendimiento.",
             "sashaTitle": "Evolution of flutter_gemma",
